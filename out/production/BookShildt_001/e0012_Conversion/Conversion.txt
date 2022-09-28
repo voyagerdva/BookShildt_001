@@ -1,0 +1,177 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0012_Conversion/Conversion.class
+  Last modified 28 сент. 2022 г.; size 1481 bytes
+  SHA-256 checksum 354ad70358e585fc1a6a51b2bdb9c213ca2dfd1edd62f6673b54d6629b399001
+  Compiled from "Conversion.java"
+class e0012_Conversion.Conversion
+  minor version: 0
+  major version: 61
+  flags: (0x0020) ACC_SUPER
+  this_class: #37                         // e0012_Conversion/Conversion
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Double             323.142d
+   #9 = Fieldref           #10.#11        // java/lang/System.out:Ljava/io/PrintStream;
+  #10 = Class              #12            // java/lang/System
+  #11 = NameAndType        #13:#14        // out:Ljava/io/PrintStream;
+  #12 = Utf8               java/lang/System
+  #13 = Utf8               out
+  #14 = Utf8               Ljava/io/PrintStream;
+  #15 = String             #16            // \nПреобразование типа int в тип byte.
+  #16 = Utf8               \nПреобразование типа int в тип byte.
+  #17 = Methodref          #18.#19        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #18 = Class              #20            // java/io/PrintStream
+  #19 = NameAndType        #21:#22        // println:(Ljava/lang/String;)V
+  #20 = Utf8               java/io/PrintStream
+  #21 = Utf8               println
+  #22 = Utf8               (Ljava/lang/String;)V
+  #23 = InvokeDynamic      #0:#24         // #0:makeConcatWithConstants:(IB)Ljava/lang/String;
+  #24 = NameAndType        #25:#26        // makeConcatWithConstants:(IB)Ljava/lang/String;
+  #25 = Utf8               makeConcatWithConstants
+  #26 = Utf8               (IB)Ljava/lang/String;
+  #27 = String             #28            // \nПреобразование типа double в тип int.
+  #28 = Utf8               \nПреобразование типа double в тип int.
+  #29 = InvokeDynamic      #1:#30         // #1:makeConcatWithConstants:(DI)Ljava/lang/String;
+  #30 = NameAndType        #25:#31        // makeConcatWithConstants:(DI)Ljava/lang/String;
+  #31 = Utf8               (DI)Ljava/lang/String;
+  #32 = String             #33            // \nПреобразование типа double в тип byte.
+  #33 = Utf8               \nПреобразование типа double в тип byte.
+  #34 = InvokeDynamic      #2:#35         // #2:makeConcatWithConstants:(DB)Ljava/lang/String;
+  #35 = NameAndType        #25:#36        // makeConcatWithConstants:(DB)Ljava/lang/String;
+  #36 = Utf8               (DB)Ljava/lang/String;
+  #37 = Class              #38            // e0012_Conversion/Conversion
+  #38 = Utf8               e0012_Conversion/Conversion
+  #39 = Utf8               Code
+  #40 = Utf8               LineNumberTable
+  #41 = Utf8               LocalVariableTable
+  #42 = Utf8               this
+  #43 = Utf8               Le0012_Conversion/Conversion;
+  #44 = Utf8               main
+  #45 = Utf8               ([Ljava/lang/String;)V
+  #46 = Utf8               args
+  #47 = Utf8               [Ljava/lang/String;
+  #48 = Utf8               b
+  #49 = Utf8               B
+  #50 = Utf8               i
+  #51 = Utf8               I
+  #52 = Utf8               d
+  #53 = Utf8               D
+  #54 = Utf8               SourceFile
+  #55 = Utf8               Conversion.java
+  #56 = Utf8               BootstrapMethods
+  #57 = MethodHandle       6:#58          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #58 = Methodref          #59.#60        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #59 = Class              #61            // java/lang/invoke/StringConcatFactory
+  #60 = NameAndType        #25:#62        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #61 = Utf8               java/lang/invoke/StringConcatFactory
+  #62 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #63 = String             #64            // i и b\u0001 \u0001
+  #64 = Utf8               i и b\u0001 \u0001
+  #65 = String             #66            // d и i \u0001 \u0001
+  #66 = Utf8               d и i \u0001 \u0001
+  #67 = String             #68            // d и b\u0001• •\u0001
+  #68 = Utf8               d и b\u0001• •\u0001
+  #69 = Utf8               InnerClasses
+  #70 = Class              #71            // java/lang/invoke/MethodHandles$Lookup
+  #71 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #72 = Class              #73            // java/lang/invoke/MethodHandles
+  #73 = Utf8               java/lang/invoke/MethodHandles
+  #74 = Utf8               Lookup
+{
+  e0012_Conversion.Conversion();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 4: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0012_Conversion/Conversion;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=5, args_size=1
+         0: sipush        257
+         3: istore_2
+         4: ldc2_w        #7                  // double 323.142d
+         7: dstore_3
+         8: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        11: ldc           #15                 // String \nПреобразование типа int в тип byte.
+        13: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        16: iload_2
+        17: i2b
+        18: istore_1
+        19: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        22: iload_2
+        23: iload_1
+        24: invokedynamic #23,  0             // InvokeDynamic #0:makeConcatWithConstants:(IB)Ljava/lang/String;
+        29: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        32: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        35: ldc           #27                 // String \nПреобразование типа double в тип int.
+        37: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        40: dload_3
+        41: d2i
+        42: istore_2
+        43: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        46: dload_3
+        47: iload_2
+        48: invokedynamic #29,  0             // InvokeDynamic #1:makeConcatWithConstants:(DI)Ljava/lang/String;
+        53: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        56: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        59: ldc           #32                 // String \nПреобразование типа double в тип byte.
+        61: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        64: dload_3
+        65: d2i
+        66: i2b
+        67: istore_1
+        68: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        71: dload_3
+        72: iload_1
+        73: invokedynamic #34,  0             // InvokeDynamic #2:makeConcatWithConstants:(DB)Ljava/lang/String;
+        78: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        81: return
+      LineNumberTable:
+        line 7: 0
+        line 8: 4
+        line 10: 8
+        line 11: 16
+        line 13: 19
+        line 14: 32
+        line 16: 40
+        line 17: 43
+        line 18: 56
+        line 20: 64
+        line 21: 68
+        line 22: 81
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      82     0  args   [Ljava/lang/String;
+           19      63     1     b   B
+            4      78     2     i   I
+            8      74     3     d   D
+}
+SourceFile: "Conversion.java"
+BootstrapMethods:
+  0: #57 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #63 i и b\u0001 \u0001
+  1: #57 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #65 d и i \u0001 \u0001
+  2: #57 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #67 d и b\u0001• •\u0001
+InnerClasses:
+  public static final #74= #70 of #72;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

@@ -1,0 +1,156 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/Long_Light_006.class
+  Last modified 22 сент. 2022 г.; size 1259 bytes
+  SHA-256 checksum bf589961e6b30af7e318098de3d8ab043125e14f86a6d741629b1655d8c1240b
+  Compiled from "Long_Light_006.java"
+public class Long_Light_006
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #36                         // Long_Light_006
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Integer            186000
+   #8 = Long               1000l
+  #10 = Long               24l
+  #12 = Long               60l
+  #14 = Fieldref           #15.#16        // java/lang/System.out:Ljava/io/PrintStream;
+  #15 = Class              #17            // java/lang/System
+  #16 = NameAndType        #18:#19        // out:Ljava/io/PrintStream;
+  #17 = Utf8               java/lang/System
+  #18 = Utf8               out
+  #19 = Utf8               Ljava/io/PrintStream;
+  #20 = InvokeDynamic      #0:#21         // #0:makeConcatWithConstants:(J)Ljava/lang/String;
+  #21 = NameAndType        #22:#23        // makeConcatWithConstants:(J)Ljava/lang/String;
+  #22 = Utf8               makeConcatWithConstants
+  #23 = Utf8               (J)Ljava/lang/String;
+  #24 = Methodref          #25.#26        // java/io/PrintStream.print:(Ljava/lang/String;)V
+  #25 = Class              #27            // java/io/PrintStream
+  #26 = NameAndType        #28:#29        // print:(Ljava/lang/String;)V
+  #27 = Utf8               java/io/PrintStream
+  #28 = Utf8               print
+  #29 = Utf8               (Ljava/lang/String;)V
+  #30 = String             #31            //  дней свет пройдет около
+  #31 = Utf8                дней свет пройдет около
+  #32 = InvokeDynamic      #1:#21         // #1:makeConcatWithConstants:(J)Ljava/lang/String;
+  #33 = Methodref          #25.#34        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #34 = NameAndType        #35:#29        // println:(Ljava/lang/String;)V
+  #35 = Utf8               println
+  #36 = Class              #37            // Long_Light_006
+  #37 = Utf8               Long_Light_006
+  #38 = Utf8               Code
+  #39 = Utf8               LineNumberTable
+  #40 = Utf8               LocalVariableTable
+  #41 = Utf8               this
+  #42 = Utf8               LLong_Light_006;
+  #43 = Utf8               main
+  #44 = Utf8               ([Ljava/lang/String;)V
+  #45 = Utf8               args
+  #46 = Utf8               [Ljava/lang/String;
+  #47 = Utf8               lightspeed
+  #48 = Utf8               I
+  #49 = Utf8               days
+  #50 = Utf8               J
+  #51 = Utf8               seconds
+  #52 = Utf8               distance
+  #53 = Utf8               SourceFile
+  #54 = Utf8               Long_Light_006.java
+  #55 = Utf8               BootstrapMethods
+  #56 = MethodHandle       6:#57          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #57 = Methodref          #58.#59        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #58 = Class              #60            // java/lang/invoke/StringConcatFactory
+  #59 = NameAndType        #22:#61        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #60 = Utf8               java/lang/invoke/StringConcatFactory
+  #61 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #62 = String             #63            // За \u0001
+  #63 = Utf8               За \u0001
+  #64 = String             #65            // \u0001 миль.
+  #65 = Utf8               \u0001 миль.
+  #66 = Utf8               InnerClasses
+  #67 = Class              #68            // java/lang/invoke/MethodHandles$Lookup
+  #68 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #69 = Class              #70            // java/lang/invoke/MethodHandles
+  #70 = Utf8               java/lang/invoke/MethodHandles
+  #71 = Utf8               Lookup
+{
+  public Long_Light_006();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 1: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LLong_Light_006;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=8, args_size=1
+         0: ldc           #7                  // int 186000
+         2: istore_1
+         3: ldc2_w        #8                  // long 1000l
+         6: lstore_2
+         7: lload_2
+         8: ldc2_w        #10                 // long 24l
+        11: lmul
+        12: ldc2_w        #12                 // long 60l
+        15: lmul
+        16: ldc2_w        #12                 // long 60l
+        19: lmul
+        20: lstore        4
+        22: iload_1
+        23: i2l
+        24: lload         4
+        26: lmul
+        27: lstore        6
+        29: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        32: lload_2
+        33: invokedynamic #20,  0             // InvokeDynamic #0:makeConcatWithConstants:(J)Ljava/lang/String;
+        38: invokevirtual #24                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+        41: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        44: ldc           #30                 // String  дней свет пройдет около
+        46: invokevirtual #24                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+        49: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        52: lload         6
+        54: invokedynamic #32,  0             // InvokeDynamic #1:makeConcatWithConstants:(J)Ljava/lang/String;
+        59: invokevirtual #33                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        62: return
+      LineNumberTable:
+        line 8: 0
+        line 9: 3
+        line 11: 7
+        line 12: 22
+        line 14: 29
+        line 15: 41
+        line 16: 49
+        line 17: 62
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      63     0  args   [Ljava/lang/String;
+            3      60     1 lightspeed   I
+            7      56     2  days   J
+           22      41     4 seconds   J
+           29      34     6 distance   J
+}
+SourceFile: "Long_Light_006.java"
+BootstrapMethods:
+  0: #56 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #62 За \u0001
+  1: #56 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #64 \u0001 миль.
+InnerClasses:
+  public static final #71= #67 of #69;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
