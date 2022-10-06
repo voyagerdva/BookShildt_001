@@ -1,0 +1,79 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0017_Arrays/Array.class
+  Last modified 5 окт. 2022 г.; size 426 bytes
+  SHA-256 checksum 3fd90d247d87ada2c99cd3c1a2d3f07cd80658bd597e9189dccecae9a736d65b
+  Compiled from "Array.java"
+public class e0017_Arrays.Array
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #8                          // e0017_Arrays/Array
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Integer            12800000
+   #8 = Class              #9             // e0017_Arrays/Array
+   #9 = Utf8               e0017_Arrays/Array
+  #10 = Utf8               Code
+  #11 = Utf8               LineNumberTable
+  #12 = Utf8               LocalVariableTable
+  #13 = Utf8               this
+  #14 = Utf8               Le0017_Arrays/Array;
+  #15 = Utf8               main
+  #16 = Utf8               ([Ljava/lang/String;)V
+  #17 = Utf8               args
+  #18 = Utf8               [Ljava/lang/String;
+  #19 = Utf8               month_days
+  #20 = Utf8               [S
+  #21 = Utf8               SourceFile
+  #22 = Utf8               Array.java
+{
+  public e0017_Arrays.Array();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0017_Arrays/Array;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=2, args_size=1
+         0: ldc           #7                  // int 12800000
+         2: newarray       short
+         4: astore_1
+         5: return
+      LineNumberTable:
+        line 6: 0
+        line 7: 5
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       6     0  args   [Ljava/lang/String;
+            5       1     1 month_days   [S
+}
+SourceFile: "Array.java"
+#############################################################################################
+package e0017_Arrays;
+
+public class Array {
+    public static void main(String[] args) {
+        short month_days[];
+        month_days = new short[12800000];
+    }
+}
+
+---------------------------------------------------------------------------------------------
+
