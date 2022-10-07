@@ -2,23 +2,7 @@ package e0019_Operations_time_measure;
 
 public class OperationsTime {
     public static void main(String[] args) throws InterruptedException {
-//    Андрей Брат Калининград, [06.10.2022 10:52]
-//    Напрмер сложение byte, int или long или double..
-//    вот так можно измерить время работы:
 
-//    long time = System.currentTimeMillis();
-//
-//
-//    someMethod();
-//        // some code
-//
-//    System.out.println(System.currentTimeMillis() - time);
-//
-////    или вот так -
-//    long time = System.nanoTime();
-//    method.run();
-//    time = System.nanoTime() - time;
-//==================================================================================
         long a = 0;
         long MAX = 1000000000L;
         long start;
