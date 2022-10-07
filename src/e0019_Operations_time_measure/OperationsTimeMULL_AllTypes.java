@@ -6,7 +6,8 @@ public class OperationsTimeMULL_AllTypes {
         long start;
         long elapsed;
 
-        long MAX = 1000000000L;
+        long MAX = 10000000000L;
+//        long MAX = 1000000000L;
 
         byte B1 = 62;
         byte B2 = 72;
@@ -22,10 +23,8 @@ public class OperationsTimeMULL_AllTypes {
         double D2 = 3000.0047D;
         long result = 0;
 
-//        MulAndDiv mulAndDiv =
-
         start = System.nanoTime();
-        MulAndDiv.multi(MAX, B1, B2, result);
+        MulAndDiv.multiByte(MAX, B1, B2, result);
         elapsed = System.nanoTime() - start;
         System.out.println("multi byte x byte. Средняя длительность одной итерации, нс: " + (double) elapsed / MAX);
 
@@ -56,42 +55,35 @@ public class OperationsTimeMULL_AllTypes {
 
 //====== DIVIDI ========================================================================================================================
         start = System.nanoTime();
-        MulAndDiv.dividi(MAX, B1, B2, result);
+        MulAndDiv.dividiByte(MAX, B1, B2, result);
         elapsed = System.nanoTime() - start;
-        System.out.println("dividi byte x byte. Средняя длительность одной итерации, нс: " + (double) elapsed / MAX);
+        System.out.println("dividi byte / byte. Средняя длительность одной итерации, нс: " + (double) elapsed / MAX);
 
         start = System.nanoTime();
         MulAndDiv.dividiShort(MAX, S1, S2, result);
         elapsed = System.nanoTime() - start;
-        System.out.println("dividi short x short. Средняя длительность одной итерации, нс: " + (double) elapsed / MAX);
+        System.out.println("dividi short / short. Средняя длительность одной итерации, нс: " + (double) elapsed / MAX);
 
         start = System.nanoTime();
         MulAndDiv.dividiInt(MAX, I1, I2, result);
         elapsed = System.nanoTime() - start;
-        System.out.println("dividi int x int. Средняя длительность одной итерации, нс: " + (double) elapsed / MAX);
+        System.out.println("dividi int / int. Средняя длительность одной итерации, нс: " + (double) elapsed / MAX);
 
         start = System.nanoTime();
         MulAndDiv.dividiLong(MAX, L1, L2, result);
         elapsed = System.nanoTime() - start;
-        System.out.println("dividi long x long. Средняя длительность одной итерации, нс: " + (double) elapsed / MAX);
+        System.out.println("dividi long / long. Средняя длительность одной итерации, нс: " + (double) elapsed / MAX);
 
         start = System.nanoTime();
         MulAndDiv.dividiFloat(MAX, F1, F2, result);
         elapsed = System.nanoTime() - start;
-        System.out.println("dividi float x float. Средняя длительность одной итерации, нс: " + (double) elapsed / MAX);
+        System.out.println("dividi float / float. Средняя длительность одной итерации, нс: " + (double) elapsed / MAX);
 
         start = System.nanoTime();
         MulAndDiv.dividiDouble(MAX, D1, D2, result);
         elapsed = System.nanoTime() - start;
-        System.out.println("dividi double x double. Средняя длительность одной итерации, нс: " + (double) elapsed / MAX);
+        System.out.println("dividi double / double. Средняя длительность одной итерации, нс: " + (double) elapsed / MAX);
 
     }
-//===================================================================================================================================
-
-
-
-//======================================================================================================
-
-
 }
 

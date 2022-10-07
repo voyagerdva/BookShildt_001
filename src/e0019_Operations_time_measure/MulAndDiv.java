@@ -1,7 +1,7 @@
 package e0019_Operations_time_measure;
 
 public class MulAndDiv {
-    static void multi(long max, byte b1, byte b2, long result) {
+    static void multiByte(long max, byte b1, byte b2, long result) {
         for (long i = 0; i < max; i++) {
             result = b1 * b2;
         }
@@ -43,45 +43,45 @@ public class MulAndDiv {
         System.out.println("\n    result = " + result);
     }
 
-    // ======= DIVIDI ==========================================================================================
-    static void dividi(long max, byte b1, byte b2, long result) {
+    // ======= DIVIDI =========================================================================================
+    static void dividiByte(long max, byte b1, byte b2, double result) {
         for (long i = 0; i < max; i++) {
-            result = b1 / b2;
+            result = (double) b1 / b2;
         }
         System.out.println("\n    result = " + result);
     }
 
-    static void dividiShort(long max, short b1, short b2, long result) {
+    static void dividiShort(long max, short b1, short b2, double result) {
         for (long i = 0; i < max; i++) {
-            result = b1 / b2;
+            result = (double) b1 / b2;
         }
         System.out.println("\n    result = " + result);
     }
 
-    static void dividiInt(long max, int b1, int b2, long result) {
+    static void dividiInt(long max, int b1, int b2, double result) {
         for (long i = 0; i < max; i++) {
-            result = b1 / b2;
+            result = (double) b1 / b2;
         }
         System.out.println("\n    result = " + result);
     }
 
-    static void dividiLong(long max, long b1, long b2, long result) {
+    static void dividiLong(long max, long b1, long b2, double result) {
         for (long i = 0; i < max; i++) {
-            result = b1 / b2;
+            result = (double) b1 / b2;
         }
         System.out.println("\n    result = " + result);
     }
 
-    static void dividiFloat(long max, float b1, float b2, float result) {
+    static void dividiFloat(long max, float b1, float b2, double result) {
         for (long i = 0; i < max; i++) {
-            result = b1 / b2;
+            result = (double) b1 / b2;
         }
         System.out.println("\n    result = " + result);
     }
 
     static void dividiDouble(long max, double b1, double b2, double result) {
         for (long i = 0; i < max; i++) {
-            result = b1 / b2;
+            result = (double) b1 / b2;
         }
         System.out.println("\n    result = " + result);
     }
