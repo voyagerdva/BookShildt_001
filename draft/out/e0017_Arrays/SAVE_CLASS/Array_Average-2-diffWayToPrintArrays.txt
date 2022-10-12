@@ -1,0 +1,268 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0017_Arrays/Array_Average.class
+  Last modified 5 окт. 2022 г.; size 1312 bytes
+  SHA-256 checksum 415f44cb43ee654ea04952ba03df852f42368e0f9fd1aa9548b21b8839e4d1f4
+  Compiled from "Array_Average.java"
+public class e0017_Arrays.Array_Average
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #60                         // e0017_Arrays/Array_Average
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // java/lang/String
+   #8 = Utf8               java/lang/String
+   #9 = String             #10            // John
+  #10 = Utf8               John
+  #11 = String             #12            // Mary
+  #12 = Utf8               Mary
+  #13 = String             #14            // Bob
+  #14 = Utf8               Bob
+  #15 = Fieldref           #16.#17        // java/lang/System.out:Ljava/io/PrintStream;
+  #16 = Class              #18            // java/lang/System
+  #17 = NameAndType        #19:#20        // out:Ljava/io/PrintStream;
+  #18 = Utf8               java/lang/System
+  #19 = Utf8               out
+  #20 = Utf8               Ljava/io/PrintStream;
+  #21 = Methodref          #22.#23        // java/util/Arrays.toString:([I)Ljava/lang/String;
+  #22 = Class              #24            // java/util/Arrays
+  #23 = NameAndType        #25:#26        // toString:([I)Ljava/lang/String;
+  #24 = Utf8               java/util/Arrays
+  #25 = Utf8               toString
+  #26 = Utf8               ([I)Ljava/lang/String;
+  #27 = Methodref          #28.#29        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #28 = Class              #30            // java/io/PrintStream
+  #29 = NameAndType        #31:#32        // println:(Ljava/lang/String;)V
+  #30 = Utf8               java/io/PrintStream
+  #31 = Utf8               println
+  #32 = Utf8               (Ljava/lang/String;)V
+  #33 = Methodref          #22.#34        // java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+  #34 = NameAndType        #35:#36        // asList:([Ljava/lang/Object;)Ljava/util/List;
+  #35 = Utf8               asList
+  #36 = Utf8               ([Ljava/lang/Object;)Ljava/util/List;
+  #37 = Methodref          #28.#38        // java/io/PrintStream.println:(Ljava/lang/Object;)V
+  #38 = NameAndType        #31:#39        // println:(Ljava/lang/Object;)V
+  #39 = Utf8               (Ljava/lang/Object;)V
+  #40 = Class              #41            // "[Ljava/lang/String;"
+  #41 = Utf8               [Ljava/lang/String;
+  #42 = String             #43            // Alice
+  #43 = Utf8               Alice
+  #44 = Methodref          #22.#45        // java/util/Arrays.deepToString:([Ljava/lang/Object;)Ljava/lang/String;
+  #45 = NameAndType        #46:#47        // deepToString:([Ljava/lang/Object;)Ljava/lang/String;
+  #46 = Utf8               deepToString
+  #47 = Utf8               ([Ljava/lang/Object;)Ljava/lang/String;
+  #48 = String             #49            // Hey
+  #49 = Utf8               Hey
+  #50 = String             #51            // there
+  #51 = Utf8               there
+  #52 = String             #53            // amigo!
+  #53 = Utf8               amigo!
+  #54 = String             #55            //
+  #55 = Utf8
+  #56 = Methodref          #7.#57         // java/lang/String.join:(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/String;
+  #57 = NameAndType        #58:#59        // join:(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/String;
+  #58 = Utf8               join
+  #59 = Utf8               (Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/String;
+  #60 = Class              #61            // e0017_Arrays/Array_Average
+  #61 = Utf8               e0017_Arrays/Array_Average
+  #62 = Utf8               Code
+  #63 = Utf8               LineNumberTable
+  #64 = Utf8               LocalVariableTable
+  #65 = Utf8               this
+  #66 = Utf8               Le0017_Arrays/Array_Average;
+  #67 = Utf8               main
+  #68 = Utf8               ([Ljava/lang/String;)V
+  #69 = Utf8               args
+  #70 = Utf8               intArray
+  #71 = Utf8               [I
+  #72 = Utf8               strArray
+  #73 = Utf8               deepArray
+  #74 = Utf8               [[Ljava/lang/String;
+  #75 = Utf8               greeting
+  #76 = Utf8               delimiter
+  #77 = Utf8               Ljava/lang/String;
+  #78 = Utf8               SourceFile
+  #79 = Utf8               Array_Average.java
+{
+  public e0017_Arrays.Array_Average();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 5: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0017_Arrays/Array_Average;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=7, locals=6, args_size=1
+         0: iconst_5
+         1: newarray       int
+         3: dup
+         4: iconst_0
+         5: iconst_1
+         6: iastore
+         7: dup
+         8: iconst_1
+         9: iconst_2
+        10: iastore
+        11: dup
+        12: iconst_2
+        13: iconst_3
+        14: iastore
+        15: dup
+        16: iconst_3
+        17: iconst_4
+        18: iastore
+        19: dup
+        20: iconst_4
+        21: iconst_5
+        22: iastore
+        23: astore_1
+        24: iconst_3
+        25: anewarray     #7                  // class java/lang/String
+        28: dup
+        29: iconst_0
+        30: ldc           #9                  // String John
+        32: aastore
+        33: dup
+        34: iconst_1
+        35: ldc           #11                 // String Mary
+        37: aastore
+        38: dup
+        39: iconst_2
+        40: ldc           #13                 // String Bob
+        42: aastore
+        43: astore_2
+        44: getstatic     #15                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        47: aload_1
+        48: invokestatic  #21                 // Method java/util/Arrays.toString:([I)Ljava/lang/String;
+        51: invokevirtual #27                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        54: getstatic     #15                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        57: aload_2
+        58: invokestatic  #33                 // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+        61: invokevirtual #37                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+        64: iconst_2
+        65: anewarray     #40                 // class "[Ljava/lang/String;"
+        68: dup
+        69: iconst_0
+        70: iconst_2
+        71: anewarray     #7                  // class java/lang/String
+        74: dup
+        75: iconst_0
+        76: ldc           #9                  // String John
+        78: aastore
+        79: dup
+        80: iconst_1
+        81: ldc           #11                 // String Mary
+        83: aastore
+        84: aastore
+        85: dup
+        86: iconst_1
+        87: iconst_2
+        88: anewarray     #7                  // class java/lang/String
+        91: dup
+        92: iconst_0
+        93: ldc           #42                 // String Alice
+        95: aastore
+        96: dup
+        97: iconst_1
+        98: ldc           #13                 // String Bob
+       100: aastore
+       101: aastore
+       102: astore_3
+       103: getstatic     #15                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       106: aload_3
+       107: invokestatic  #33                 // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+       110: invokevirtual #37                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+       113: getstatic     #15                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       116: aload_3
+       117: invokestatic  #44                 // Method java/util/Arrays.deepToString:([Ljava/lang/Object;)Ljava/lang/String;
+       120: invokevirtual #27                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       123: iconst_3
+       124: anewarray     #7                  // class java/lang/String
+       127: dup
+       128: iconst_0
+       129: ldc           #48                 // String Hey
+       131: aastore
+       132: dup
+       133: iconst_1
+       134: ldc           #50                 // String there
+       136: aastore
+       137: dup
+       138: iconst_2
+       139: ldc           #52                 // String amigo!
+       141: aastore
+       142: astore        4
+       144: ldc           #54                 // String
+       146: astore        5
+       148: aload         5
+       150: aload         4
+       152: invokestatic  #56                 // Method java/lang/String.join:(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/String;
+       155: pop
+       156: return
+      LineNumberTable:
+        line 8: 0
+        line 12: 24
+        line 14: 44
+        line 15: 54
+        line 17: 64
+        line 18: 103
+        line 20: 113
+        line 22: 123
+        line 23: 144
+        line 24: 148
+        line 25: 156
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     157     0  args   [Ljava/lang/String;
+           24     133     1 intArray   [I
+           44     113     2 strArray   [Ljava/lang/String;
+          103      54     3 deepArray   [[Ljava/lang/String;
+          144      13     4 greeting   [Ljava/lang/String;
+          148       9     5 delimiter   Ljava/lang/String;
+}
+SourceFile: "Array_Average.java"
+#############################################################################################
+package e0017_Arrays;
+
+import java.util.Arrays;
+
+public class Array_Average {
+    public static void main(String[] args) {
+        // array of primitives:
+        int[] intArray = new int[] {1, 2, 3, 4, 5};
+        //output: [1, 2, 3, 4, 5]
+
+        // array of object references:
+        String[] strArray = new String[] {"John", "Mary", "Bob"};
+        //output: [John, Mary, Bob]
+        System.out.println(Arrays.toString(intArray));
+        System.out.println(Arrays.asList(strArray));
+
+        String[][] deepArray = new String[][] {{"John", "Mary"}, {"Alice", "Bob"}};
+        System.out.println(Arrays.asList(deepArray));
+//output: [[Ljava.lang.String;@106d69c, [Ljava.lang.String;@52e922]
+        System.out.println(Arrays.deepToString(deepArray));
+
+        String[] greeting = {"Hey", "there", "amigo!"};
+        String delimiter = " ";
+        String.join(delimiter, greeting);
+    }
+}
+
+---------------------------------------------------------------------------------------------
+

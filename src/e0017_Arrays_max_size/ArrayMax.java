@@ -9,12 +9,12 @@ public class ArrayMax {
         int sizeF = 1_567_621_116;  // +
         int sizeD = 783_810_558;    // +
 
-        byte arrB[] = new byte[sizeB];    // +
+//        byte arrB[] = new byte[sizeB];    // +
         short arrS[] = new short[sizeS];  // +
-        int arrI[] = new int[sizeI];      // +
-        long arrL[] = new long[sizeL];    // +
-        float arrF[] = new float[sizeF];    // +
-        double arrI[] = new double[sizeD];
+//        int arrI[] = new int[sizeI];      // +
+//        long arrL[] = new long[sizeL];    // +
+//        float arrF[] = new float[sizeF];    // +
+//        double arrI[] = new double[sizeD];
 
 //        for (int sizeS = 0; sizeS < 2_147_483_647; sizeS++) {
 //            try
