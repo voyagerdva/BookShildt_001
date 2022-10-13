@@ -1,0 +1,505 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0019_Operations_time_measure/OperationsTime.class
+  Last modified 6 окт. 2022 г.; size 2724 bytes
+  SHA-256 checksum a7ee34835eecb6a731a4a658b5cabc9e463ba86fd1c350d190a903ba8acae36f
+  Compiled from "OperationsTime.java"
+public class e0019_Operations_time_measure.OperationsTime
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #16                         // e0019_Operations_time_measure/OperationsTime
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 6, attributes: 3
+Constant pool:
+    #1 = Methodref          #2.#3         // java/lang/Object."<init>":()V
+    #2 = Class              #4            // java/lang/Object
+    #3 = NameAndType        #5:#6         // "<init>":()V
+    #4 = Utf8               java/lang/Object
+    #5 = Utf8               <init>
+    #6 = Utf8               ()V
+    #7 = Long               1000000000l
+    #9 = Methodref          #10.#11       // java/lang/System.nanoTime:()J
+   #10 = Class              #12           // java/lang/System
+   #11 = NameAndType        #13:#14       // nanoTime:()J
+   #12 = Utf8               java/lang/System
+   #13 = Utf8               nanoTime
+   #14 = Utf8               ()J
+   #15 = Methodref          #16.#17       // e0019_Operations_time_measure/OperationsTime.summ:(JJ)V
+   #16 = Class              #18           // e0019_Operations_time_measure/OperationsTime
+   #17 = NameAndType        #19:#20       // summ:(JJ)V
+   #18 = Utf8               e0019_Operations_time_measure/OperationsTime
+   #19 = Utf8               summ
+   #20 = Utf8               (JJ)V
+   #21 = Fieldref           #10.#22       // java/lang/System.out:Ljava/io/PrintStream;
+   #22 = NameAndType        #23:#24       // out:Ljava/io/PrintStream;
+   #23 = Utf8               out
+   #24 = Utf8               Ljava/io/PrintStream;
+   #25 = InvokeDynamic      #0:#26        // #0:makeConcatWithConstants:(D)Ljava/lang/String;
+   #26 = NameAndType        #27:#28       // makeConcatWithConstants:(D)Ljava/lang/String;
+   #27 = Utf8               makeConcatWithConstants
+   #28 = Utf8               (D)Ljava/lang/String;
+   #29 = Methodref          #30.#31       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #30 = Class              #32           // java/io/PrintStream
+   #31 = NameAndType        #33:#34       // println:(Ljava/lang/String;)V
+   #32 = Utf8               java/io/PrintStream
+   #33 = Utf8               println
+   #34 = Utf8               (Ljava/lang/String;)V
+   #35 = Methodref          #16.#36       // e0019_Operations_time_measure/OperationsTime.summInc:(JJ)V
+   #36 = NameAndType        #37:#20       // summInc:(JJ)V
+   #37 = Utf8               summInc
+   #38 = InvokeDynamic      #1:#26        // #1:makeConcatWithConstants:(D)Ljava/lang/String;
+   #39 = Methodref          #16.#40       // e0019_Operations_time_measure/OperationsTime.multiplByte:(BJ)V
+   #40 = NameAndType        #41:#42       // multiplByte:(BJ)V
+   #41 = Utf8               multiplByte
+   #42 = Utf8               (BJ)V
+   #43 = InvokeDynamic      #2:#26        // #2:makeConcatWithConstants:(D)Ljava/lang/String;
+   #44 = Double             9.99999999999E11d
+   #46 = Integer            10000000
+   #47 = Methodref          #16.#48       // e0019_Operations_time_measure/OperationsTime.dividi:(DI)V
+   #48 = NameAndType        #49:#50       // dividi:(DI)V
+   #49 = Utf8               dividi
+   #50 = Utf8               (DI)V
+   #51 = InvokeDynamic      #3:#26        // #3:makeConcatWithConstants:(D)Ljava/lang/String;
+   #52 = InvokeDynamic      #4:#53        // #4:makeConcatWithConstants:(B)Ljava/lang/String;
+   #53 = NameAndType        #27:#54       // makeConcatWithConstants:(B)Ljava/lang/String;
+   #54 = Utf8               (B)Ljava/lang/String;
+   #55 = Double             1.1d
+   #57 = InvokeDynamic      #5:#26        // #5:makeConcatWithConstants:(D)Ljava/lang/String;
+   #58 = Utf8               Code
+   #59 = Utf8               LineNumberTable
+   #60 = Utf8               LocalVariableTable
+   #61 = Utf8               this
+   #62 = Utf8               Le0019_Operations_time_measure/OperationsTime;
+   #63 = Utf8               main
+   #64 = Utf8               ([Ljava/lang/String;)V
+   #65 = Utf8               args
+   #66 = Utf8               [Ljava/lang/String;
+   #67 = Utf8               a
+   #68 = Utf8               J
+   #69 = Utf8               MAX
+   #70 = Utf8               start
+   #71 = Utf8               elapsed
+   #72 = Utf8               m
+   #73 = Utf8               B
+   #74 = Utf8               d
+   #75 = Utf8               D
+   #76 = Utf8               MAX_div
+   #77 = Utf8               I
+   #78 = Utf8               Exceptions
+   #79 = Class              #80           // java/lang/InterruptedException
+   #80 = Utf8               java/lang/InterruptedException
+   #81 = Utf8               i
+   #82 = Utf8               StackMapTable
+   #83 = Utf8               SourceFile
+   #84 = Utf8               OperationsTime.java
+   #85 = Utf8               BootstrapMethods
+   #86 = MethodHandle       6:#87         // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #87 = Methodref          #88.#89       // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #88 = Class              #90           // java/lang/invoke/StringConcatFactory
+   #89 = NameAndType        #27:#91       // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #90 = Utf8               java/lang/invoke/StringConcatFactory
+   #91 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #92 = String             #93           // —умма обычна€ (a+1). —редн€€ длительность одной итерации, нс: \u0001
+   #93 = Utf8               —умма обычна€ (a+1). —редн€€ длительность одной итерации, нс: \u0001
+   #94 = String             #95           // —умма инкремент (a++). —редн€€ длительность одной итерации, нс: \u0001
+   #95 = Utf8               —умма инкремент (a++). —редн€€ длительность одной итерации, нс: \u0001
+   #96 = String             #97           // ”множение (m * 1). —редн€€ длительность одной итерации, нс: \u0001
+   #97 = Utf8               ”множение (m * 1). —редн€€ длительность одной итерации, нс: \u0001
+   #98 = String             #99           // ƒеление (d / 1.1). —редн€€ длительность одной итерации, нс: \u0001
+   #99 = Utf8               ƒеление (d / 1.1). —редн€€ длительность одной итерации, нс: \u0001
+  #100 = String             #101          // \n    m = \u0001
+  #101 = Utf8               \n    m = \u0001
+  #102 = String             #103          // \n    d = \u0001
+  #103 = Utf8               \n    d = \u0001
+  #104 = Utf8               InnerClasses
+  #105 = Class              #106          // java/lang/invoke/MethodHandles$Lookup
+  #106 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #107 = Class              #108          // java/lang/invoke/MethodHandles
+  #108 = Utf8               java/lang/invoke/MethodHandles
+  #109 = Utf8               Lookup
+{
+  public e0019_Operations_time_measure.OperationsTime();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0019_Operations_time_measure/OperationsTime;
+
+  public static void main(java.lang.String[]) throws java.lang.InterruptedException;
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=5, locals=13, args_size=1
+         0: lconst_0
+         1: lstore_1
+         2: ldc2_w        #7                  // long 1000000000l
+         5: lstore_3
+         6: invokestatic  #9                  // Method java/lang/System.nanoTime:()J
+         9: lstore        5
+        11: lload_1
+        12: lload_3
+        13: invokestatic  #15                 // Method summ:(JJ)V
+        16: invokestatic  #9                  // Method java/lang/System.nanoTime:()J
+        19: lload         5
+        21: lsub
+        22: lstore        7
+        24: getstatic     #21                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        27: lload         7
+        29: l2d
+        30: lload_3
+        31: l2d
+        32: ddiv
+        33: invokedynamic #25,  0             // InvokeDynamic #0:makeConcatWithConstants:(D)Ljava/lang/String;
+        38: invokevirtual #29                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        41: invokestatic  #9                  // Method java/lang/System.nanoTime:()J
+        44: lstore        5
+        46: lload_1
+        47: lload_3
+        48: invokestatic  #35                 // Method summInc:(JJ)V
+        51: invokestatic  #9                  // Method java/lang/System.nanoTime:()J
+        54: lload         5
+        56: lsub
+        57: lstore        7
+        59: getstatic     #21                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        62: lload         7
+        64: l2d
+        65: lload_3
+        66: l2d
+        67: ddiv
+        68: invokedynamic #38,  0             // InvokeDynamic #1:makeConcatWithConstants:(D)Ljava/lang/String;
+        73: invokevirtual #29                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        76: iconst_1
+        77: istore        9
+        79: invokestatic  #9                  // Method java/lang/System.nanoTime:()J
+        82: lstore        5
+        84: iload         9
+        86: lload_3
+        87: invokestatic  #39                 // Method multiplByte:(BJ)V
+        90: invokestatic  #9                  // Method java/lang/System.nanoTime:()J
+        93: lload         5
+        95: lsub
+        96: lstore        7
+        98: getstatic     #21                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       101: lload         7
+       103: l2d
+       104: lload_3
+       105: l2d
+       106: ddiv
+       107: invokedynamic #43,  0             // InvokeDynamic #2:makeConcatWithConstants:(D)Ljava/lang/String;
+       112: invokevirtual #29                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       115: ldc2_w        #44                 // double 9.99999999999E11d
+       118: dstore        10
+       120: ldc           #46                 // int 10000000
+       122: istore        12
+       124: invokestatic  #9                  // Method java/lang/System.nanoTime:()J
+       127: lstore        5
+       129: dload         10
+       131: iload         12
+       133: invokestatic  #47                 // Method dividi:(DI)V
+       136: invokestatic  #9                  // Method java/lang/System.nanoTime:()J
+       139: lload         5
+       141: lsub
+       142: lstore        7
+       144: getstatic     #21                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       147: lload         7
+       149: l2d
+       150: iload         12
+       152: i2d
+       153: ddiv
+       154: invokedynamic #51,  0             // InvokeDynamic #3:makeConcatWithConstants:(D)Ljava/lang/String;
+       159: invokevirtual #29                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       162: return
+      LineNumberTable:
+        line 22: 0
+        line 23: 2
+        line 27: 6
+        line 28: 11
+        line 29: 16
+        line 30: 24
+        line 32: 41
+        line 33: 46
+        line 34: 51
+        line 35: 59
+        line 37: 76
+        line 38: 79
+        line 39: 84
+        line 40: 90
+        line 41: 98
+        line 43: 115
+        line 44: 120
+        line 45: 124
+        line 46: 129
+        line 47: 136
+        line 48: 144
+        line 51: 162
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     163     0  args   [Ljava/lang/String;
+            2     161     1     a   J
+            6     157     3   MAX   J
+           11     152     5 start   J
+           24     139     7 elapsed   J
+           79      84     9     m   B
+          120      43    10     d   D
+          124      39    12 MAX_div   I
+    Exceptions:
+      throws java.lang.InterruptedException
+
+  static void summ(long, long);
+    descriptor: (JJ)V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=4, locals=6, args_size=2
+         0: lconst_0
+         1: lstore        4
+         3: lload         4
+         5: lload_2
+         6: lcmp
+         7: ifge          23
+        10: lload_0
+        11: lconst_1
+        12: ladd
+        13: lstore_0
+        14: lload         4
+        16: lconst_1
+        17: ladd
+        18: lstore        4
+        20: goto          3
+        23: return
+      LineNumberTable:
+        line 54: 0
+        line 55: 10
+        line 54: 14
+        line 57: 23
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            3      20     4     i   J
+            0      24     0     a   J
+            0      24     2   MAX   J
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 3
+          locals = [ long ]
+        frame_type = 250 /* chop */
+          offset_delta = 19
+
+  static void summInc(long, long);
+    descriptor: (JJ)V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=4, locals=6, args_size=2
+         0: lconst_0
+         1: lstore        4
+         3: lload         4
+         5: lload_2
+         6: lcmp
+         7: ifge          23
+        10: lload_0
+        11: lconst_1
+        12: ladd
+        13: lstore_0
+        14: lload         4
+        16: lconst_1
+        17: ladd
+        18: lstore        4
+        20: goto          3
+        23: return
+      LineNumberTable:
+        line 60: 0
+        line 61: 10
+        line 60: 14
+        line 63: 23
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            3      20     4     i   J
+            0      24     0     a   J
+            0      24     2   MAX   J
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 3
+          locals = [ long ]
+        frame_type = 250 /* chop */
+          offset_delta = 19
+
+  static void multiplByte(byte, long);
+    descriptor: (BJ)V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=4, locals=7, args_size=2
+         0: lconst_0
+         1: lstore_3
+         2: lload_3
+         3: lload_1
+         4: lcmp
+         5: ifge          21
+         8: iload_0
+         9: iconst_2
+        10: imul
+        11: i2l
+        12: lstore        5
+        14: lload_3
+        15: lconst_1
+        16: ladd
+        17: lstore_3
+        18: goto          2
+        21: getstatic     #21                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        24: iload_0
+        25: invokedynamic #52,  0             // InvokeDynamic #4:makeConcatWithConstants:(B)Ljava/lang/String;
+        30: invokevirtual #29                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        33: return
+      LineNumberTable:
+        line 66: 0
+        line 67: 8
+        line 66: 14
+        line 69: 21
+        line 70: 33
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            2      19     3     i   J
+            0      34     0     m   B
+            0      34     1   MAX   J
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 2
+          locals = [ long ]
+        frame_type = 250 /* chop */
+          offset_delta = 18
+
+  static void dividi(double, int);
+    descriptor: (DI)V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=4, locals=5, args_size=2
+         0: lconst_0
+         1: lstore_3
+         2: lload_3
+         3: iload_2
+         4: i2l
+         5: lcmp
+         6: ifge          22
+         9: dload_0
+        10: ldc2_w        #55                 // double 1.1d
+        13: ddiv
+        14: dstore_0
+        15: lload_3
+        16: lconst_1
+        17: ladd
+        18: lstore_3
+        19: goto          2
+        22: getstatic     #21                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        25: dload_0
+        26: invokedynamic #57,  0             // InvokeDynamic #5:makeConcatWithConstants:(D)Ljava/lang/String;
+        31: invokevirtual #29                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        34: return
+      LineNumberTable:
+        line 73: 0
+        line 74: 9
+        line 73: 15
+        line 76: 22
+        line 77: 34
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            2      20     3     i   J
+            0      35     0     d   D
+            0      35     2 MAX_div   I
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 2
+          locals = [ long ]
+        frame_type = 250 /* chop */
+          offset_delta = 19
+}
+SourceFile: "OperationsTime.java"
+BootstrapMethods:
+  0: #86 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #92 —умма обычна€ (a+1). —редн€€ длительность одной итерации, нс: \u0001
+  1: #86 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #94 —умма инкремент (a++). —редн€€ длительность одной итерации, нс: \u0001
+  2: #86 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #96 ”множение (m * 1). —редн€€ длительность одной итерации, нс: \u0001
+  3: #86 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #98 ƒеление (d / 1.1). —редн€€ длительность одной итерации, нс: \u0001
+  4: #86 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #100 \n    m = \u0001
+  5: #86 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #102 \n    d = \u0001
+InnerClasses:
+  public static final #109= #105 of #107; // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0019_Operations_time_measure;
+
+public class OperationsTime {
+    public static void main(String[] args) throws InterruptedException {
+
+//==================================================================================
+        long a = 0;
+        long MAX = 1000000000L;
+        long start;
+        long elapsed;
+
+        start = System.nanoTime();
+        summ(a, MAX);
+        elapsed = System.nanoTime() - start;
+        System.out.println("—умма обычна€ (a+1). —редн€€ длительность одной итерации, нс: " + (double) elapsed / MAX);
+
+        start = System.nanoTime();
+        summInc(a, MAX);
+        elapsed = System.nanoTime() - start;
+        System.out.println("—умма инкремент (a++). —редн€€ длительность одной итерации, нс: " + (double) elapsed / MAX);
+
+        byte m = 1;
+        start = System.nanoTime();
+        multiplByte(m, MAX);
+        elapsed = System.nanoTime() - start;
+        System.out.println("”множение (m * 2). —редн€€ длительность одной итерации, нс: " + (double) elapsed / MAX);
+
+        double d = 999999999999.0;
+        int MAX_div = 10000000;
+        start = System.nanoTime();
+        dividi(d, MAX_div);
+        elapsed = System.nanoTime() - start;
+        System.out.println("ƒеление (d / 1.1). —редн€€ длительность одной итерации, нс: " + (double) elapsed / MAX_div);
+
+
+    }
+
+    static void summ(long a, long MAX) {
+        for (long i = 0; i < MAX; i++) {
+            a = a + 1;
+        }
+    }
+
+    static void summInc(long a, long MAX) {
+        for (long i = 0; i < MAX; i++) {
+            a++;
+        }
+    }
+
+    static void multiplByte(byte m, long MAX) {
+        for (long i = 0; i < MAX; i++) {
+            long res = m * 2;
+        }
+        System.out.println("\n    m = " + m);
+    }
+
+    static void dividi(double d, int MAX_div) {
+        for (long i = 0; i < MAX_div; i++) {
+            d = d / 1.1;
+        }
+        System.out.println("\n    d = " + d);
+    }
+}
+
+---------------------------------------------------------------------------------------------

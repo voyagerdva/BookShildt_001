@@ -1,0 +1,159 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0020_Operations/OrderOperations.class
+  Last modified 13 окт. 2022 г.; size 743 bytes
+  SHA-256 checksum e3d6eb7c9affadd5ecfa21a91a96011da4a3b102d21f0596f62d89f781b6130f
+  Compiled from "OrderOperations.java"
+public class e0020_Operations.OrderOperations
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #19                         // e0020_Operations/OrderOperations
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = Methodref          #14.#15        // java/io/PrintStream.println:(I)V
+  #14 = Class              #16            // java/io/PrintStream
+  #15 = NameAndType        #17:#18        // println:(I)V
+  #16 = Utf8               java/io/PrintStream
+  #17 = Utf8               println
+  #18 = Utf8               (I)V
+  #19 = Class              #20            // e0020_Operations/OrderOperations
+  #20 = Utf8               e0020_Operations/OrderOperations
+  #21 = Utf8               Code
+  #22 = Utf8               LineNumberTable
+  #23 = Utf8               LocalVariableTable
+  #24 = Utf8               this
+  #25 = Utf8               Le0020_Operations/OrderOperations;
+  #26 = Utf8               main
+  #27 = Utf8               ([Ljava/lang/String;)V
+  #28 = Utf8               args
+  #29 = Utf8               [Ljava/lang/String;
+  #30 = Utf8               a
+  #31 = Utf8               I
+  #32 = Utf8               b
+  #33 = Utf8               c
+  #34 = Utf8               d
+  #35 = Utf8               e
+  #36 = Utf8               f
+  #37 = Utf8               g
+  #38 = Utf8               h
+  #39 = Utf8               SourceFile
+  #40 = Utf8               OrderOperations.java
+{
+  public e0020_Operations.OrderOperations();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0020_Operations/OrderOperations;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=9, args_size=1
+         0: iconst_4
+         1: istore_2
+         2: iconst_3
+         3: istore_3
+         4: bipush        7
+         6: istore        4
+         8: iconst_2
+         9: istore        5
+        11: bipush        9
+        13: istore        6
+        15: bipush        100
+        17: istore        7
+        19: bipush        12
+        21: istore        8
+        23: iload         7
+        25: iload_2
+
+        26: iinc          2, 1
+
+        29: idiv
+        30: iload_3
+
+        31: imul
+        32: iload         4
+
+        34: isub
+        35: iload         5
+
+        37: iadd
+        38: iload         6
+
+        40: iinc          8, -1
+        43: iload         8
+
+        45: ishr
+        
+        46: iand
+        47: istore_1
+        48: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        51: iload_1
+        52: invokevirtual #13                 // Method java/io/PrintStream.println:(I)V
+        55: return
+      LineNumberTable:
+        line 7: 0
+        line 8: 2
+        line 9: 4
+        line 10: 8
+        line 11: 11
+        line 12: 15
+        line 13: 19
+        line 15: 23
+        line 17: 48
+        line 28: 55
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      56     0  args   [Ljava/lang/String;
+           48       8     1     a   I
+            2      54     2     b   I
+            4      52     3     c   I
+            8      48     4     d   I
+           11      45     5     e   I
+           15      41     6     f   I
+           19      37     7     g   I
+           23      33     8     h   I
+}
+SourceFile: "OrderOperations.java"
+#############################################################################################
+package e0020_Operations;
+
+public class OrderOperations {
+    public static void main(String[] args) {
+        int a,b,c,d,e,f,g,h;
+
+        b = 4;
+        c = 3;
+        d = 7;
+        e = 2;
+        f = 9;
+        g = 100;
+        h = 12;
+
+        a = g / b++ * c - d + e & f >> --h;
+
+        System.out.println(a);
+      }
+}
+---------------------------------------------------------------------------------------------

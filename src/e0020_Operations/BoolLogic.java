@@ -21,8 +21,8 @@ public class BoolLogic {
         int denom = 20;
         int num = 100;
 
-        if (denom != 0 & num > 10) {
-            System.out.println("denom != 0 && num / denom > 10");
+        if (denom != 0 && num > 10) {
+            System.out.println("denom != 0 && num > 10");
         }
 
     }

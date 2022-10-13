@@ -1,0 +1,149 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0021_IF_ELSE_SWITCH/ifElse.class
+  Last modified 13 окт. 2022 г.; size 765 bytes
+  SHA-256 checksum 44f6c0a93a4fdaab7498d3ebc0820cc18aac84d402352b7d86b140b7abd3f592
+  Compiled from "ifElse.java"
+public class e0021_IF_ELSE_SWITCH.ifElse
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #23                         // e0021_IF_ELSE_SWITCH/ifElse
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Double             1.11119999999E11d
+   #9 = Fieldref           #10.#11        // java/lang/System.out:Ljava/io/PrintStream;
+  #10 = Class              #12            // java/lang/System
+  #11 = NameAndType        #13:#14        // out:Ljava/io/PrintStream;
+  #12 = Utf8               java/lang/System
+  #13 = Utf8               out
+  #14 = Utf8               Ljava/io/PrintStream;
+  #15 = Methodref          #16.#17        // java/io/PrintStream.println:(I)V
+  #16 = Class              #18            // java/io/PrintStream
+  #17 = NameAndType        #19:#20        // println:(I)V
+  #18 = Utf8               java/io/PrintStream
+  #19 = Utf8               println
+  #20 = Utf8               (I)V
+  #21 = Double             2.22229999999E11d
+  #23 = Class              #24            // e0021_IF_ELSE_SWITCH/ifElse
+  #24 = Utf8               e0021_IF_ELSE_SWITCH/ifElse
+  #25 = Utf8               Code
+  #26 = Utf8               LineNumberTable
+  #27 = Utf8               LocalVariableTable
+  #28 = Utf8               this
+  #29 = Utf8               Le0021_IF_ELSE_SWITCH/ifElse;
+  #30 = Utf8               main
+  #31 = Utf8               ([Ljava/lang/String;)V
+  #32 = Utf8               DDD111
+  #33 = Utf8               D
+  #34 = Utf8               DDD222
+  #35 = Utf8               args
+  #36 = Utf8               [Ljava/lang/String;
+  #37 = Utf8               a
+  #38 = Utf8               I
+  #39 = Utf8               b
+  #40 = Utf8               c
+  #41 = Utf8               d
+  #42 = Utf8               StackMapTable
+  #43 = Class              #36            // "[Ljava/lang/String;"
+  #44 = Utf8               SourceFile
+  #45 = Utf8               ifElse.java
+{
+  public e0021_IF_ELSE_SWITCH.ifElse();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0021_IF_ELSE_SWITCH/ifElse;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=7, args_size=1
+         0: bipush        14
+         2: istore_1
+         3: bipush        18
+         5: istore_2
+         6: bipush        16
+         8: istore_3
+         9: bipush        20
+        11: istore        4
+        13: iload_1
+        14: iload_3
+        
+        15: if_icmple     33
+        18: ldc2_w        #7                  // double 1.11119999999E11d
+        21: dstore        5
+        23: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        26: iload_2
+        27: invokevirtual #15                 // Method java/io/PrintStream.println:(I)V
+        
+        30: goto          46
+        33: ldc2_w        #21                 // double 2.22229999999E11d
+        36: dstore        5
+        38: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        41: iload         4
+        43: invokevirtual #15                 // Method java/io/PrintStream.println:(I)V
+        46: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 3
+        line 7: 6
+        line 8: 9
+        line 10: 13
+        line 11: 18
+        line 12: 23
+        line 13: 30
+        line 14: 33
+        line 15: 38
+        line 17: 46
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           23       7     5 DDD111   D
+           38       8     5 DDD222   D
+            0      47     0  args   [Ljava/lang/String;
+            3      44     1     a   I
+            6      41     2     b   I
+            9      38     3     c   I
+           13      34     4     d   I
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 33
+          locals = [ class "[Ljava/lang/String;", int, int, int, int ]
+          stack = []
+        frame_type = 12 /* same */
+}
+SourceFile: "ifElse.java"
+#############################################################################################
+package e0021_IF_ELSE_SWITCH;
+
+public class ifElse {
+    public static void main(String[] args) {
+        int a = 14;
+        int b = 18;
+        int c = 16;
+        int d = 20;
+
+        if (a > c) {
+            double DDD111 = 111119999999D;
+            System.out.println(b);
+        } else {
+            double DDD222 = 222229999999D;
+            System.out.println(d);
+        }
+    }
+}
+---------------------------------------------------------------------------------------------

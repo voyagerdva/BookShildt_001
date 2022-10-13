@@ -1,0 +1,283 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0021_IF_ELSE_SWITCH/ifElse.class
+  Last modified 13 окт. 2022 г.; size 1519 bytes
+  SHA-256 checksum 7360663cbd0087c8d7cd08b4d73c20c7fb88259038ab7011be04bfb490a266b5
+  Compiled from "ifElse.java"
+public class e0021_IF_ELSE_SWITCH.ifElse
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #33                         // e0021_IF_ELSE_SWITCH/ifElse
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = String             #8             // зиме
+   #8 = Utf8               зиме
+   #9 = String             #10            // весне
+  #10 = Utf8               весне
+  #11 = String             #12            // лету
+  #12 = Utf8               лету
+  #13 = String             #14            // осени
+  #14 = Utf8               осени
+  #15 = String             #16            // что-то другое
+  #16 = Utf8               что-то другое
+  #17 = Fieldref           #18.#19        // java/lang/System.out:Ljava/io/PrintStream;
+  #18 = Class              #20            // java/lang/System
+  #19 = NameAndType        #21:#22        // out:Ljava/io/PrintStream;
+  #20 = Utf8               java/lang/System
+  #21 = Utf8               out
+  #22 = Utf8               Ljava/io/PrintStream;
+  #23 = InvokeDynamic      #0:#24         // #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #24 = NameAndType        #25:#26        // makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #25 = Utf8               makeConcatWithConstants
+  #26 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+  #27 = Methodref          #28.#29        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #28 = Class              #30            // java/io/PrintStream
+  #29 = NameAndType        #31:#32        // println:(Ljava/lang/String;)V
+  #30 = Utf8               java/io/PrintStream
+  #31 = Utf8               println
+  #32 = Utf8               (Ljava/lang/String;)V
+  #33 = Class              #34            // e0021_IF_ELSE_SWITCH/ifElse
+  #34 = Utf8               e0021_IF_ELSE_SWITCH/ifElse
+  #35 = Utf8               Code
+  #36 = Utf8               LineNumberTable
+  #37 = Utf8               LocalVariableTable
+  #38 = Utf8               this
+  #39 = Utf8               Le0021_IF_ELSE_SWITCH/ifElse;
+  #40 = Utf8               main
+  #41 = Utf8               ([Ljava/lang/String;)V
+  #42 = Utf8               S
+  #43 = Utf8               Ljava/lang/String;
+  #44 = Utf8               args
+  #45 = Utf8               [Ljava/lang/String;
+  #46 = Utf8               m
+  #47 = Utf8               I
+  #48 = Utf8               StackMapTable
+  #49 = Class              #45            // "[Ljava/lang/String;"
+  #50 = Class              #51            // java/lang/String
+  #51 = Utf8               java/lang/String
+  #52 = Utf8               SourceFile
+  #53 = Utf8               ifElse.java
+  #54 = Utf8               BootstrapMethods
+  #55 = MethodHandle       6:#56          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #56 = Methodref          #57.#58        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #57 = Class              #59            // java/lang/invoke/StringConcatFactory
+  #58 = NameAndType        #25:#60        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #59 = Utf8               java/lang/invoke/StringConcatFactory
+  #60 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #61 = String             #62            // ¬–≈ћя √ќƒј = \u0001
+  #62 = Utf8               ¬–≈ћя √ќƒј = \u0001
+  #63 = Utf8               InnerClasses
+  #64 = Class              #65            // java/lang/invoke/MethodHandles$Lookup
+  #65 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #66 = Class              #67            // java/lang/invoke/MethodHandles
+  #67 = Utf8               java/lang/invoke/MethodHandles
+  #68 = Utf8               Lookup
+{
+  public e0021_IF_ELSE_SWITCH.ifElse();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0021_IF_ELSE_SWITCH/ifElse;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=3, args_size=1
+         0: sipush        888
+         3: istore_1
+         4: iload_1
+         5: sipush        333
+         8: if_icmpne     15
+        11: iconst_1
+        12: goto          16
+        15: iconst_0
+        16: iload_1
+        17: sipush        444
+        20: if_icmpne     27
+        23: iconst_1
+        24: goto          28
+        27: iconst_0
+        28: ior
+        29: ifeq          38
+        32: ldc           #7                  // String зиме
+
+        34: astore_2
+        35: goto          143
+        38: iload_1
+        39: sipush        555
+        42: if_icmpne     49
+        45: iconst_1
+        46: goto          50
+        49: iconst_0
+        50: iload_1
+        51: sipush        667
+        54: if_icmpne     61
+        57: iconst_1
+        58: goto          62
+        61: iconst_0
+        62: ior
+        63: ifeq          72
+        66: ldc           #9                  // String весне
+
+        68: astore_2
+        69: goto          143
+        72: iload_1
+        73: sipush        777
+        76: if_icmpne     83
+        79: iconst_1
+        80: goto          84
+        83: iconst_0
+        84: iload_1
+        85: sipush        888
+        88: if_icmpne     95
+        91: iconst_1
+        92: goto          96
+        95: iconst_0
+        96: ior
+        97: ifeq          106
+       100: ldc           #11                 // String лету
+
+       102: astore_2
+       103: goto          143
+       106: iload_1
+       107: sipush        999
+       110: if_icmpne     117
+       113: iconst_1
+       114: goto          118
+       117: iconst_0
+       118: iload_1
+       119: sipush        1000
+       122: if_icmpne     129
+       125: iconst_1
+       126: goto          130
+       129: iconst_0
+       130: ior
+       131: ifeq          140
+       134: ldc           #13                 // String осени
+
+       136: astore_2
+       137: goto          143
+       
+       140: ldc           #15                 // String что-то другое
+       142: astore_2
+       143: getstatic     #17                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       146: aload_2
+       147: invokedynamic #23,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       152: invokevirtual #27                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       155: return
+      LineNumberTable:
+        line 5: 0
+        line 9: 4
+        line 10: 32
+        line 11: 38
+        line 12: 66
+        line 13: 72
+        line 14: 100
+        line 15: 106
+        line 16: 134
+        line 18: 140
+        line 21: 143
+        line 22: 155
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           35       3     2     S   Ljava/lang/String;
+           69       3     2     S   Ljava/lang/String;
+          103       3     2     S   Ljava/lang/String;
+          137       3     2     S   Ljava/lang/String;
+            0     156     0  args   [Ljava/lang/String;
+            4     152     1     m   I
+          143      13     2     S   Ljava/lang/String;
+      StackMapTable: number_of_entries = 21
+        frame_type = 252 /* append */
+          offset_delta = 15
+          locals = [ int ]
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 74 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class "[Ljava/lang/String;", int ]
+          stack = [ int, int ]
+        frame_type = 9 /* same */
+        frame_type = 10 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 74 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class "[Ljava/lang/String;", int ]
+          stack = [ int, int ]
+        frame_type = 9 /* same */
+        frame_type = 10 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 74 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class "[Ljava/lang/String;", int ]
+          stack = [ int, int ]
+        frame_type = 9 /* same */
+        frame_type = 10 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 74 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class "[Ljava/lang/String;", int ]
+          stack = [ int, int ]
+        frame_type = 9 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 2
+          locals = [ class java/lang/String ]
+}
+SourceFile: "ifElse.java"
+BootstrapMethods:
+  0: #55 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #61 ¬–≈ћя √ќƒј = \u0001
+InnerClasses:
+  public static final #68= #64 of #66;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0021_IF_ELSE_SWITCH;
+
+public class ifElse {
+    public static void main(String[] args) {
+        int m = 888;
+
+        String S;
+
+        if (m == 333 | m == 444) {
+            S = "зиме";
+        } else if (m == 555 | m == 667) {
+            S = "весне";
+        } else if (m == 777 | m == 888) {
+            S = "лету";
+        } else if (m == 999 | m == 1000) {
+            S = "осени";
+        } else {
+            S = "что-то другое";
+        }
+
+        System.out.println("¬–≈ћя √ќƒј = " + S);
+    }
+}
+---------------------------------------------------------------------------------------------

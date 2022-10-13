@@ -1,6 +1,6 @@
 Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0020_Operations/BoolLogic.class
-  Last modified 12 окт. 2022 г.; size 736 bytes
-  SHA-256 checksum 2b95070887a6c16f4b186a625f579b34cccba3b0abcc57033594389144745151
+  Last modified 13 окт. 2022 г.; size 763 bytes
+  SHA-256 checksum 871e55653eed2ed5d07256f9eb5b05b05be5a663b446935778d2dfa4b5bbe5c7
   Compiled from "BoolLogic.java"
 public class e0020_Operations.BoolLogic
   minor version: 0
@@ -22,8 +22,8 @@ Constant pool:
   #10 = Utf8               java/lang/System
   #11 = Utf8               out
   #12 = Utf8               Ljava/io/PrintStream;
-  #13 = String             #14            // denom != 0 && num / denom > 10
-  #14 = Utf8               denom != 0 && num / denom > 10
+  #13 = String             #14            // denom != 0 && num > 10
+  #14 = Utf8               denom != 0 && num > 10
   #15 = Methodref          #16.#17        // java/io/PrintStream.println:(Ljava/lang/String;)V
   #16 = Class              #18            // java/io/PrintStream
   #17 = NameAndType        #19:#20        // println:(Ljava/lang/String;)V
@@ -70,7 +70,7 @@ Constant pool:
     descriptor: ([Ljava/lang/String;)V
     flags: (0x0009) ACC_PUBLIC, ACC_STATIC
     Code:
-      stack=2, locals=5, args_size=1
+      stack=3, locals=5, args_size=1
          0: iconst_1
          1: istore_1
          2: iconst_0
@@ -80,34 +80,51 @@ Constant pool:
          7: bipush        100
          9: istore        4
         11: iload_3
-        12: ifeq          30
-        15: iload         4
-        17: bipush        10
-        19: if_icmple     30
-        22: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
-        25: ldc           #13                 // String denom != 0 && num / denom > 10
-        27: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
-        30: return
+        12: ifeq          19
+        15: iconst_1
+        16: goto          20
+        19: iconst_0
+        20: iload         4
+        22: bipush        10
+        24: if_icmple     31
+        27: iconst_1
+        28: goto          32
+        31: iconst_0
+        32: iand
+        33: ifeq          44
+        36: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        39: ldc           #13                 // String denom != 0 && num > 10
+        41: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        44: return
       LineNumberTable:
         line 5: 0
         line 6: 2
         line 21: 4
         line 22: 7
         line 24: 11
-        line 25: 22
-        line 28: 30
+        line 25: 36
+        line 28: 44
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
-            0      31     0  args   [Ljava/lang/String;
-            2      29     1     a   Z
-            4      27     2     b   Z
-            7      24     3 denom   I
-           11      20     4   num   I
-      StackMapTable: number_of_entries = 1
+            0      45     0  args   [Ljava/lang/String;
+            2      43     1     a   Z
+            4      41     2     b   Z
+            7      38     3 denom   I
+           11      34     4   num   I
+      StackMapTable: number_of_entries = 5
         frame_type = 255 /* full_frame */
-          offset_delta = 30
+          offset_delta = 19
           locals = [ class "[Ljava/lang/String;", int, int, int, int ]
           stack = []
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 74 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class "[Ljava/lang/String;", int, int, int, int ]
+          stack = [ int, int ]
+        frame_type = 11 /* same */
 }
 SourceFile: "BoolLogic.java"
 #############################################################################################
@@ -120,8 +137,8 @@ public class BoolLogic {
         int denom = 20;
         int num = 100;
 
-        if (denom != 0 && num > 10) {
-            System.out.println("denom != 0 && num / denom > 10");
+        if (denom != 0 & num > 10) {
+            System.out.println("denom != 0 && num > 10");
         }
 
     }

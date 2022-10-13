@@ -1,0 +1,150 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0018_Operations/BasicMath.class
+  Last modified 6 окт. 2022 г.; size 1142 bytes
+  SHA-256 checksum 4d6a34e6630f9266bb2951164eaabc53aab1b14ab886efe5101f223bdb00779b
+  Compiled from "BasicMath.java"
+public class e0018_Operations.BasicMath
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #30                         // e0018_Operations/BasicMath
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Double             42.25d
+   #9 = Fieldref           #10.#11        // java/lang/System.out:Ljava/io/PrintStream;
+  #10 = Class              #12            // java/lang/System
+  #11 = NameAndType        #13:#14        // out:Ljava/io/PrintStream;
+  #12 = Utf8               java/lang/System
+  #13 = Utf8               out
+  #14 = Utf8               Ljava/io/PrintStream;
+  #15 = InvokeDynamic      #0:#16         // #0:makeConcatWithConstants:(I)Ljava/lang/String;
+  #16 = NameAndType        #17:#18        // makeConcatWithConstants:(I)Ljava/lang/String;
+  #17 = Utf8               makeConcatWithConstants
+  #18 = Utf8               (I)Ljava/lang/String;
+  #19 = Methodref          #20.#21        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #20 = Class              #22            // java/io/PrintStream
+  #21 = NameAndType        #23:#24        // println:(Ljava/lang/String;)V
+  #22 = Utf8               java/io/PrintStream
+  #23 = Utf8               println
+  #24 = Utf8               (Ljava/lang/String;)V
+  #25 = Double             10.0d
+  #27 = InvokeDynamic      #1:#28         // #1:makeConcatWithConstants:(D)Ljava/lang/String;
+  #28 = NameAndType        #17:#29        // makeConcatWithConstants:(D)Ljava/lang/String;
+  #29 = Utf8               (D)Ljava/lang/String;
+  #30 = Class              #31            // e0018_Operations/BasicMath
+  #31 = Utf8               e0018_Operations/BasicMath
+  #32 = Utf8               Code
+  #33 = Utf8               LineNumberTable
+  #34 = Utf8               LocalVariableTable
+  #35 = Utf8               this
+  #36 = Utf8               Le0018_Operations/BasicMath;
+  #37 = Utf8               main
+  #38 = Utf8               ([Ljava/lang/String;)V
+  #39 = Utf8               args
+  #40 = Utf8               [Ljava/lang/String;
+  #41 = Utf8               x
+  #42 = Utf8               I
+  #43 = Utf8               y
+  #44 = Utf8               D
+  #45 = Utf8               SourceFile
+  #46 = Utf8               BasicMath.java
+  #47 = Utf8               BootstrapMethods
+  #48 = MethodHandle       6:#49          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #49 = Methodref          #50.#51        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #50 = Class              #52            // java/lang/invoke/StringConcatFactory
+  #51 = NameAndType        #17:#53        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #52 = Utf8               java/lang/invoke/StringConcatFactory
+  #53 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #54 = String             #55            // x mod 10 = \u0001
+  #55 = Utf8               x mod 10 = \u0001
+  #56 = String             #57            // y mod 10 = \u0001
+  #57 = Utf8               y mod 10 = \u0001
+  #58 = Utf8               InnerClasses
+  #59 = Class              #60            // java/lang/invoke/MethodHandles$Lookup
+  #60 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #61 = Class              #62            // java/lang/invoke/MethodHandles
+  #62 = Utf8               java/lang/invoke/MethodHandles
+  #63 = Utf8               Lookup
+{
+  public e0018_Operations.BasicMath();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0018_Operations/BasicMath;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=5, locals=4, args_size=1
+         0: bipush        42
+         2: istore_1
+         3: ldc2_w        #7                  // double 42.25d
+         6: dstore_2
+         
+         7: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        10: iload_1
+        11: bipush        10
+        13: irem
+
+        14: invokedynamic #15,  0             // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+        19: invokevirtual #19                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        22: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        25: dload_2
+        26: ldc2_w        #25                 // double 10.0d
+        29: drem
+        
+        30: invokedynamic #27,  0             // InvokeDynamic #1:makeConcatWithConstants:(D)Ljava/lang/String;
+        35: invokevirtual #19                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        38: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 3
+        line 8: 7
+        line 9: 22
+        line 11: 38
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      39     0  args   [Ljava/lang/String;
+            3      36     1     x   I
+            7      32     2     y   D
+}
+SourceFile: "BasicMath.java"
+BootstrapMethods:
+  0: #48 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #54 x mod 10 = \u0001
+  1: #48 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #56 y mod 10 = \u0001
+InnerClasses:
+  public static final #63= #59 of #61;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0018_Operations;
+
+public class BasicMath {
+    public static void main(String[] args) {
+        int x = 42;
+        double y = 42.25;
+
+        System.out.println("x mod 10 = " + x % 10);
+        System.out.println("y mod 10 = " + y % 10);
+
+    }
+}
+
+---------------------------------------------------------------------------------------------

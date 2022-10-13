@@ -1,0 +1,218 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0017_Arrays/ArrayMulty.class
+  Last modified 5 окт. 2022 г.; size 1018 bytes
+  SHA-256 checksum 1f522bdf57dfadf6d34d346cce79e0d79ba94ed6bc653d114b02816b94910a0c
+  Compiled from "ArrayMulty.java"
+public class e0017_Arrays.ArrayMulty
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #32                         // e0017_Arrays/ArrayMulty
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // "[[I"
+   #8 = Utf8               [[I
+   #9 = Fieldref           #10.#11        // java/lang/System.out:Ljava/io/PrintStream;
+  #10 = Class              #12            // java/lang/System
+  #11 = NameAndType        #13:#14        // out:Ljava/io/PrintStream;
+  #12 = Utf8               java/lang/System
+  #13 = Utf8               out
+  #14 = Utf8               Ljava/io/PrintStream;
+  #15 = String             #16            // %4s
+  #16 = Utf8               %4s
+  #17 = Methodref          #18.#19        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+  #18 = Class              #20            // java/lang/Integer
+  #19 = NameAndType        #21:#22        // valueOf:(I)Ljava/lang/Integer;
+  #20 = Utf8               java/lang/Integer
+  #21 = Utf8               valueOf
+  #22 = Utf8               (I)Ljava/lang/Integer;
+  #23 = Methodref          #24.#25        // java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+  #24 = Class              #26            // java/io/PrintStream
+  #25 = NameAndType        #27:#28        // printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+  #26 = Utf8               java/io/PrintStream
+  #27 = Utf8               printf
+  #28 = Utf8               (Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+  #29 = Methodref          #24.#30        // java/io/PrintStream.println:()V
+  #30 = NameAndType        #31:#6         // println:()V
+  #31 = Utf8               println
+  #32 = Class              #33            // e0017_Arrays/ArrayMulty
+  #33 = Utf8               e0017_Arrays/ArrayMulty
+  #34 = Utf8               Code
+  #35 = Utf8               LineNumberTable
+  #36 = Utf8               LocalVariableTable
+  #37 = Utf8               this
+  #38 = Utf8               Le0017_Arrays/ArrayMulty;
+  #39 = Utf8               main
+  #40 = Utf8               ([Ljava/lang/String;)V
+  #41 = Utf8               j
+  #42 = Utf8               I
+  #43 = Utf8               args
+  #44 = Utf8               [Ljava/lang/String;
+  #45 = Utf8               twoD
+  #46 = Utf8               i
+  #47 = Utf8               k
+  #48 = Utf8               StackMapTable
+  #49 = Class              #44            // "[Ljava/lang/String;"
+  #50 = Utf8               SourceFile
+  #51 = Utf8               ArrayMulty.java
+{
+  public e0017_Arrays.ArrayMulty();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0017_Arrays/ArrayMulty;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=7, locals=5, args_size=1
+         0: iconst_4
+         1: iconst_5
+         2: multianewarray #7,  2             // class "[[I"
+         6: astore_1
+         7: iconst_0
+         8: istore        4
+        10: iconst_0
+        11: istore_2
+        12: iload_2
+        13: iconst_4
+        14: if_icmpge     49
+        17: iconst_0
+        18: istore_3
+        19: iload_3
+        20: iconst_5
+        21: if_icmpge     43
+        24: aload_1
+        25: iload_2
+        26: aaload
+        27: iload_3
+        28: iload         4
+        30: iload         4
+        32: imul
+        33: iastore
+        34: iinc          4, 1
+        37: iinc          3, 1
+        40: goto          19
+        43: iinc          2, 1
+        46: goto          12
+        49: iconst_0
+        50: istore_2
+        51: iload_2
+        52: iconst_4
+        53: if_icmpge     105
+        56: iconst_0
+        57: istore_3
+        58: iload_3
+        59: iconst_5
+        60: if_icmpge     93
+        63: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        66: ldc           #15                 // String %4s
+        68: iconst_1
+        69: anewarray     #2                  // class java/lang/Object
+        72: dup
+        73: iconst_0
+        74: aload_1
+        75: iload_2
+        76: aaload
+        77: iload_3
+        78: iaload
+        79: invokestatic  #17                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        82: aastore
+        83: invokevirtual #23                 // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+        86: pop
+        87: iinc          3, 1
+        90: goto          58
+        93: getstatic     #9                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        96: invokevirtual #29                 // Method java/io/PrintStream.println:()V
+        99: iinc          2, 1
+       102: goto          51
+       105: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 7
+        line 8: 10
+        line 9: 17
+        line 10: 24
+        line 11: 34
+        line 9: 37
+        line 8: 43
+        line 14: 49
+        line 15: 56
+        line 16: 63
+        line 15: 87
+        line 17: 93
+        line 14: 99
+        line 19: 105
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           19      30     3     j   I
+           58      47     3     j   I
+            0     106     0  args   [Ljava/lang/String;
+            7      99     1  twoD   [[I
+           12      94     2     i   I
+           10      96     4     k   I
+      StackMapTable: number_of_entries = 8
+        frame_type = 255 /* full_frame */
+          offset_delta = 12
+          locals = [ class "[Ljava/lang/String;", class "[[I", int, top, int ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 6
+          locals = [ class "[Ljava/lang/String;", class "[[I", int, int, int ]
+          stack = []
+        frame_type = 23 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 5
+          locals = [ class "[Ljava/lang/String;", class "[[I", int, top, int ]
+          stack = []
+        frame_type = 1 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 6
+          locals = [ class "[Ljava/lang/String;", class "[[I", int, int, int ]
+          stack = []
+        frame_type = 34 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 11
+          locals = [ class "[Ljava/lang/String;", class "[[I", int, top, int ]
+          stack = []
+}
+SourceFile: "ArrayMulty.java"
+#############################################################################################
+package e0017_Arrays;
+
+public class ArrayMulty {
+    public static void main(String[] args) {
+        int twoD[][] = new int[4][5];
+        int i, j, k = 0;
+
+        for (i = 0; i < 4; i++)
+            for (j = 0; j < 5; j++) {
+                twoD[i][j] = k * k;
+                k++;
+            }
+
+        for (i = 0; i < 4; i++) {
+            for (j = 0; j < 5; j++)
+                System.out.printf("%4s", twoD[i][j]);
+            System.out.println();
+        }
+    }
+}
+
+---------------------------------------------------------------------------------------------
+

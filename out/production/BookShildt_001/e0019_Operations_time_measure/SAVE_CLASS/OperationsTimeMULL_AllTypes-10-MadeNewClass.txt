@@ -1,0 +1,579 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0019_Operations_time_measure/OperationsTimeMULL_AllTypes.class
+  Last modified 7 окт. 2022 г.; size 3884 bytes
+  SHA-256 checksum 02698af805628da7700930d2c32cc310212367dd05a4c4cca8893539c235a64e
+  Compiled from "OperationsTimeMULL_AllTypes.java"
+public class e0019_Operations_time_measure.OperationsTimeMULL_AllTypes
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #92                         // e0019_Operations_time_measure/OperationsTimeMULL_AllTypes
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+    #1 = Methodref          #2.#3         // java/lang/Object."<init>":()V
+    #2 = Class              #4            // java/lang/Object
+    #3 = NameAndType        #5:#6         // "<init>":()V
+    #4 = Utf8               java/lang/Object
+    #5 = Utf8               <init>
+    #6 = Utf8               ()V
+    #7 = Long               1000000000l
+    #9 = Long               5000000000l
+   #11 = Float              400.032f
+   #12 = Float              200.032f
+   #13 = Double             2000.0047d
+   #15 = Double             3000.0047d
+   #17 = Methodref          #18.#19       // java/lang/System.nanoTime:()J
+   #18 = Class              #20           // java/lang/System
+   #19 = NameAndType        #21:#22       // nanoTime:()J
+   #20 = Utf8               java/lang/System
+   #21 = Utf8               nanoTime
+   #22 = Utf8               ()J
+   #23 = Methodref          #24.#25       // e0019_Operations_time_measure/MulAndDiv.multi:(JBBJ)V
+   #24 = Class              #26           // e0019_Operations_time_measure/MulAndDiv
+   #25 = NameAndType        #27:#28       // multi:(JBBJ)V
+   #26 = Utf8               e0019_Operations_time_measure/MulAndDiv
+   #27 = Utf8               multi
+   #28 = Utf8               (JBBJ)V
+   #29 = Fieldref           #18.#30       // java/lang/System.out:Ljava/io/PrintStream;
+   #30 = NameAndType        #31:#32       // out:Ljava/io/PrintStream;
+   #31 = Utf8               out
+   #32 = Utf8               Ljava/io/PrintStream;
+   #33 = InvokeDynamic      #0:#34        // #0:makeConcatWithConstants:(D)Ljava/lang/String;
+   #34 = NameAndType        #35:#36       // makeConcatWithConstants:(D)Ljava/lang/String;
+   #35 = Utf8               makeConcatWithConstants
+   #36 = Utf8               (D)Ljava/lang/String;
+   #37 = Methodref          #38.#39       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #38 = Class              #40           // java/io/PrintStream
+   #39 = NameAndType        #41:#42       // println:(Ljava/lang/String;)V
+   #40 = Utf8               java/io/PrintStream
+   #41 = Utf8               println
+   #42 = Utf8               (Ljava/lang/String;)V
+   #43 = Methodref          #24.#44       // e0019_Operations_time_measure/MulAndDiv.multiShort:(JSSJ)V
+   #44 = NameAndType        #45:#46       // multiShort:(JSSJ)V
+   #45 = Utf8               multiShort
+   #46 = Utf8               (JSSJ)V
+   #47 = InvokeDynamic      #1:#34        // #1:makeConcatWithConstants:(D)Ljava/lang/String;
+   #48 = Methodref          #24.#49       // e0019_Operations_time_measure/MulAndDiv.multiInt:(JIIJ)V
+   #49 = NameAndType        #50:#51       // multiInt:(JIIJ)V
+   #50 = Utf8               multiInt
+   #51 = Utf8               (JIIJ)V
+   #52 = InvokeDynamic      #2:#34        // #2:makeConcatWithConstants:(D)Ljava/lang/String;
+   #53 = Methodref          #24.#54       // e0019_Operations_time_measure/MulAndDiv.multiLong:(JJJJ)V
+   #54 = NameAndType        #55:#56       // multiLong:(JJJJ)V
+   #55 = Utf8               multiLong
+   #56 = Utf8               (JJJJ)V
+   #57 = InvokeDynamic      #3:#34        // #3:makeConcatWithConstants:(D)Ljava/lang/String;
+   #58 = Methodref          #24.#59       // e0019_Operations_time_measure/MulAndDiv.multiFloat:(JFFF)V
+   #59 = NameAndType        #60:#61       // multiFloat:(JFFF)V
+   #60 = Utf8               multiFloat
+   #61 = Utf8               (JFFF)V
+   #62 = InvokeDynamic      #4:#34        // #4:makeConcatWithConstants:(D)Ljava/lang/String;
+   #63 = Methodref          #24.#64       // e0019_Operations_time_measure/MulAndDiv.multiDouble:(JDDD)V
+   #64 = NameAndType        #65:#66       // multiDouble:(JDDD)V
+   #65 = Utf8               multiDouble
+   #66 = Utf8               (JDDD)V
+   #67 = InvokeDynamic      #5:#34        // #5:makeConcatWithConstants:(D)Ljava/lang/String;
+   #68 = Methodref          #24.#69       // e0019_Operations_time_measure/MulAndDiv.dividi:(JBBJ)V
+   #69 = NameAndType        #70:#28       // dividi:(JBBJ)V
+   #70 = Utf8               dividi
+   #71 = InvokeDynamic      #6:#34        // #6:makeConcatWithConstants:(D)Ljava/lang/String;
+   #72 = Methodref          #24.#73       // e0019_Operations_time_measure/MulAndDiv.dividiShort:(JSSJ)V
+   #73 = NameAndType        #74:#46       // dividiShort:(JSSJ)V
+   #74 = Utf8               dividiShort
+   #75 = InvokeDynamic      #7:#34        // #7:makeConcatWithConstants:(D)Ljava/lang/String;
+   #76 = Methodref          #24.#77       // e0019_Operations_time_measure/MulAndDiv.dividiInt:(JIIJ)V
+   #77 = NameAndType        #78:#51       // dividiInt:(JIIJ)V
+   #78 = Utf8               dividiInt
+   #79 = InvokeDynamic      #8:#34        // #8:makeConcatWithConstants:(D)Ljava/lang/String;
+   #80 = Methodref          #24.#81       // e0019_Operations_time_measure/MulAndDiv.dividiLong:(JJJJ)V
+   #81 = NameAndType        #82:#56       // dividiLong:(JJJJ)V
+   #82 = Utf8               dividiLong
+   #83 = InvokeDynamic      #9:#34        // #9:makeConcatWithConstants:(D)Ljava/lang/String;
+   #84 = Methodref          #24.#85       // e0019_Operations_time_measure/MulAndDiv.dividiFloat:(JFFF)V
+   #85 = NameAndType        #86:#61       // dividiFloat:(JFFF)V
+   #86 = Utf8               dividiFloat
+   #87 = InvokeDynamic      #10:#34       // #10:makeConcatWithConstants:(D)Ljava/lang/String;
+   #88 = Methodref          #24.#89       // e0019_Operations_time_measure/MulAndDiv.dividiDouble:(JDDD)V
+   #89 = NameAndType        #90:#66       // dividiDouble:(JDDD)V
+   #90 = Utf8               dividiDouble
+   #91 = InvokeDynamic      #11:#34       // #11:makeConcatWithConstants:(D)Ljava/lang/String;
+   #92 = Class              #93           // e0019_Operations_time_measure/OperationsTimeMULL_AllTypes
+   #93 = Utf8               e0019_Operations_time_measure/OperationsTimeMULL_AllTypes
+   #94 = Utf8               Code
+   #95 = Utf8               LineNumberTable
+   #96 = Utf8               LocalVariableTable
+   #97 = Utf8               this
+   #98 = Utf8               Le0019_Operations_time_measure/OperationsTimeMULL_AllTypes;
+   #99 = Utf8               main
+  #100 = Utf8               ([Ljava/lang/String;)V
+  #101 = Utf8               args
+  #102 = Utf8               [Ljava/lang/String;
+  #103 = Utf8               start
+  #104 = Utf8               J
+  #105 = Utf8               elapsed
+  #106 = Utf8               MAX
+  #107 = Utf8               B1
+  #108 = Utf8               B
+  #109 = Utf8               B2
+  #110 = Utf8               I1
+  #111 = Utf8               I
+  #112 = Utf8               I2
+  #113 = Utf8               S1
+  #114 = Utf8               S
+  #115 = Utf8               S2
+  #116 = Utf8               L1
+  #117 = Utf8               L2
+  #118 = Utf8               F1
+  #119 = Utf8               F
+  #120 = Utf8               F2
+  #121 = Utf8               D1
+  #122 = Utf8               D
+  #123 = Utf8               D2
+  #124 = Utf8               result
+  #125 = Utf8               SourceFile
+  #126 = Utf8               OperationsTimeMULL_AllTypes.java
+  #127 = Utf8               BootstrapMethods
+  #128 = MethodHandle       6:#129        // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #129 = Methodref          #130.#131     // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #130 = Class              #132          // java/lang/invoke/StringConcatFactory
+  #131 = NameAndType        #35:#133      // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #132 = Utf8               java/lang/invoke/StringConcatFactory
+  #133 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #134 = String             #135          // multi byte x byte. Средняя длительность одной итерации, нс: \u0001
+  #135 = Utf8               multi byte x byte. Средняя длительность одной итерации, нс: \u0001
+  #136 = String             #137          // multi short x short. Средняя длительность одной итерации, нс: \u0001
+  #137 = Utf8               multi short x short. Средняя длительность одной итерации, нс: \u0001
+  #138 = String             #139          // multi int x int. Средняя длительность одной итерации, нс: \u0001
+  #139 = Utf8               multi int x int. Средняя длительность одной итерации, нс: \u0001
+  #140 = String             #141          // multi long x long. Средняя длительность одной итерации, нс: \u0001
+  #141 = Utf8               multi long x long. Средняя длительность одной итерации, нс: \u0001
+  #142 = String             #143          // multi float x float. Средняя длительность одной итерации, нс: \u0001
+  #143 = Utf8               multi float x float. Средняя длительность одной итерации, нс: \u0001
+  #144 = String             #145          // multi double x double. Средняя длительность одной итерации, нс: \u0001
+  #145 = Utf8               multi double x double. Средняя длительность одной итерации, нс: \u0001
+  #146 = String             #147          // dividi byte x byte. Средняя длительность одной итерации, нс: \u0001
+  #147 = Utf8               dividi byte x byte. Средняя длительность одной итерации, нс: \u0001
+  #148 = String             #149          // dividi short x short. Средняя длительность одной итерации, нс: \u0001
+  #149 = Utf8               dividi short x short. Средняя длительность одной итерации, нс: \u0001
+  #150 = String             #151          // dividi int x int. Средняя длительность одной итерации, нс: \u0001
+  #151 = Utf8               dividi int x int. Средняя длительность одной итерации, нс: \u0001
+  #152 = String             #153          // dividi long x long. Средняя длительность одной итерации, нс: \u0001
+  #153 = Utf8               dividi long x long. Средняя длительность одной итерации, нс: \u0001
+  #154 = String             #155          // dividi float x float. Средняя длительность одной итерации, нс: \u0001
+  #155 = Utf8               dividi float x float. Средняя длительность одной итерации, нс: \u0001
+  #156 = String             #157          // dividi double x double. Средняя длительность одной итерации, нс: \u0001
+  #157 = Utf8               dividi double x double. Средняя длительность одной итерации, нс: \u0001
+  #158 = Utf8               InnerClasses
+  #159 = Class              #160          // java/lang/invoke/MethodHandles$Lookup
+  #160 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #161 = Class              #162          // java/lang/invoke/MethodHandles
+  #162 = Utf8               java/lang/invoke/MethodHandles
+  #163 = Utf8               Lookup
+{
+  public e0019_Operations_time_measure.OperationsTimeMULL_AllTypes();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0019_Operations_time_measure/OperationsTimeMULL_AllTypes;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=8, locals=25, args_size=1
+         0: ldc2_w        #7                  // long 1000000000l
+         3: lstore        5
+         5: bipush        62
+         7: istore        7
+         9: bipush        72
+        11: istore        8
+        13: sipush        5000
+        16: istore        9
+        18: sipush        7000
+        21: istore        10
+        23: sipush        1000
+        26: istore        11
+        28: sipush        2000
+        31: istore        12
+        33: ldc2_w        #9                  // long 5000000000l
+        36: lstore        13
+        38: ldc2_w        #7                  // long 1000000000l
+        41: lstore        15
+        43: ldc           #11                 // float 400.032f
+        45: fstore        17
+        47: ldc           #12                 // float 200.032f
+        49: fstore        18
+        51: ldc2_w        #13                 // double 2000.0047d
+        54: dstore        19
+        56: ldc2_w        #15                 // double 3000.0047d
+        59: dstore        21
+        61: lconst_0
+        62: lstore        23
+        64: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+        67: lstore_1
+        68: lload         5
+        70: iload         7
+        72: iload         8
+        74: lload         23
+        76: invokestatic  #23                 // Method e0019_Operations_time_measure/MulAndDiv.multi:(JBBJ)V
+        79: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+        82: lload_1
+        83: lsub
+        84: lstore_3
+        85: getstatic     #29                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        88: lload_3
+        89: l2d
+        90: lload         5
+        92: l2d
+        93: ddiv
+        94: invokedynamic #33,  0             // InvokeDynamic #0:makeConcatWithConstants:(D)Ljava/lang/String;
+        99: invokevirtual #37                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       102: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       105: lstore_1
+       106: lload         5
+       108: iload         11
+       110: iload         12
+       112: lload         23
+       114: invokestatic  #43                 // Method e0019_Operations_time_measure/MulAndDiv.multiShort:(JSSJ)V
+       117: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       120: lload_1
+       121: lsub
+       122: lstore_3
+       123: getstatic     #29                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       126: lload_3
+       127: l2d
+       128: lload         5
+       130: l2d
+       131: ddiv
+       132: invokedynamic #47,  0             // InvokeDynamic #1:makeConcatWithConstants:(D)Ljava/lang/String;
+       137: invokevirtual #37                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       140: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       143: lstore_1
+       144: lload         5
+       146: iload         9
+       148: iload         10
+       150: lload         23
+       152: invokestatic  #48                 // Method e0019_Operations_time_measure/MulAndDiv.multiInt:(JIIJ)V
+       155: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       158: lload_1
+       159: lsub
+       160: lstore_3
+       161: getstatic     #29                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       164: lload_3
+       165: l2d
+       166: lload         5
+       168: l2d
+       169: ddiv
+       170: invokedynamic #52,  0             // InvokeDynamic #2:makeConcatWithConstants:(D)Ljava/lang/String;
+       175: invokevirtual #37                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       178: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       181: lstore_1
+       182: lload         5
+       184: lload         13
+       186: lload         15
+       188: lload         23
+       190: invokestatic  #53                 // Method e0019_Operations_time_measure/MulAndDiv.multiLong:(JJJJ)V
+       193: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       196: lload_1
+       197: lsub
+       198: lstore_3
+       199: getstatic     #29                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       202: lload_3
+       203: l2d
+       204: lload         5
+       206: l2d
+       207: ddiv
+       208: invokedynamic #57,  0             // InvokeDynamic #3:makeConcatWithConstants:(D)Ljava/lang/String;
+       213: invokevirtual #37                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       216: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       219: lstore_1
+       220: lload         5
+       222: fload         17
+       224: fload         18
+       226: lload         23
+       228: l2f
+       229: invokestatic  #58                 // Method e0019_Operations_time_measure/MulAndDiv.multiFloat:(JFFF)V
+       232: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       235: lload_1
+       236: lsub
+       237: lstore_3
+       238: getstatic     #29                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       241: lload_3
+       242: l2d
+       243: lload         5
+       245: l2d
+       246: ddiv
+       247: invokedynamic #62,  0             // InvokeDynamic #4:makeConcatWithConstants:(D)Ljava/lang/String;
+       252: invokevirtual #37                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       255: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       258: lstore_1
+       259: lload         5
+       261: dload         19
+       263: dload         21
+       265: lload         23
+       267: l2d
+       268: invokestatic  #63                 // Method e0019_Operations_time_measure/MulAndDiv.multiDouble:(JDDD)V
+       271: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       274: lload_1
+       275: lsub
+       276: lstore_3
+       277: getstatic     #29                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       280: lload_3
+       281: l2d
+       282: lload         5
+       284: l2d
+       285: ddiv
+       286: invokedynamic #67,  0             // InvokeDynamic #5:makeConcatWithConstants:(D)Ljava/lang/String;
+       291: invokevirtual #37                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       294: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       297: lstore_1
+       298: lload         5
+       300: iload         7
+       302: iload         8
+       304: lload         23
+       306: invokestatic  #68                 // Method e0019_Operations_time_measure/MulAndDiv.dividi:(JBBJ)V
+       309: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       312: lload_1
+       313: lsub
+       314: lstore_3
+       315: getstatic     #29                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       318: lload_3
+       319: l2d
+       320: lload         5
+       322: l2d
+       323: ddiv
+       324: invokedynamic #71,  0             // InvokeDynamic #6:makeConcatWithConstants:(D)Ljava/lang/String;
+       329: invokevirtual #37                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       332: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       335: lstore_1
+       336: lload         5
+       338: iload         11
+       340: iload         12
+       342: lload         23
+       344: invokestatic  #72                 // Method e0019_Operations_time_measure/MulAndDiv.dividiShort:(JSSJ)V
+       347: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       350: lload_1
+       351: lsub
+       352: lstore_3
+       353: getstatic     #29                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       356: lload_3
+       357: l2d
+       358: lload         5
+       360: l2d
+       361: ddiv
+       362: invokedynamic #75,  0             // InvokeDynamic #7:makeConcatWithConstants:(D)Ljava/lang/String;
+       367: invokevirtual #37                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       370: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       373: lstore_1
+       374: lload         5
+       376: iload         9
+       378: iload         10
+       380: lload         23
+       382: invokestatic  #76                 // Method e0019_Operations_time_measure/MulAndDiv.dividiInt:(JIIJ)V
+       385: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       388: lload_1
+       389: lsub
+       390: lstore_3
+       391: getstatic     #29                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       394: lload_3
+       395: l2d
+       396: lload         5
+       398: l2d
+       399: ddiv
+       400: invokedynamic #79,  0             // InvokeDynamic #8:makeConcatWithConstants:(D)Ljava/lang/String;
+       405: invokevirtual #37                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       408: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       411: lstore_1
+       412: lload         5
+       414: lload         13
+       416: lload         15
+       418: lload         23
+       420: invokestatic  #80                 // Method e0019_Operations_time_measure/MulAndDiv.dividiLong:(JJJJ)V
+       423: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       426: lload_1
+       427: lsub
+       428: lstore_3
+       429: getstatic     #29                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       432: lload_3
+       433: l2d
+       434: lload         5
+       436: l2d
+       437: ddiv
+       438: invokedynamic #83,  0             // InvokeDynamic #9:makeConcatWithConstants:(D)Ljava/lang/String;
+       443: invokevirtual #37                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       446: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       449: lstore_1
+       450: lload         5
+       452: fload         17
+       454: fload         18
+       456: lload         23
+       458: l2f
+       459: invokestatic  #84                 // Method e0019_Operations_time_measure/MulAndDiv.dividiFloat:(JFFF)V
+       462: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       465: lload_1
+       466: lsub
+       467: lstore_3
+       468: getstatic     #29                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       471: lload_3
+       472: l2d
+       473: lload         5
+       475: l2d
+       476: ddiv
+       477: invokedynamic #87,  0             // InvokeDynamic #10:makeConcatWithConstants:(D)Ljava/lang/String;
+       482: invokevirtual #37                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       485: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       488: lstore_1
+       489: lload         5
+       491: dload         19
+       493: dload         21
+       495: lload         23
+       497: l2dmul
+       498: invokestatic  #88                 // Method e0019_Operations_time_measure/MulAndDiv.dividiDouble:(JDDD)V
+       501: invokestatic  #17                 // Method java/lang/System.nanoTime:()J
+       504: lload_1
+       505: lsub
+       506: lstore_3
+       507: getstatic     #29                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       510: lload_3
+       511: l2d
+       512: lload         5
+       514: l2d
+       515: ddiv
+       516: invokedynamic #91,  0             // InvokeDynamic #11:makeConcatWithConstants:(D)Ljava/lang/String;
+       521: invokevirtual #37                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       524: return
+      LineNumberTable:
+        line 9: 0
+        line 11: 5
+        line 12: 9
+        line 13: 13
+        line 14: 18
+        line 15: 23
+        line 16: 28
+        line 17: 33
+        line 18: 38
+        line 19: 43
+        line 20: 47
+        line 21: 51
+        line 22: 56
+        line 23: 61
+        line 27: 64
+        line 28: 68
+        line 29: 79
+        line 30: 85
+        line 32: 102
+        line 33: 106
+        line 34: 117
+        line 35: 123
+        line 37: 140
+        line 38: 144
+        line 39: 155
+        line 40: 161
+        line 42: 178
+        line 43: 182
+        line 44: 193
+        line 45: 199
+        line 47: 216
+        line 48: 220
+        line 49: 232
+        line 50: 238
+        line 52: 255
+        line 53: 259
+        line 54: 271
+        line 55: 277
+        line 58: 294
+        line 59: 298
+        line 60: 309
+        line 61: 315
+        line 63: 332
+        line 64: 336
+        line 65: 347
+        line 66: 353
+        line 68: 370
+        line 69: 374
+        line 70: 385
+        line 71: 391
+        line 73: 408
+        line 74: 412
+        line 75: 423
+        line 76: 429
+        line 78: 446
+        line 79: 450
+        line 80: 462
+        line 81: 468
+        line 83: 485
+        line 84: 489
+        line 85: 501
+        line 86: 507
+        line 88: 524
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     525     0  args   [Ljava/lang/String;
+           68     457     1 start   J
+           85     440     3 elapsed   J
+            5     520     5   MAX   J
+            9     516     7    B1   B
+           13     512     8    B2   B
+           18     507     9    I1   I
+           23     502    10    I2   I
+           28     497    11    S1   S
+           33     492    12    S2   S
+           38     487    13    L1   J
+           43     482    15    L2   J
+           47     478    17    F1   F
+           51     474    18    F2   F
+           56     469    19    D1   D
+           61     464    21    D2   D
+           64     461    23 result   J
+}
+SourceFile: "OperationsTimeMULL_AllTypes.java"
+BootstrapMethods:
+  0: #128 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #134 multi byte x byte. Средняя длительность одной итерации, нс: \u0001
+  1: #128 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #136 multi short x short. Средняя длительность одной итерации, нс: \u0001
+  2: #128 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #138 multi int x int. Средняя длительность одной итерации, нс: \u0001
+  3: #128 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #140 multi long x long. Средняя длительность одной итерации, нс: \u0001
+  4: #128 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #142 multi float x float. Средняя длительность одной итерации, нс: \u0001
+  5: #128 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #144 multi double x double. Средняя длительность одной итерации, нс: \u0001
+  6: #128 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #146 dividi byte x byte. Средняя длительность одной итерации, нс: \u0001
+  7: #128 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #148 dividi short x short. Средняя длительность одной итерации, нс: \u0001
+  8: #128 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #150 dividi int x int. Средняя длительность одной итерации, нс: \u0001
+  9: #128 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #152 dividi long x long. Средняя длительность одной итерации, нс: \u0001
+  10: #128 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #154 dividi float x float. Средняя длительность одной итерации, нс: \u0001
+  11: #128 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #156 dividi double x double. Средняя длительность одной итерации, нс: \u0001
+InnerClasses:
+  public static final #163= #159 of #161; // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+
+---------------------------------------------------------------------------------------------

@@ -1,0 +1,149 @@
+  Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0020_Operations/Ternary.class
+  Last modified 13 окт. 2022 г.; size 1090 bytes
+  SHA-256 checksum ee6161095773670bf2e0beacda9add399aa3f94d97eba6b6d2b69951675fc8bf
+  Compiled from "Ternary.java"
+public class e0020_Operations.Ternary
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #23                         // e0020_Operations/Ternary
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = InvokeDynamic      #0:#14         // #0:makeConcatWithConstants:(II)Ljava/lang/String;
+  #14 = NameAndType        #15:#16        // makeConcatWithConstants:(II)Ljava/lang/String;
+  #15 = Utf8               makeConcatWithConstants
+  #16 = Utf8               (II)Ljava/lang/String;
+  #17 = Methodref          #18.#19        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #18 = Class              #20            // java/io/PrintStream
+  #19 = NameAndType        #21:#22        // println:(Ljava/lang/String;)V
+  #20 = Utf8               java/io/PrintStream
+  #21 = Utf8               println
+  #22 = Utf8               (Ljava/lang/String;)V
+  #23 = Class              #24            // e0020_Operations/Ternary
+  #24 = Utf8               e0020_Operations/Ternary
+  #25 = Utf8               Code
+  #26 = Utf8               LineNumberTable
+  #27 = Utf8               LocalVariableTable
+  #28 = Utf8               this
+  #29 = Utf8               Le0020_Operations/Ternary;
+  #30 = Utf8               main
+  #31 = Utf8               ([Ljava/lang/String;)V
+  #32 = Utf8               k
+  #33 = Utf8               I
+  #34 = Utf8               args
+  #35 = Utf8               [Ljava/lang/String;
+  #36 = Utf8               i
+  #37 = Utf8               StackMapTable
+  #38 = Utf8               SourceFile
+  #39 = Utf8               Ternary.java
+  #40 = Utf8               BootstrapMethods
+  #41 = MethodHandle       6:#42          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #42 = Methodref          #43.#44        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #43 = Class              #45            // java/lang/invoke/StringConcatFactory
+  #44 = NameAndType        #15:#46        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #45 = Utf8               java/lang/invoke/StringConcatFactory
+  #46 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #47 = String             #48            // \u0001 ravno \u0001
+  #48 = Utf8               \u0001 ravno \u0001
+  #49 = Utf8               InnerClasses
+  #50 = Class              #51            // java/lang/invoke/MethodHandles$Lookup
+  #51 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #52 = Class              #53            // java/lang/invoke/MethodHandles
+  #53 = Utf8               java/lang/invoke/MethodHandles
+  #54 = Utf8               Lookup
+{
+  public e0020_Operations.Ternary();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0020_Operations/Ternary;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=3, args_size=1
+         0: bipush        10
+         2: istore_1
+         3: iload_1
+         4: ifge          13
+         7: iload_1
+         8: ineg
+         9: istore_2
+        10: goto          15
+        13: iload_1
+        14: istore_2
+        15: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        18: iload_1
+        19: iload_2
+        20: invokedynamic #13,  0             // InvokeDynamic #0:makeConcatWithConstants:(II)Ljava/lang/String;
+        25: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        28: return
+      LineNumberTable:
+        line 7: 0
+        line 10: 3
+        line 11: 7
+        line 13: 13
+        line 15: 15
+        line 16: 28
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           10       3     2     k   I
+            0      29     0  args   [Ljava/lang/String;
+            3      26     1     i   I
+           15      14     2     k   I
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 13
+          locals = [ int ]
+        frame_type = 252 /* append */
+          offset_delta = 1
+          locals = [ int ]
+}
+SourceFile: "Ternary.java"
+BootstrapMethods:
+  0: #41 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #47 \u0001 ravno \u0001
+InnerClasses:
+  public static final #54= #50 of #52;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0020_Operations;
+
+public class Ternary {
+    public static void main(String[] args) {
+        int i, k;
+
+        i = 10;
+
+        if (i < 0) {
+            k = -i;
+        } else {
+            k = i;
+        }
+        System.out.println(i + " ravno " + k) ;
+    }
+}
+
+---------------------------------------------------------------------------------------------

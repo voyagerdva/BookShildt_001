@@ -1,6 +1,6 @@
 Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0020_Operations/BoolLogic.class
-  Last modified 12 окт. 2022 г.; size 736 bytes
-  SHA-256 checksum 2b95070887a6c16f4b186a625f579b34cccba3b0abcc57033594389144745151
+  Last modified 13 окт. 2022 г.; size 728 bytes
+  SHA-256 checksum e9af187e95766cf25b49c767d2d461bb43233220891da9c9605885b7e4d9a221
   Compiled from "BoolLogic.java"
 public class e0020_Operations.BoolLogic
   minor version: 0
@@ -22,8 +22,8 @@ Constant pool:
   #10 = Utf8               java/lang/System
   #11 = Utf8               out
   #12 = Utf8               Ljava/io/PrintStream;
-  #13 = String             #14            // denom != 0 && num / denom > 10
-  #14 = Utf8               denom != 0 && num / denom > 10
+  #13 = String             #14            // denom != 0 && num > 10
+  #14 = Utf8               denom != 0 && num > 10
   #15 = Methodref          #16.#17        // java/io/PrintStream.println:(Ljava/lang/String;)V
   #16 = Class              #18            // java/io/PrintStream
   #17 = NameAndType        #19:#20        // println:(Ljava/lang/String;)V
@@ -85,7 +85,7 @@ Constant pool:
         17: bipush        10
         19: if_icmple     30
         22: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
-        25: ldc           #13                 // String denom != 0 && num / denom > 10
+        25: ldc           #13                 // String denom != 0 && num > 10
         27: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
         30: return
       LineNumberTable:
@@ -121,7 +121,7 @@ public class BoolLogic {
         int num = 100;
 
         if (denom != 0 && num > 10) {
-            System.out.println("denom != 0 && num / denom > 10");
+            System.out.println("denom != 0 && num > 10");
         }
 
     }

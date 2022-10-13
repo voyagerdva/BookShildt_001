@@ -1,0 +1,112 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0021_IF_ELSE_SWITCH/ifElse.class
+  Last modified 13 окт. 2022 г.; size 552 bytes
+  SHA-256 checksum c1a8d5c9dcdaee985cdcfd57f913d516c7b7e36b5f0c5cc61d776ff6bec714c1
+  Compiled from "ifElse.java"
+public class e0021_IF_ELSE_SWITCH.ifElse
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #11                         // e0021_IF_ELSE_SWITCH/ifElse
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Double             1.11119999999E11d
+   #9 = Double             2.22229999999E11d
+  #11 = Class              #12            // e0021_IF_ELSE_SWITCH/ifElse
+  #12 = Utf8               e0021_IF_ELSE_SWITCH/ifElse
+  #13 = Utf8               Code
+  #14 = Utf8               LineNumberTable
+  #15 = Utf8               LocalVariableTable
+  #16 = Utf8               this
+  #17 = Utf8               Le0021_IF_ELSE_SWITCH/ifElse;
+  #18 = Utf8               main
+  #19 = Utf8               ([Ljava/lang/String;)V
+  #20 = Utf8               args
+  #21 = Utf8               [Ljava/lang/String;
+  #22 = Utf8               a
+  #23 = Utf8               I
+  #24 = Utf8               b
+  #25 = Utf8               c
+  #26 = Utf8               StackMapTable
+  #27 = Utf8               SourceFile
+  #28 = Utf8               ifElse.java
+{
+  public e0021_IF_ELSE_SWITCH.ifElse();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0021_IF_ELSE_SWITCH/ifElse;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=6, args_size=1
+         0: iconst_4
+         1: istore_1
+         2: bipush        8
+         4: istore_2
+         5: bipush        6
+         7: istore_3
+         8: iload_1
+         9: iload_3
+        10: if_icmpge     21
+        13: ldc2_w        #7                  // double 1.11119999999E11d
+        16: dstore        4
+        18: goto          26
+        21: ldc2_w        #9                  // double 2.22229999999E11d
+        24: dstore        4
+        26: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 2
+        line 7: 5
+        line 9: 8
+        line 10: 13
+        line 11: 18
+        line 12: 21
+        line 14: 26
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      27     0  args   [Ljava/lang/String;
+            2      25     1     a   I
+            5      22     2     b   I
+            8      19     3     c   I
+      StackMapTable: number_of_entries = 2
+        frame_type = 254 /* append */
+          offset_delta = 21
+          locals = [ int, int, int ]
+        frame_type = 4 /* same */
+}
+SourceFile: "ifElse.java"
+#############################################################################################
+package e0021_IF_ELSE_SWITCH;
+
+public class ifElse {
+    public static void main(String[] args) {
+        int a = 4;
+        int b = 8;
+        int c = 6;
+
+        if (a < c) {
+            double DDD111 = 111119999999D;
+        } else {
+            double DDD222 = 222229999999D;
+        }
+    }
+}
+---------------------------------------------------------------------------------------------

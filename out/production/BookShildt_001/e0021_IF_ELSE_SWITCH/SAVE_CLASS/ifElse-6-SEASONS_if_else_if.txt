@@ -1,0 +1,197 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0021_IF_ELSE_SWITCH/ifElse.class
+  Last modified 13 окт. 2022 г.; size 905 bytes
+  SHA-256 checksum 190ef335c16352ba61a8a7d60ebc8970ab584fa77d6b5482a7ab93a3d86f28c9
+  Compiled from "ifElse.java"
+public class e0021_IF_ELSE_SWITCH.ifElse
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #29                         // e0021_IF_ELSE_SWITCH/ifElse
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = String             #8             // зиме
+   #8 = Utf8               зиме
+   #9 = String             #10            // весне
+  #10 = Utf8               весне
+  #11 = String             #12            // лету
+  #12 = Utf8               лету
+  #13 = String             #14            // осени
+  #14 = Utf8               осени
+  #15 = String             #16            // что-то другое
+  #16 = Utf8               что-то другое
+  #17 = Fieldref           #18.#19        // java/lang/System.out:Ljava/io/PrintStream;
+  #18 = Class              #20            // java/lang/System
+  #19 = NameAndType        #21:#22        // out:Ljava/io/PrintStream;
+  #20 = Utf8               java/lang/System
+  #21 = Utf8               out
+  #22 = Utf8               Ljava/io/PrintStream;
+  #23 = Methodref          #24.#25        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #24 = Class              #26            // java/io/PrintStream
+  #25 = NameAndType        #27:#28        // println:(Ljava/lang/String;)V
+  #26 = Utf8               java/io/PrintStream
+  #27 = Utf8               println
+  #28 = Utf8               (Ljava/lang/String;)V
+  #29 = Class              #30            // e0021_IF_ELSE_SWITCH/ifElse
+  #30 = Utf8               e0021_IF_ELSE_SWITCH/ifElse
+  #31 = Utf8               Code
+  #32 = Utf8               LineNumberTable
+  #33 = Utf8               LocalVariableTable
+  #34 = Utf8               this
+  #35 = Utf8               Le0021_IF_ELSE_SWITCH/ifElse;
+  #36 = Utf8               main
+  #37 = Utf8               ([Ljava/lang/String;)V
+  #38 = Utf8               S
+  #39 = Utf8               Ljava/lang/String;
+  #40 = Utf8               args
+  #41 = Utf8               [Ljava/lang/String;
+  #42 = Utf8               m
+  #43 = Utf8               I
+  #44 = Utf8               StackMapTable
+  #45 = Class              #46            // java/lang/String
+  #46 = Utf8               java/lang/String
+  #47 = Utf8               SourceFile
+  #48 = Utf8               ifElse.java
+{
+  public e0021_IF_ELSE_SWITCH.ifElse();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 5: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0021_IF_ELSE_SWITCH/ifElse;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: iconst_4
+         1: istore_1
+
+         2: iload_1
+         3: bipush        12         
+         5: if_icmpeq     13
+         8: iload_1
+         9: iconst_1
+
+        10: if_icmpne     19
+        13: ldc           #7                  // String зиме
+        15: astore_2
+        16: goto          74
+
+        19: iload_1
+        20: iconst_3
+        21: if_icmpeq     29
+        24: iload_1
+        25: iconst_4
+        
+        26: if_icmpne     35
+        29: ldc           #9                  // String весне
+        31: astore_2
+        32: goto          74
+        35: iload_1
+        36: bipush        6
+        
+        38: if_icmpeq     47
+        41: iload_1
+        42: bipush        7
+        
+        44: if_icmpne     53
+        47: ldc           #11                 // String лету
+        49: astore_2
+        50: goto          74
+        53: iload_1
+        54: bipush        9
+        
+        56: if_icmpeq     65
+        59: iload_1
+        60: bipush        10
+        
+        62: if_icmpne     71
+        65: ldc           #13                 // String осени
+        67: astore_2
+        68: goto          74
+
+        71: ldc           #15                 // String что-то другое
+        73: astore_2
+
+        74: getstatic     #17                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        77: aload_2
+        78: invokevirtual #23                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        81: return
+      LineNumberTable:
+        line 7: 0
+        line 11: 2
+        line 12: 13
+        line 13: 19
+        line 14: 29
+        line 15: 35
+        line 16: 47
+        line 17: 53
+        line 18: 65
+        line 20: 71
+        line 23: 74
+        line 24: 81
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           16       3     2     S   Ljava/lang/String;
+           32       3     2     S   Ljava/lang/String;
+           50       3     2     S   Ljava/lang/String;
+           68       3     2     S   Ljava/lang/String;
+            0      82     0  args   [Ljava/lang/String;
+            2      80     1     m   I
+           74       8     2     S   Ljava/lang/String;
+      StackMapTable: number_of_entries = 9
+        frame_type = 252 /* append */
+          offset_delta = 13
+          locals = [ int ]
+        frame_type = 5 /* same */
+        frame_type = 9 /* same */
+        frame_type = 5 /* same */
+        frame_type = 11 /* same */
+        frame_type = 5 /* same */
+        frame_type = 11 /* same */
+        frame_type = 5 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 2
+          locals = [ class java/lang/String ]
+}
+SourceFile: "ifElse.java"
+#############################################################################################
+package e0021_IF_ELSE_SWITCH;
+
+public class ifElse {
+    public static void main(String[] args) {
+        int m = 4;
+
+        String S;
+
+        if (m == 12 || m == 1) {
+            S = "зиме";
+        } else if (m == 3 || m == 4) {
+            S = "весне";
+        } else if (m == 6 || m == 7) {
+            S = "лету";
+        } else if (m == 9 || m == 10) {
+            S = "осени";
+        } else {
+            S = "что-то другое";
+        }
+
+        System.out.println(S);
+    }
+}
+---------------------------------------------------------------------------------------------

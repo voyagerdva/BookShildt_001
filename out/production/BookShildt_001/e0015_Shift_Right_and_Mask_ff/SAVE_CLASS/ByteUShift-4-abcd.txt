@@ -1,0 +1,376 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0015_Shift_Right_and_Mask_ff/ByteUShift.class
+  Last modified 2 окт. 2022 г.; size 1751 bytes
+  SHA-256 checksum 01fce710ebdb692123eceb9a083a64378c2f7c719deec29dd4dea85919122181
+  Compiled from "ByteUShift.java"
+public class e0015_Shift_Right_and_Mask_ff.ByteUShift
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #43                         // e0015_Shift_Right_and_Mask_ff/ByteUShift
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = InvokeDynamic      #0:#14         // #0:makeConcatWithConstants:(CC)Ljava/lang/String;
+  #14 = NameAndType        #15:#16        // makeConcatWithConstants:(CC)Ljava/lang/String;
+  #15 = Utf8               makeConcatWithConstants
+  #16 = Utf8               (CC)Ljava/lang/String;
+  #17 = Methodref          #18.#19        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #18 = Class              #20            // java/io/PrintStream
+  #19 = NameAndType        #21:#22        // println:(Ljava/lang/String;)V
+  #20 = Utf8               java/io/PrintStream
+  #21 = Utf8               println
+  #22 = Utf8               (Ljava/lang/String;)V
+  #23 = InvokeDynamic      #1:#24         // #1:makeConcatWithConstants:(B)Ljava/lang/String;
+  #24 = NameAndType        #15:#25        // makeConcatWithConstants:(B)Ljava/lang/String;
+  #25 = Utf8               (B)Ljava/lang/String;
+  #26 = String             #27            // %32s
+  #27 = Utf8               %32s
+  #28 = Methodref          #29.#30        // java/lang/Integer.toBinaryString:(I)Ljava/lang/String;
+  #29 = Class              #31            // java/lang/Integer
+  #30 = NameAndType        #32:#33        // toBinaryString:(I)Ljava/lang/String;
+  #31 = Utf8               java/lang/Integer
+  #32 = Utf8               toBinaryString
+  #33 = Utf8               (I)Ljava/lang/String;
+  #34 = Methodref          #35.#36        // java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  #35 = Class              #37            // java/lang/String
+  #36 = NameAndType        #38:#39        // format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  #37 = Utf8               java/lang/String
+  #38 = Utf8               format
+  #39 = Utf8               (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  #40 = InvokeDynamic      #2:#14         // #2:makeConcatWithConstants:(CC)Ljava/lang/String;
+  #41 = InvokeDynamic      #3:#14         // #3:makeConcatWithConstants:(CC)Ljava/lang/String;
+  #42 = InvokeDynamic      #4:#14         // #4:makeConcatWithConstants:(CC)Ljava/lang/String;
+  #43 = Class              #44            // e0015_Shift_Right_and_Mask_ff/ByteUShift
+  #44 = Utf8               e0015_Shift_Right_and_Mask_ff/ByteUShift
+  #45 = Utf8               Code
+  #46 = Utf8               LineNumberTable
+  #47 = Utf8               LocalVariableTable
+  #48 = Utf8               this
+  #49 = Utf8               Le0015_Shift_Right_and_Mask_ff/ByteUShift;
+  #50 = Utf8               main
+  #51 = Utf8               ([Ljava/lang/String;)V
+  #52 = Utf8               args
+  #53 = Utf8               [Ljava/lang/String;
+  #54 = Utf8               hex
+  #55 = Utf8               [C
+  #56 = Utf8               b
+  #57 = Utf8               B
+  #58 = Utf8               c
+  #59 = Utf8               d
+  #60 = Utf8               e
+  #61 = Utf8               SourceFile
+  #62 = Utf8               ByteUShift.java
+  #63 = Utf8               BootstrapMethods
+  #64 = MethodHandle       6:#65          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #65 = Methodref          #66.#67        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #66 = Class              #68            // java/lang/invoke/StringConcatFactory
+  #67 = NameAndType        #15:#69        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #68 = Utf8               java/lang/invoke/StringConcatFactory
+  #69 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #70 = String             #71            // b = 0x\u0001\u0001
+  #71 = Utf8               b = 0x\u0001\u0001
+  #72 = String             #73            // \n\u0001
+  #73 = Utf8               \n\u0001
+  #74 = String             #75            // \nb >> 4 = 0x\u0001\u0001
+  #75 = Utf8               \nb >> 4 = 0x\u0001\u0001
+  #76 = String             #77            // \nb >>> 4 = 0x\u0001\u0001
+  #77 = Utf8               \nb >>> 4 = 0x\u0001\u0001
+  #78 = String             #79            //  (b & 0xff) >> 4 = 0x\u0001\u0001
+  #79 = Utf8                (b & 0xff) >> 4 = 0x\u0001\u0001
+  #80 = Utf8               InnerClasses
+  #81 = Class              #82            // java/lang/invoke/MethodHandles$Lookup
+  #82 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #83 = Class              #84            // java/lang/invoke/MethodHandles
+  #84 = Utf8               java/lang/invoke/MethodHandles
+  #85 = Utf8               Lookup
+{
+  public e0015_Shift_Right_and_Mask_ff.ByteUShift();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0015_Shift_Right_and_Mask_ff/ByteUShift;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=7, locals=6, args_size=1
+         0: bipush        16
+         2: newarray       char
+         4: dup
+         5: iconst_0
+         6: bipush        48
+         8: castore
+         9: dup
+        10: iconst_1
+        11: bipush        49
+        13: castore
+        14: dup
+        15: iconst_2
+        16: bipush        50
+        18: castore
+        19: dup
+        20: iconst_3
+        21: bipush        51
+        23: castore
+        24: dup
+        25: iconst_4
+        26: bipush        52
+        28: castore
+        29: dup
+        30: iconst_5
+        31: bipush        53
+        33: castore
+        34: dup
+        35: bipush        6
+        37: bipush        54
+        39: castore
+        40: dup
+        41: bipush        7
+        43: bipush        55
+        45: castore
+        46: dup
+        47: bipush        8
+        49: bipush        56
+        51: castore
+        52: dup
+        53: bipush        9
+        55: bipush        57
+        57: castore
+        58: dup
+        59: bipush        10
+        61: sipush        1072
+        64: castore
+        65: dup
+        66: bipush        11
+        68: bipush        98
+        70: castore
+        71: dup
+        72: bipush        12
+        74: sipush        1089
+        77: castore
+        78: dup
+        79: bipush        13
+        81: bipush        100
+        83: castore
+        84: dup
+        85: bipush        14
+        87: sipush        1077
+        90: castore
+        91: dup
+        92: bipush        15
+        94: bipush        102
+        96: castore
+        97: astore_1
+        98: bipush        -9
+       100: istore_2
+       101: iload_2
+       102: iconst_4
+       103: ishr
+       104: i2b
+       105: istore_3
+       106: iload_2
+       107: iconst_4
+       108: iushr
+       109: i2b
+       110: istore        4
+       112: iload_2
+       113: sipush        255
+       116: iand
+       117: iconst_4
+       118: ishr
+       119: i2b
+       120: istore        5
+       122: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       125: aload_1
+       126: iload_2
+       127: iconst_4
+       128: ishr
+       129: bipush        15
+       131: iand
+       132: caload
+       133: aload_1
+       134: iload_2
+       135: bipush        15
+       137: iand
+       138: caload
+       139: invokedynamic #13,  0             // InvokeDynamic #0:makeConcatWithConstants:(CC)Ljava/lang/String;
+       144: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       147: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       150: iload_2
+       151: invokedynamic #23,  0             // InvokeDynamic #1:makeConcatWithConstants:(B)Ljava/lang/String;
+       156: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       159: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       162: ldc           #26                 // String %32s
+       164: iconst_1
+       165: anewarray     #2                  // class java/lang/Object
+       168: dup
+       169: iconst_0
+       170: iload_2
+       171: invokestatic  #28                 // Method java/lang/Integer.toBinaryString:(I)Ljava/lang/String;
+       174: aastore
+       175: invokestatic  #34                 // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+       178: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       181: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       184: aload_1
+       185: iload_3
+       186: iconst_4
+       187: ishr
+       188: bipush        15
+       190: iand
+       191: caload
+       192: aload_1
+       193: iload_3
+       194: bipush        15
+       196: iand
+       197: caload
+       198: invokedynamic #40,  0             // InvokeDynamic #2:makeConcatWithConstants:(CC)Ljava/lang/String;
+       203: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       206: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       209: ldc           #26                 // String %32s
+       211: iconst_1
+       212: anewarray     #2                  // class java/lang/Object
+       215: dup
+       216: iconst_0
+       217: iload_2
+       218: iconst_4
+       219: ishr
+       220: invokestatic  #28                 // Method java/lang/Integer.toBinaryString:(I)Ljava/lang/String;
+       223: aastore
+       224: invokestatic  #34                 // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+       227: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       230: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       233: aload_1
+       234: iload         4
+       236: iconst_4
+       237: ishr
+       238: bipush        15
+       240: iand
+       241: caload
+       242: aload_1
+       243: iload         4
+       245: bipush        15
+       247: iand
+       248: caload
+       249: invokedynamic #41,  0             // InvokeDynamic #3:makeConcatWithConstants:(CC)Ljava/lang/String;
+       254: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       257: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       260: aload_1
+       261: iload         5
+       263: iconst_4
+       264: ishr
+       265: bipush        15
+       267: iand
+       268: caload
+       269: aload_1
+       270: iload         5
+       272: bipush        15
+       274: iand
+       275: caload
+       276: invokedynamic #42,  0             // InvokeDynamic #4:makeConcatWithConstants:(CC)Ljava/lang/String;
+       281: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       284: return
+      LineNumberTable:
+        line 5: 0
+        line 9: 98
+        line 10: 101
+        line 11: 106
+        line 12: 112
+        line 13: 122
+        line 14: 147
+        line 15: 159
+        line 17: 181
+        line 18: 206
+        line 20: 230
+        line 21: 257
+        line 22: 284
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     285     0  args   [Ljava/lang/String;
+           98     187     1   hex   [C
+          101     184     2     b   B
+          106     179     3     c   B
+          112     173     4     d   B
+          122     163     5     e   B
+}
+SourceFile: "ByteUShift.java"
+BootstrapMethods:
+  0: #64 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #70 b = 0x\u0001\u0001
+  1: #64 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #72 \n\u0001
+  2: #64 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #74 \nb >> 4 = 0x\u0001\u0001
+  3: #64 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #76 \nb >>> 4 = 0x\u0001\u0001
+  4: #64 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #78  (b & 0xff) >> 4 = 0x\u0001\u0001
+InnerClasses:
+  public static final #85= #81 of #83;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+
+
+  ##################################################################################################################################
+
+  package e0015_Shift_Right_and_Mask_ff;
+
+  public class ByteUShift {
+      public static void main(String[] args) {
+          char hex[] = {
+                  '0', '1', '2', '3', '4', '5', '6', '7',
+                 '8', '9', 'а', 'b', 'с', 'd', 'е', 'f'
+          };
+          byte b = (byte) 0xf7;
+          byte c = (byte) (b >> 4);
+          byte d = (byte) (b >>> 4);
+          byte e = (byte) ( (b & 0xff) >> 4);
+          System.out.println("b = 0x" + hex[(b >> 4) & 0x0f] + hex[b & 0x0f]);
+          System.out.println("\n" + b);
+          System.out.println(String.format("%32s", Integer.toBinaryString(b)));
+  
+          System.out.println("\nb >> 4 = 0x"  + hex[(c >> 4) & 0x0f] + hex[c & 0x0f]);
+          System.out.println(String.format("%32s", Integer.toBinaryString(b >> 4)));
+  
+          System.out.println("\nb >>> 4 = 0x" + hex[(d >> 4) & 0x0f] + hex[d & 0x0f]);
+          System.out.println(" (b & 0xff) >> 4 = 0x" + hex[(e >> 4) & 0x0f] + hex[e & 0x0f]);
+      }
+  }
+
+--------------------------------------------------------------
+  "C:\Program Files\Java\jdk-17.0.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.3.1\lib\idea_rt.jar=14590:C:\Program Files\JetBrains\IntelliJ IDEA 2021.3.1\bin" -Dfile.encoding=UTF-8 -classpath E:\__PROJECT__\JAVA\BookShildt_001\out\production\BookShildt_001 e0015_Shift_Right_and_Mask_ff.ByteUShift
+b = 0xf7
+
+-9
+11111111111111111111111111110111
+
+b >> 4 = 0xff
+11111111111111111111111111111111
+
+b >>> 4 = 0xff
+ (b & 0xff) >> 4 = 0x0f
+
+Process finished with exit code 0
