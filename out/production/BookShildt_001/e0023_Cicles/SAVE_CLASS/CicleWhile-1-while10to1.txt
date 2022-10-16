@@ -1,0 +1,135 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0023_Cicles/CicleWhile.class
+  Last modified 14 окт. 2022 г.; size 1057 bytes
+  SHA-256 checksum 8b495cf36b722a34dcc685e61a2eea5b02cf9e68c74a07e22d9d14bc59e302a2
+  Compiled from "CicleWhile.java"
+public class e0023_Cicles.CicleWhile
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #23                         // e0023_Cicles/CicleWhile
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = InvokeDynamic      #0:#14         // #0:makeConcatWithConstants:(I)Ljava/lang/String;
+  #14 = NameAndType        #15:#16        // makeConcatWithConstants:(I)Ljava/lang/String;
+  #15 = Utf8               makeConcatWithConstants
+  #16 = Utf8               (I)Ljava/lang/String;
+  #17 = Methodref          #18.#19        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #18 = Class              #20            // java/io/PrintStream
+  #19 = NameAndType        #21:#22        // println:(Ljava/lang/String;)V
+  #20 = Utf8               java/io/PrintStream
+  #21 = Utf8               println
+  #22 = Utf8               (Ljava/lang/String;)V
+  #23 = Class              #24            // e0023_Cicles/CicleWhile
+  #24 = Utf8               e0023_Cicles/CicleWhile
+  #25 = Utf8               Code
+  #26 = Utf8               LineNumberTable
+  #27 = Utf8               LocalVariableTable
+  #28 = Utf8               this
+  #29 = Utf8               Le0023_Cicles/CicleWhile;
+  #30 = Utf8               main
+  #31 = Utf8               ([Ljava/lang/String;)V
+  #32 = Utf8               args
+  #33 = Utf8               [Ljava/lang/String;
+  #34 = Utf8               n
+  #35 = Utf8               I
+  #36 = Utf8               StackMapTable
+  #37 = Utf8               SourceFile
+  #38 = Utf8               CicleWhile.java
+  #39 = Utf8               BootstrapMethods
+  #40 = MethodHandle       6:#41          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #41 = Methodref          #42.#43        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #42 = Class              #44            // java/lang/invoke/StringConcatFactory
+  #43 = NameAndType        #15:#45        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #44 = Utf8               java/lang/invoke/StringConcatFactory
+  #45 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #46 = String             #47            // такт \u0001
+  #47 = Utf8               такт \u0001
+  #48 = Utf8               InnerClasses
+  #49 = Class              #50            // java/lang/invoke/MethodHandles$Lookup
+  #50 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #51 = Class              #52            // java/lang/invoke/MethodHandles
+  #52 = Utf8               java/lang/invoke/MethodHandles
+  #53 = Utf8               Lookup
+{
+  public e0023_Cicles.CicleWhile();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0023_Cicles/CicleWhile;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: bipush        10
+         2: istore_1
+         
+         3: iload_1
+         4: ifle          25
+         7: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        10: iload_1
+        11: invokedynamic #13,  0             // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+        16: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        19: iinc          1, -1
+        22: goto          3
+        
+        25: return
+      LineNumberTable:
+        line 5: 0
+        line 7: 3
+        line 8: 7
+        line 9: 19
+        line 11: 25
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      26     0  args   [Ljava/lang/String;
+            3      23     1     n   I
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 3
+          locals = [ int ]
+        frame_type = 21 /* same */
+}
+SourceFile: "CicleWhile.java"
+BootstrapMethods:
+  0: #40 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #46 такт \u0001
+InnerClasses:
+  public static final #53= #49 of #51;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0023_Cicles;
+
+public class CicleWhile {
+    public static void main(String[] args) {
+        int n = 10;
+
+        while (n > 0) {
+            System.out.println("такт " + n);
+            n--;
+        }
+    }
+}
+---------------------------------------------------------------------------------------------

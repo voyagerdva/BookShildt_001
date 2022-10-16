@@ -1,0 +1,215 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0022_Switch/SampleSwitch.class
+  Last modified 14 окт. 2022 г.; size 973 bytes
+  SHA-256 checksum 2efac3f80d2efc0b922d84ce487951f8d6a4cc2f3ebc775fb88dd03b79619f4b
+  Compiled from "SampleSwitch.java"
+public class e0022_Switch.SampleSwitch
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #33                         // e0022_Switch/SampleSwitch
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = String             #14            // i = 200
+  #14 = Utf8               i = 200
+  #15 = Methodref          #16.#17        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #16 = Class              #18            // java/io/PrintStream
+  #17 = NameAndType        #19:#20        // println:(Ljava/lang/String;)V
+  #18 = Utf8               java/io/PrintStream
+  #19 = Utf8               println
+  #20 = Utf8               (Ljava/lang/String;)V
+  #21 = String             #22            // j равно 1000
+  #22 = Utf8               j равно 1000
+  #23 = String             #24            // j равно 1100
+  #24 = Utf8               j равно 1100
+  #25 = String             #26            // j равно 1200
+  #26 = Utf8               j равно 1200
+  #27 = String             #28            // i = 300
+  #28 = Utf8               i = 300
+  #29 = String             #30            // i = 350
+  #30 = Utf8               i = 350
+  #31 = String             #32            // i больше 351
+  #32 = Utf8               i больше 351
+  #33 = Class              #34            // e0022_Switch/SampleSwitch
+  #34 = Utf8               e0022_Switch/SampleSwitch
+  #35 = Utf8               Code
+  #36 = Utf8               LineNumberTable
+  #37 = Utf8               LocalVariableTable
+  #38 = Utf8               this
+  #39 = Utf8               Le0022_Switch/SampleSwitch;
+  #40 = Utf8               main
+  #41 = Utf8               ([Ljava/lang/String;)V
+  #42 = Utf8               j
+  #43 = Utf8               I
+  #44 = Utf8               args
+  #45 = Utf8               [Ljava/lang/String;
+  #46 = Utf8               i
+  #47 = Utf8               StackMapTable
+  #48 = Utf8               SourceFile
+  #49 = Utf8               SampleSwitch.java
+{
+  public e0022_Switch.SampleSwitch();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0022_Switch/SampleSwitch;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: sipush        250
+         3: istore_1
+         4: iload_1
+         5: lookupswitch  { // 4
+
+                     200: 48
+
+                     250: 59
+
+                     300: 133
+
+                     350: 144
+                 default: 155
+            }
+        48: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        51: ldc           #13                 // String i = 200
+        53: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        56: goto          163
+        59: sipush        1100
+        62: istore_2
+        63: iload_2
+        64: lookupswitch  { // 3
+
+                    1000: 100
+
+                    1100: 111
+
+                    1200: 122
+                 default: 130
+            }
+       100: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       103: ldc           #21                 // String j равно 1000
+       105: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       108: goto          130
+       111: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       114: ldc           #23                 // String j равно 1100
+       116: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       119: goto          130
+       122: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       125: ldc           #25                 // String j равно 1200
+       127: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       130: goto          163
+       133: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       136: ldc           #27                 // String i = 300
+       138: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       141: goto          163
+       144: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       147: ldc           #29                 // String i = 350
+       149: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       152: goto          163
+       155: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       158: ldc           #31                 // String i больше 351
+       160: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       163: return
+      LineNumberTable:
+        line 5: 0
+        line 8: 4
+        line 10: 48
+        line 11: 56
+        line 13: 59
+        line 14: 63
+        line 16: 100
+        line 17: 108
+        line 19: 111
+        line 20: 119
+        line 22: 122
+        line 25: 130
+        line 27: 133
+        line 28: 141
+        line 30: 144
+        line 31: 152
+        line 33: 155
+        line 35: 163
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           63      70     2     j   I
+            0     164     0  args   [Ljava/lang/String;
+            4     160     1     i   I
+      StackMapTable: number_of_entries = 10
+        frame_type = 252 /* append */
+          offset_delta = 48
+          locals = [ int ]
+        frame_type = 10 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 40
+          locals = [ int ]
+        frame_type = 10 /* same */
+        frame_type = 10 /* same */
+        frame_type = 7 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 2
+        frame_type = 10 /* same */
+        frame_type = 10 /* same */
+        frame_type = 7 /* same */
+}
+SourceFile: "SampleSwitch.java"
+#############################################################################################
+package e0022_Switch;
+
+public class SampleSwitch {
+    public static void main(String[] args) {
+        int i = 250;
+//        int j;
+
+        switch (i) {
+            case 200:
+                System.out.println("i = 200");
+                break;
+            case 250:
+                int j = 1100;
+                switch (j) {
+                    case 1000:
+                        System.out.println("j равно 1000");
+                        break;
+                    case 1100:
+                        System.out.println("j равно 1100");
+                        break;
+                    case 1200:
+                        System.out.println("j равно 1200");
+                        break;
+                }
+                break;
+            case 300:
+                System.out.println("i = 300");
+                break;
+            case 350:
+                System.out.println("i = 350");
+                break;
+            default:
+                System.out.println("i больше 351");
+        }
+    }
+}
+---------------------------------------------------------------------------------------------

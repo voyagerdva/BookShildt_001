@@ -1,0 +1,158 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0023_Cicles/For.class
+  Last modified 16 окт. 2022 г.; size 1093 bytes
+  SHA-256 checksum 01d07a634e7a88f2384867ae1f8c407bb48b30135f5f4e222ab21244f3c37911
+  Compiled from "For.java"
+public class e0023_Cicles.For
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #24                         // e0023_Cicles/For
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = InvokeDynamic      #0:#14         // #0:makeConcatWithConstants:(I)Ljava/lang/String;
+  #14 = NameAndType        #15:#16        // makeConcatWithConstants:(I)Ljava/lang/String;
+  #15 = Utf8               makeConcatWithConstants
+  #16 = Utf8               (I)Ljava/lang/String;
+  #17 = Methodref          #18.#19        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #18 = Class              #20            // java/io/PrintStream
+  #19 = NameAndType        #21:#22        // println:(Ljava/lang/String;)V
+  #20 = Utf8               java/io/PrintStream
+  #21 = Utf8               println
+  #22 = Utf8               (Ljava/lang/String;)V
+  #23 = InvokeDynamic      #1:#14         // #1:makeConcatWithConstants:(I)Ljava/lang/String;
+  #24 = Class              #25            // e0023_Cicles/For
+  #25 = Utf8               e0023_Cicles/For
+  #26 = Utf8               Code
+  #27 = Utf8               LineNumberTable
+  #28 = Utf8               LocalVariableTable
+  #29 = Utf8               this
+  #30 = Utf8               Le0023_Cicles/For;
+  #31 = Utf8               main
+  #32 = Utf8               ([Ljava/lang/String;)V
+  #33 = Utf8               args
+  #34 = Utf8               [Ljava/lang/String;
+  #35 = Utf8               a
+  #36 = Utf8               I
+  #37 = Utf8               b
+  #38 = Utf8               StackMapTable
+  #39 = Utf8               SourceFile
+  #40 = Utf8               For.java
+  #41 = Utf8               BootstrapMethods
+  #42 = MethodHandle       6:#43          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #43 = Methodref          #44.#45        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #44 = Class              #46            // java/lang/invoke/StringConcatFactory
+  #45 = NameAndType        #15:#47        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #46 = Utf8               java/lang/invoke/StringConcatFactory
+  #47 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #48 = String             #49            // a = \u0001
+  #49 = Utf8               a = \u0001
+  #50 = String             #51            // b = \u0001
+  #51 = Utf8               b = \u0001
+  #52 = Utf8               InnerClasses
+  #53 = Class              #54            // java/lang/invoke/MethodHandles$Lookup
+  #54 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #55 = Class              #56            // java/lang/invoke/MethodHandles
+  #56 = Utf8               java/lang/invoke/MethodHandles
+  #57 = Utf8               Lookup
+{
+  public e0023_Cicles.For();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0023_Cicles/For;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: sipush        200
+         3: istore_1
+         4: sipush        400
+         7: istore_2
+         8: iload_1
+         9: iload_2
+         
+        10: if_icmpge     50
+        
+        13: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        16: iload_1
+        17: invokedynamic #13,  0             // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+        22: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        25: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        28: iload_2
+        29: invokedynamic #23,  0             // InvokeDynamic #1:makeConcatWithConstants:(I)Ljava/lang/String;
+        34: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        37: iload_1
+        
+        38: bipush        50
+        40: iadd
+        41: istore_1
+        42: iload_2
+        
+        43: bipush        50
+        45: isub
+        46: istore_2
+        47: goto          8
+        50: return
+      LineNumberTable:
+        line 6: 0
+        line 7: 13
+        line 8: 25
+        line 6: 37
+        line 10: 50
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      51     0  args   [Ljava/lang/String;
+            4      47     1     a   I
+            8      43     2     b   I
+      StackMapTable: number_of_entries = 2
+        frame_type = 253 /* append */
+          offset_delta = 8
+          locals = [ int, int ]
+        frame_type = 41 /* same */
+}
+SourceFile: "For.java"
+BootstrapMethods:
+  0: #42 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #48 a = \u0001
+  1: #42 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #50 b = \u0001
+InnerClasses:
+  public static final #57= #53 of #55;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0023_Cicles;
+
+public class For {
+    public static void main(String[] args) {
+        int a, b;
+        for (a = 200, b = 400; a < b; a = a + 50, b = b - 50) {
+            System.out.println("a = " + a);
+            System.out.println("b = " + b);
+        }
+    }
+}
+---------------------------------------------------------------------------------------------

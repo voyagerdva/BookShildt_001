@@ -1,0 +1,362 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0023_Cicles/Menu.class
+  Last modified 16 окт. 2022 г.; size 1848 bytes
+  SHA-256 checksum a32fa5c8eacf2a0143b71a4c584a65aa1b5ec0616e9c75f6811cec23876c901f
+  Compiled from "Menu.java"
+public class e0023_Cicles.Menu
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #83                         // e0023_Cicles/Menu
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+    #1 = Methodref          #2.#3         // java/lang/Object."<init>":()V
+    #2 = Class              #4            // java/lang/Object
+    #3 = NameAndType        #5:#6         // "<init>":()V
+    #4 = Utf8               java/lang/Object
+    #5 = Utf8               <init>
+    #6 = Utf8               ()V
+    #7 = Fieldref           #8.#9         // java/lang/System.out:Ljava/io/PrintStream;
+    #8 = Class              #10           // java/lang/System
+    #9 = NameAndType        #11:#12       // out:Ljava/io/PrintStream;
+   #10 = Utf8               java/lang/System
+   #11 = Utf8               out
+   #12 = Utf8               Ljava/io/PrintStream;
+   #13 = String             #14           // Справка по оператору:
+   #14 = Utf8               Справка по оператору:
+   #15 = Methodref          #16.#17       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #16 = Class              #18           // java/io/PrintStream
+   #17 = NameAndType        #19:#20       // println:(Ljava/lang/String;)V
+   #18 = Utf8               java/io/PrintStream
+   #19 = Utf8               println
+   #20 = Utf8               (Ljava/lang/String;)V
+   #21 = String             #22           //    1. if
+   #22 = Utf8                  1. if
+   #23 = String             #24           //    2. switch
+   #24 = Utf8                  2. switch
+   #25 = String             #26           //    3. while
+   #26 = Utf8                  3. while
+   #27 = String             #28           //    4. do-while
+   #28 = Utf8                  4. do-while
+   #29 = String             #30           //    5. for\n
+   #30 = Utf8                  5. for\n
+   #31 = String             #32           // Выберите нужный пункт:
+   #32 = Utf8               Выберите нужный пункт:
+   #33 = Fieldref           #8.#34        // java/lang/System.in:Ljava/io/InputStream;
+   #34 = NameAndType        #35:#36       // in:Ljava/io/InputStream;
+   #35 = Utf8               in
+   #36 = Utf8               Ljava/io/InputStream;
+   #37 = Methodref          #38.#39       // java/io/InputStream.read:()I
+   #38 = Class              #40           // java/io/InputStream
+   #39 = NameAndType        #41:#42       // read:()I
+   #40 = Utf8               java/io/InputStream
+   #41 = Utf8               read
+   #42 = Utf8               ()I
+   #43 = String             #44           // --------------------------------------
+   #44 = Utf8               --------------------------------------
+   #45 = String             #46           // if:\n
+   #46 = Utf8               if:\n
+   #47 = String             #48           // if(условие) оператор;
+   #48 = Utf8               if(условие) оператор;
+   #49 = String             #50           // else оператор;
+   #50 = Utf8               else оператор;
+   #51 = String             #52           // switch:\n
+   #52 = Utf8               switch:\n
+   #53 = String             #54           // switch(выражение) {
+   #54 = Utf8               switch(выражение) {
+   #55 = String             #56           // case константа;
+   #56 = Utf8               case константа;
+   #57 = String             #58           // последовательность операторов;
+   #58 = Utf8               последовательность операторов;
+   #59 = String             #60           // break;
+   #60 = Utf8               break;
+   #61 = String             #62           // // ...
+   #62 = Utf8               // ...
+   #63 = String             #64           // }
+   #64 = Utf8               }
+   #65 = String             #66           // while:\n
+   #66 = Utf8               while:\n
+   #67 = String             #68           // while(условие) оператор;
+   #68 = Utf8               while(условие) оператор;
+   #69 = String             #70           // do-while:\n
+   #70 = Utf8               do-while:\n
+   #71 = String             #72           // do {
+   #72 = Utf8               do {
+   #73 = String             #74           //     оператор;
+   #74 = Utf8                   оператор;
+   #75 = String             #76           // } while (условие);
+   #76 = Utf8               } while (условие);
+   #77 = String             #78           // for:\n
+   #78 = Utf8               for:\n
+   #79 = String             #80           // for (инициализация; условие; итерация)
+   #80 = Utf8               for (инициализация; условие; итерация)
+   #81 = String             #82           //   оператор;
+   #82 = Utf8                 оператор;
+   #83 = Class              #84           // e0023_Cicles/Menu
+   #84 = Utf8               e0023_Cicles/Menu
+   #85 = Utf8               Code
+   #86 = Utf8               LineNumberTable
+   #87 = Utf8               LocalVariableTable
+   #88 = Utf8               this
+   #89 = Utf8               Le0023_Cicles/Menu;
+   #90 = Utf8               main
+   #91 = Utf8               ([Ljava/lang/String;)V
+   #92 = Utf8               args
+   #93 = Utf8               [Ljava/lang/String;
+   #94 = Utf8               choice
+   #95 = Utf8               C
+   #96 = Utf8               StackMapTable
+   #97 = Utf8               Exceptions
+   #98 = Class              #99           // java/io/IOException
+   #99 = Utf8               java/io/IOException
+  #100 = Utf8               SourceFile
+  #101 = Utf8               Menu.java
+{
+  public e0023_Cicles.Menu();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 5: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0023_Cicles/Menu;
+
+  public static void main(java.lang.String[]) throws java.io.IOException;
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #13                 // String Справка по оператору:
+         5: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        11: ldc           #21                 // String    1. if
+        13: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        16: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        19: ldc           #23                 // String    2. switch
+        21: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        24: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        27: ldc           #25                 // String    3. while
+        29: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        32: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        35: ldc           #27                 // String    4. do-while
+        37: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        40: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        43: ldc           #29                 // String    5. for\n
+        45: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        48: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        51: ldc           #31                 // String Выберите нужный пункт:
+        53: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        
+        56: getstatic     #33                 // Field java/lang/System.in:Ljava/io/InputStream;
+        59: invokevirtual #37                 // Method java/io/InputStream.read:()I
+        62: i2c
+
+        63: istore_1
+        64: iload_1
+        65: bipush        49
+        67: if_icmplt     0
+
+        70: iload_1
+        71: bipush        53
+        73: if_icmpgt     0
+
+        76: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        79: ldc           #43                 // String --------------------------------------
+        81: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+
+        84: iload_1
+        85: tableswitch   { // 49 to 53
+
+                      49: 120
+
+                      50: 147
+
+                      51: 206
+
+                      52: 225
+
+                      53: 260
+                 default: 284
+            }
+       120: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       123: ldc           #45                 // String if:\n
+       125: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       128: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       131: ldc           #47                 // String if(условие) оператор;
+       133: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       136: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       139: ldc           #49                 // String else оператор;
+       141: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       144: goto          284
+
+       147: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       150: ldc           #51                 // String switch:\n
+       152: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       155: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       158: ldc           #53                 // String switch(выражение) {
+       160: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       163: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       166: ldc           #55                 // String case константа;
+       168: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       171: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       174: ldc           #57                 // String последовательность операторов;
+       176: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       179: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       182: ldc           #59                 // String break;
+       184: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       187: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       190: ldc           #61                 // String // ...
+       192: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       195: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       198: ldc           #63                 // String }
+       200: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       203: goto          284
+
+       206: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       209: ldc           #65                 // String while:\n
+       211: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       214: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       217: ldc           #67                 // String while(условие) оператор;
+       219: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       222: goto          284
+
+       225: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       228: ldc           #69                 // String do-while:\n
+       230: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       233: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       236: ldc           #71                 // String do {
+       238: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       241: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       244: ldc           #73                 // String     оператор;
+       246: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       249: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       252: ldc           #75                 // String } while (условие);
+       254: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       257: goto          284
+
+       260: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       263: ldc           #77                 // String for:\n
+       265: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       268: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       271: ldc           #79                 // String for (инициализация; условие; итерация)
+       273: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       276: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       279: ldc           #81                 // String   оператор;
+       281: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       284: return
+      LineNumberTable:
+        line 10: 0
+        line 11: 8
+        line 12: 16
+        line 13: 24
+        line 14: 32
+        line 15: 40
+        line 16: 48
+        line 17: 56
+        line 18: 64
+        line 20: 76
+        line 22: 84
+        line 24: 120
+        line 25: 128
+        line 26: 136
+        line 27: 144
+        line 29: 147
+        line 30: 155
+        line 31: 163
+        line 32: 171
+        line 33: 179
+        line 34: 187
+        line 35: 195
+        line 36: 203
+        line 38: 206
+        line 39: 214
+        line 40: 222
+        line 42: 225
+        line 43: 233
+        line 44: 241
+        line 45: 249
+        line 46: 257
+        line 48: 260
+        line 49: 268
+        line 50: 276
+        line 53: 284
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     285     0  args   [Ljava/lang/String;
+           64     221     1 choice   C
+      StackMapTable: number_of_entries = 7
+        frame_type = 0 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 119
+          locals = [ int ]
+        frame_type = 26 /* same */
+        frame_type = 58 /* same */
+        frame_type = 18 /* same */
+        frame_type = 34 /* same */
+        frame_type = 23 /* same */
+    Exceptions:
+      throws java.io.IOException
+}
+SourceFile: "Menu.java"
+#############################################################################################
+package e0023_Cicles;
+
+import org.w3c.dom.ls.LSOutput;
+
+public class Menu {
+    public static void main(String[] args) throws java.io.IOException {
+        char choice;
+
+        do {
+            System.out.println("Справка по оператору:");
+            System.out.println("   1. if");
+            System.out.println("   2. switch");
+            System.out.println("   3. while");
+            System.out.println("   4. do-while");
+            System.out.println("   5. for\n");
+            System.out.println("Выберите нужный пункт:");
+            choice = (char) System.in.read();
+        } while (choice < '1' || choice > '5');
+
+        System.out.println("--------------------------------------");
+
+        switch (choice) {
+            case '1':
+                System.out.println("if:\n");
+                System.out.println("if(условие) оператор;");
+                System.out.println("else оператор;");
+                break;
+            case '2':
+                System.out.println("switch:\n");
+                System.out.println("switch(выражение) {");
+                System.out.println("case константа;");
+                System.out.println("последовательность операторов;");
+                System.out.println("break;");
+                System.out.println("// ...");
+                System.out.println("}");
+                break;
+            case '3':
+                System.out.println("while:\n");
+                System.out.println("while(условие) оператор;");
+                break;
+            case '4':
+                System.out.println("do-while:\n");
+                System.out.println("do {");
+                System.out.println("    оператор;");
+                System.out.println("} while (условие);");
+                break;
+            case '5':
+                System.out.println("for:\n");
+                System.out.println("for (инициализация; условие; итерация)");
+                System.out.println("  оператор;");
+                break;
+        }
+    }
+}
+---------------------------------------------------------------------------------------------
