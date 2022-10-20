@@ -1,0 +1,84 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0024_CLASSES_1/Box.class
+  Last modified 18 окт. 2022 г.; size 323 bytes
+  SHA-256 checksum b1f7be7adfc39497f7596f6ee6cf075f443883a216f0e536c63f39395417577d
+  Compiled from "BoxDemo.java"
+class e0024_CLASSES_1.Box
+  minor version: 0
+  major version: 61
+  flags: (0x0020) ACC_SUPER
+  this_class: #7                          // e0024_CLASSES_1/Box
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 3, methods: 1, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // e0024_CLASSES_1/Box
+   #8 = Utf8               e0024_CLASSES_1/Box
+   #9 = Utf8               width
+  #10 = Utf8               D
+  #11 = Utf8               height
+  #12 = Utf8               depth
+  #13 = Utf8               Code
+  #14 = Utf8               LineNumberTable
+  #15 = Utf8               LocalVariableTable
+  #16 = Utf8               this
+  #17 = Utf8               Le0024_CLASSES_1/Box;
+  #18 = Utf8               SourceFile
+  #19 = Utf8               BoxDemo.java
+{
+  double width;
+    descriptor: D
+    flags: (0x0000)
+
+  double height;
+    descriptor: D
+    flags: (0x0000)
+
+  double depth;
+    descriptor: D
+    flags: (0x0000)
+
+  e0024_CLASSES_1.Box();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0024_CLASSES_1/Box;
+}
+SourceFile: "BoxDemo.java"
+#############################################################################################
+package e0024_CLASSES_1;
+
+class Box {
+    double width;
+    double height;
+    double depth;
+}
+
+
+public class BoxDemo {
+    public static void main(String[] args) {
+        Box mybox = new Box();
+        double vol;
+
+        mybox.width = 10;
+        mybox.height = 20;
+        mybox.depth = 15;
+
+        vol = mybox.width * mybox.height * mybox.depth;
+
+        System.out.println("VOLUME = " + vol);
+    }
+}
+---------------------------------------------------------------------------------------------
