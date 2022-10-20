@@ -1,0 +1,235 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0026_CLASSES_Colors/Black.class
+  Last modified 20 окт. 2022 г.; size 1500 bytes
+  SHA-256 checksum 8e7d2e8836513570db014ea34f58da6ae6a95df44cb41a871ab72b35199064ae
+  Compiled from "Black.java"
+public class e0026_CLASSES_Colors.Black
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #22                         // e0026_CLASSES_Colors/Black
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 3, methods: 5, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = String             #14            // It is Black constructor!!!
+  #14 = Utf8               It is Black constructor!!!
+  #15 = Methodref          #16.#17        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #16 = Class              #18            // java/io/PrintStream
+  #17 = NameAndType        #19:#20        // println:(Ljava/lang/String;)V
+  #18 = Utf8               java/io/PrintStream
+  #19 = Utf8               println
+  #20 = Utf8               (Ljava/lang/String;)V
+  #21 = Methodref          #22.#23        // e0026_CLASSES_Colors/Black.createInstanceRed:()V
+  #22 = Class              #24            // e0026_CLASSES_Colors/Black
+  #23 = NameAndType        #25:#6         // createInstanceRed:()V
+  #24 = Utf8               e0026_CLASSES_Colors/Black
+  #25 = Utf8               createInstanceRed
+  #26 = Class              #27            // e0026_CLASSES_Colors/Red
+  #27 = Utf8               e0026_CLASSES_Colors/Red
+  #28 = Methodref          #26.#3         // e0026_CLASSES_Colors/Red."<init>":()V
+  #29 = Methodref          #26.#30        // e0026_CLASSES_Colors/Red.floatRedNumber:()F
+  #30 = NameAndType        #31:#32        // floatRedNumber:()F
+  #31 = Utf8               floatRedNumber
+  #32 = Utf8               ()F
+  #33 = InvokeDynamic      #0:#34         // #0:makeConcatWithConstants:(F)Ljava/lang/String;
+  #34 = NameAndType        #35:#36        // makeConcatWithConstants:(F)Ljava/lang/String;
+  #35 = Utf8               makeConcatWithConstants
+  #36 = Utf8               (F)Ljava/lang/String;
+  #37 = String             #38            // METHOD blackVolume
+  #38 = Utf8               METHOD blackVolume
+  #39 = Utf8               BB1
+  #40 = Utf8               F
+  #41 = Utf8               BB2
+  #42 = Utf8               BB3
+  #43 = Utf8               Code
+  #44 = Utf8               LineNumberTable
+  #45 = Utf8               LocalVariableTable
+  #46 = Utf8               this
+  #47 = Utf8               Le0026_CLASSES_Colors/Black;
+  #48 = Utf8               createInstance
+  #49 = Utf8               myred
+  #50 = Utf8               Le0026_CLASSES_Colors/Red;
+  #51 = Utf8               countFloatRed
+  #52 = Utf8               BB
+  #53 = Utf8               blackVolume
+  #54 = Utf8               SourceFile
+  #55 = Utf8               Black.java
+  #56 = Utf8               BootstrapMethods
+  #57 = MethodHandle       6:#58          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #58 = Methodref          #59.#60        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #59 = Class              #61            // java/lang/invoke/StringConcatFactory
+  #60 = NameAndType        #35:#62        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #61 = Utf8               java/lang/invoke/StringConcatFactory
+  #62 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #63 = String             #64            // BB floatNumber ^ 2 =\u0001
+  #64 = Utf8               BB floatNumber ^ 2 =\u0001
+  #65 = Utf8               InnerClasses
+  #66 = Class              #67            // java/lang/invoke/MethodHandles$Lookup
+  #67 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #68 = Class              #69            // java/lang/invoke/MethodHandles
+  #69 = Utf8               java/lang/invoke/MethodHandles
+  #70 = Utf8               Lookup
+{
+  float BB1;
+    descriptor: F
+    flags: (0x0000)
+
+  float BB2;
+    descriptor: F
+    flags: (0x0000)
+
+  float BB3;
+    descriptor: F
+    flags: (0x0000)
+
+  e0026_CLASSES_Colors.Black();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         7: ldc           #13                 // String It is Black constructor!!!
+         9: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        12: return
+      LineNumberTable:
+        line 8: 0
+        line 9: 4
+        line 10: 12
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      13     0  this   Le0026_CLASSES_Colors/Black;
+
+  void createInstance();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #21                 // Method createInstanceRed:()V
+         4: return
+      LineNumberTable:
+        line 13: 0
+        line 14: 4
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0026_CLASSES_Colors/Black;
+
+  void createInstanceRed();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=2, args_size=1
+         0: new           #26                 // class e0026_CLASSES_Colors/Red
+         3: dup
+         4: invokespecial #28                 // Method e0026_CLASSES_Colors/Red."<init>":()V
+         7: astore_1
+         8: return
+      LineNumberTable:
+        line 17: 0
+        line 18: 8
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   Le0026_CLASSES_Colors/Black;
+            8       1     1 myred   Le0026_CLASSES_Colors/Red;
+
+  void countFloatRed();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=3, args_size=1
+         0: new           #26                 // class e0026_CLASSES_Colors/Red
+         3: dup
+         4: invokespecial #28                 // Method e0026_CLASSES_Colors/Red."<init>":()V
+         7: astore_2
+         8: aload_2
+         9: invokevirtual #29                 // Method e0026_CLASSES_Colors/Red.floatRedNumber:()F
+        12: aload_2
+        13: invokevirtual #29                 // Method e0026_CLASSES_Colors/Red.floatRedNumber:()F
+        16: fmul
+        17: fstore_1
+        18: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        21: fload_1
+        22: invokedynamic #33,  0             // InvokeDynamic #0:makeConcatWithConstants:(F)Ljava/lang/String;
+        27: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        30: return
+      LineNumberTable:
+        line 22: 0
+        line 24: 8
+        line 25: 18
+        line 26: 30
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      31     0  this   Le0026_CLASSES_Colors/Black;
+           18      13     1    BB   F
+            8      23     2 myred   Le0026_CLASSES_Colors/Red;
+
+  void blackVolume();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #37                 // String METHOD blackVolume
+         5: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 29: 0
+        line 30: 8
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   Le0026_CLASSES_Colors/Black;
+}
+SourceFile: "Black.java"
+BootstrapMethods:
+  0: #57 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #63 BB floatNumber ^ 2 =\u0001
+InnerClasses:
+  public static final #70= #66 of #68;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0026_CLASSES_Colors;
+
+public class Black {
+    float BB1;
+    float BB2;
+    float BB3;
+
+    Black() {
+        System.out.println("It is Black constructor!!!");
+    }
+
+    void createInstance() {
+        createInstanceRed();
+    }
+
+    void createInstanceRed() {
+        Red myred = new Red();
+    }
+
+    void countFloatRed() {
+        float BB;
+        Red myred = new Red();
+
+        BB = myred.floatRedNumber() * myred.floatRedNumber();
+        System.out.println("BB floatNumber ^ 2 =" + BB);
+    }
+
+    void blackVolume() {
+        System.out.println("METHOD blackVolume");
+    }
+
+}
+---------------------------------------------------------------------------------------------

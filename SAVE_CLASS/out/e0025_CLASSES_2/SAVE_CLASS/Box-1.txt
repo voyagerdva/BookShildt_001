@@ -1,0 +1,158 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0025_CLASSES_2/Box.class
+  Last modified 20 окт. 2022 г.; size 1025 bytes
+  SHA-256 checksum b4938ea5ea6fa1b8c15aef0b7f8b0fd6ce65a55a199855cd6018740516de4690
+  Compiled from "BoxDemo3.java"
+class e0025_CLASSES_2.Box
+  minor version: 0
+  major version: 61
+  flags: (0x0020) ACC_SUPER
+  this_class: #14                         // e0025_CLASSES_2/Box
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 3, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = Fieldref           #14.#15        // e0025_CLASSES_2/Box.width:D
+  #14 = Class              #16            // e0025_CLASSES_2/Box
+  #15 = NameAndType        #17:#18        // width:D
+  #16 = Utf8               e0025_CLASSES_2/Box
+  #17 = Utf8               width
+  #18 = Utf8               D
+  #19 = Fieldref           #14.#20        // e0025_CLASSES_2/Box.height:D
+  #20 = NameAndType        #21:#18        // height:D
+  #21 = Utf8               height
+  #22 = Fieldref           #14.#23        // e0025_CLASSES_2/Box.depth:D
+  #23 = NameAndType        #24:#18        // depth:D
+  #24 = Utf8               depth
+  #25 = InvokeDynamic      #0:#26         // #0:makeConcatWithConstants:(D)Ljava/lang/String;
+  #26 = NameAndType        #27:#28        // makeConcatWithConstants:(D)Ljava/lang/String;
+  #27 = Utf8               makeConcatWithConstants
+  #28 = Utf8               (D)Ljava/lang/String;
+  #29 = Methodref          #30.#31        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #30 = Class              #32            // java/io/PrintStream
+  #31 = NameAndType        #33:#34        // println:(Ljava/lang/String;)V
+  #32 = Utf8               java/io/PrintStream
+  #33 = Utf8               println
+  #34 = Utf8               (Ljava/lang/String;)V
+  #35 = Utf8               Code
+  #36 = Utf8               LineNumberTable
+  #37 = Utf8               LocalVariableTable
+  #38 = Utf8               this
+  #39 = Utf8               Le0025_CLASSES_2/Box;
+  #40 = Utf8               volume
+  #41 = Utf8               SourceFile
+  #42 = Utf8               BoxDemo3.java
+  #43 = Utf8               BootstrapMethods
+  #44 = MethodHandle       6:#45          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #45 = Methodref          #46.#47        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #46 = Class              #48            // java/lang/invoke/StringConcatFactory
+  #47 = NameAndType        #27:#49        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #48 = Utf8               java/lang/invoke/StringConcatFactory
+  #49 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #50 = String             #51            // VOLUME RAVEN = \u0001
+  #51 = Utf8               VOLUME RAVEN = \u0001
+  #52 = Utf8               InnerClasses
+  #53 = Class              #54            // java/lang/invoke/MethodHandles$Lookup
+  #54 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #55 = Class              #56            // java/lang/invoke/MethodHandles
+  #56 = Utf8               java/lang/invoke/MethodHandles
+  #57 = Utf8               Lookup
+{
+  double width;
+    descriptor: D
+    flags: (0x0000)
+
+  double height;
+    descriptor: D
+    flags: (0x0000)
+
+  double depth;
+    descriptor: D
+    flags: (0x0000)
+
+  e0025_CLASSES_2.Box();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0025_CLASSES_2/Box;
+
+  void volume();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=5, locals=1, args_size=1
+         0: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: aload_0
+         4: getfield      #13                 // Field width:D
+         7: aload_0
+         8: getfield      #19                 // Field height:D
+        11: dmul
+        12: aload_0
+        13: getfield      #22                 // Field depth:D
+        16: dmul
+        17: invokedynamic #25,  0             // InvokeDynamic #0:makeConcatWithConstants:(D)Ljava/lang/String;
+        22: invokevirtual #29                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        25: return
+      LineNumberTable:
+        line 9: 0
+        line 10: 25
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      26     0  this   Le0025_CLASSES_2/Box;
+}
+SourceFile: "BoxDemo3.java"
+BootstrapMethods:
+  0: #44 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #50 VOLUME RAVEN = \u0001
+InnerClasses:
+  public static final #57= #53 of #55;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0025_CLASSES_2;
+
+class Box {
+    double width;
+    double height;
+    double depth;
+
+    void volume() {
+        System.out.println("VOLUME RAVEN = " + width * height * depth);
+    }
+}
+
+
+class BoxDemo3 {
+    public static void main(String[] args) {
+        Box mybox1 = new Box();
+        Box mybox2 = new Box();
+
+        mybox1.width = 10;
+        mybox1.height = 20;
+        mybox1.depth = 15;
+
+        mybox2.width = 3;
+        mybox2.height = 6;
+        mybox2.depth = 9;
+
+        mybox1.volume();
+        mybox1.volume();
+    }
+}---------------------------------------------------------------------------------------------

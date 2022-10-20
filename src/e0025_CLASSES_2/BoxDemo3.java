@@ -1,22 +1,24 @@
-package e0024_CLASSES_1;
+package e0025_CLASSES_2;
 
 class Box {
-
     double width;
     double height;
     double depth;
 
     void volume() {
-        System.out.println(width * height * depth);
+        System.out.println("VOLUME RAVEN = " + width * height * depth);
     }
 }
 
 
 class BoxDemo3 {
+    float W;
+    float H;
+    float D;
+
     public static void main(String[] args) {
         Box mybox1 = new Box();
         Box mybox2 = new Box();
-        double vol1, vol2;
 
         mybox1.width = 10;
         mybox1.height = 20;
@@ -26,10 +28,7 @@ class BoxDemo3 {
         mybox2.height = 6;
         mybox2.depth = 9;
 
-        vol1 = mybox1.width * mybox1.height * mybox1.depth;
-        vol2 = mybox2.width * mybox2.height * mybox2.depth;
-
-        System.out.println("VOLUME = " + vol1);
-        System.out.println("VOLUME = " + vol2);
+        mybox1.volume();
+        mybox1.volume();
     }
 }

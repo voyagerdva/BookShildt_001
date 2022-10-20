@@ -1,0 +1,182 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0026_CLASSES_Colors/Yellow.class
+  Last modified 20 окт. 2022 г.; size 974 bytes
+  SHA-256 checksum 8e797684f3f59127dafaf5f2182817830545c03ebf14ad1c7edab8919d6e29d4
+  Compiled from "Yellow.java"
+public class e0026_CLASSES_Colors.Yellow
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #28                         // e0026_CLASSES_Colors/Yellow
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 3, methods: 5, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = String             #14            // It is Yellow constructor!!!
+  #14 = Utf8               It is Yellow constructor!!!
+  #15 = Methodref          #16.#17        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #16 = Class              #18            // java/io/PrintStream
+  #17 = NameAndType        #19:#20        // println:(Ljava/lang/String;)V
+  #18 = Utf8               java/io/PrintStream
+  #19 = Utf8               println
+  #20 = Utf8               (Ljava/lang/String;)V
+  #21 = Class              #22            // e0026_CLASSES_Colors/Black
+  #22 = Utf8               e0026_CLASSES_Colors/Black
+  #23 = Methodref          #21.#3         // e0026_CLASSES_Colors/Black."<init>":()V
+  #24 = String             #25            // METHOD yellowFall
+  #25 = Utf8               METHOD yellowFall
+  #26 = String             #27            // METHOD yellowStep
+  #27 = Utf8               METHOD yellowStep
+  #28 = Class              #29            // e0026_CLASSES_Colors/Yellow
+  #29 = Utf8               e0026_CLASSES_Colors/Yellow
+  #30 = Utf8               YY1
+  #31 = Utf8               F
+  #32 = Utf8               YY2
+  #33 = Utf8               YY3
+  #34 = Utf8               Code
+  #35 = Utf8               LineNumberTable
+  #36 = Utf8               LocalVariableTable
+  #37 = Utf8               this
+  #38 = Utf8               Le0026_CLASSES_Colors/Yellow;
+  #39 = Utf8               createInstance
+  #40 = Utf8               createInstanceBlack
+  #41 = Utf8               myblack
+  #42 = Utf8               Le0026_CLASSES_Colors/Black;
+  #43 = Utf8               yellowFall
+  #44 = Utf8               yellowStep
+  #45 = Utf8               SourceFile
+  #46 = Utf8               Yellow.java
+{
+  float YY1;
+    descriptor: F
+    flags: (0x0000)
+
+  float YY2;
+    descriptor: F
+    flags: (0x0000)
+
+  float YY3;
+    descriptor: F
+    flags: (0x0000)
+
+  e0026_CLASSES_Colors.Yellow();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         7: ldc           #13                 // String It is Yellow constructor!!!
+         9: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        12: return
+      LineNumberTable:
+        line 8: 0
+        line 9: 4
+        line 10: 12
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      13     0  this   Le0026_CLASSES_Colors/Yellow;
+
+  void createInstance();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=0, locals=1, args_size=1
+         0: return
+      LineNumberTable:
+        line 14: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       1     0  this   Le0026_CLASSES_Colors/Yellow;
+
+  void createInstanceBlack();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=2, args_size=1
+         0: new           #21                 // class e0026_CLASSES_Colors/Black
+         3: dup
+         4: invokespecial #23                 // Method e0026_CLASSES_Colors/Black."<init>":()V
+         7: astore_1
+         8: return
+      LineNumberTable:
+        line 17: 0
+        line 18: 8
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   Le0026_CLASSES_Colors/Yellow;
+            8       1     1 myblack   Le0026_CLASSES_Colors/Black;
+
+  void yellowFall();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #24                 // String METHOD yellowFall
+         5: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 21: 0
+        line 22: 8
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   Le0026_CLASSES_Colors/Yellow;
+
+  void yellowStep();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #26                 // String METHOD yellowStep
+         5: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 25: 0
+        line 26: 8
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   Le0026_CLASSES_Colors/Yellow;
+}
+SourceFile: "Yellow.java"
+#############################################################################################
+package e0026_CLASSES_Colors;
+
+public class Yellow {
+    float YY1;
+    float YY2;
+    float YY3;
+
+    Yellow() {
+        System.out.println("It is Yellow constructor!!!");
+    }
+
+    void createInstance() {
+//        createInstanceBlack();
+    }
+
+    void createInstanceBlack() {
+        Black myblack = new Black();
+    }
+
+    void yellowFall() {
+        System.out.println("METHOD yellowFall");
+    }
+
+    void yellowStep() {
+        System.out.println("METHOD yellowStep");
+    }
+}
+---------------------------------------------------------------------------------------------
