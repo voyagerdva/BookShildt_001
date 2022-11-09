@@ -1,0 +1,167 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0027_OverloadMethods/Overload.class
+  Last modified 24 окт. 2022 г.; size 1292 bytes
+  SHA-256 checksum e9e716aa713ac7f8ff0056af5df4cacd3ff80f732e9494d0073e62c292641ac2
+  Compiled from "Overload.java"
+public class e0027_OverloadMethods.Overload
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #40                         // e0027_OverloadMethods/Overload
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // e0027_OverloadMethods/OverloadDemo
+   #8 = Utf8               e0027_OverloadMethods/OverloadDemo
+   #9 = Methodref          #7.#3          // e0027_OverloadMethods/OverloadDemo."<init>":()V
+  #10 = Methodref          #7.#11         // e0027_OverloadMethods/OverloadDemo.test:()V
+  #11 = NameAndType        #12:#6         // test:()V
+  #12 = Utf8               test
+  #13 = Methodref          #7.#14         // e0027_OverloadMethods/OverloadDemo.test:(I)V
+  #14 = NameAndType        #12:#15        // test:(I)V
+  #15 = Utf8               (I)V
+  #16 = Methodref          #7.#17         // e0027_OverloadMethods/OverloadDemo.test:(II)V
+  #17 = NameAndType        #12:#18        // test:(II)V
+  #18 = Utf8               (II)V
+  #19 = Double             123.25d
+  #21 = Methodref          #7.#22         // e0027_OverloadMethods/OverloadDemo.test:(D)D
+  #22 = NameAndType        #12:#23        // test:(D)D
+  #23 = Utf8               (D)D
+  #24 = Fieldref           #25.#26        // java/lang/System.out:Ljava/io/PrintStream;
+  #25 = Class              #27            // java/lang/System
+  #26 = NameAndType        #28:#29        // out:Ljava/io/PrintStream;
+  #27 = Utf8               java/lang/System
+  #28 = Utf8               out
+  #29 = Utf8               Ljava/io/PrintStream;
+  #30 = InvokeDynamic      #0:#31         // #0:makeConcatWithConstants:(D)Ljava/lang/String;
+  #31 = NameAndType        #32:#33        // makeConcatWithConstants:(D)Ljava/lang/String;
+  #32 = Utf8               makeConcatWithConstants
+  #33 = Utf8               (D)Ljava/lang/String;
+  #34 = Methodref          #35.#36        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #35 = Class              #37            // java/io/PrintStream
+  #36 = NameAndType        #38:#39        // println:(Ljava/lang/String;)V
+  #37 = Utf8               java/io/PrintStream
+  #38 = Utf8               println
+  #39 = Utf8               (Ljava/lang/String;)V
+  #40 = Class              #41            // e0027_OverloadMethods/Overload
+  #41 = Utf8               e0027_OverloadMethods/Overload
+  #42 = Utf8               Code
+  #43 = Utf8               LineNumberTable
+  #44 = Utf8               LocalVariableTable
+  #45 = Utf8               this
+  #46 = Utf8               Le0027_OverloadMethods/Overload;
+  #47 = Utf8               main
+  #48 = Utf8               ([Ljava/lang/String;)V
+  #49 = Utf8               args
+  #50 = Utf8               [Ljava/lang/String;
+  #51 = Utf8               ob
+  #52 = Utf8               Le0027_OverloadMethods/OverloadDemo;
+  #53 = Utf8               result
+  #54 = Utf8               D
+  #55 = Utf8               SourceFile
+  #56 = Utf8               Overload.java
+  #57 = Utf8               BootstrapMethods
+  #58 = MethodHandle       6:#59          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #59 = Methodref          #60.#61        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #60 = Class              #62            // java/lang/invoke/StringConcatFactory
+  #61 = NameAndType        #32:#63        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #62 = Utf8               java/lang/invoke/StringConcatFactory
+  #63 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #64 = String             #65            // Результат вызова ob.teset(123.25): \u0001
+  #65 = Utf8               Результат вызова ob.teset(123.25): \u0001
+  #66 = Utf8               InnerClasses
+  #67 = Class              #68            // java/lang/invoke/MethodHandles$Lookup
+  #68 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #69 = Class              #70            // java/lang/invoke/MethodHandles
+  #70 = Utf8               java/lang/invoke/MethodHandles
+  #71 = Utf8               Lookup
+{
+  public e0027_OverloadMethods.Overload();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0027_OverloadMethods/Overload;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=4, args_size=1
+         0: new           #7                  // class e0027_OverloadMethods/OverloadDemo
+         3: dup
+         4: invokespecial #9                  // Method e0027_OverloadMethods/OverloadDemo."<init>":()V
+         
+         7: astore_1
+         8: aload_1
+         9: invokevirtual #10                 // Method e0027_OverloadMethods/OverloadDemo.test:()V
+         
+        12: aload_1
+        13: bipush        10
+        15: invokevirtual #13                 // Method e0027_OverloadMethods/OverloadDemo.test:(I)V
+        
+        18: aload_1
+        19: bipush        10
+        21: bipush        20
+        23: invokevirtual #16                 // Method e0027_OverloadMethods/OverloadDemo.test:(II)V
+        
+        26: aload_1
+        27: ldc2_w        #19                 // double 123.25d
+        30: invokevirtual #21                 // Method e0027_OverloadMethods/OverloadDemo.test:(D)D
+        
+        33: dstore_2
+        34: getstatic     #24                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        37: dload_2
+        38: invokedynamic #30,  0             // InvokeDynamic #0:makeConcatWithConstants:(D)Ljava/lang/String;
+        43: invokevirtual #34                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        46: return
+      LineNumberTable:
+        line 5: 0
+        line 8: 8
+        line 9: 12
+        line 10: 18
+        line 11: 26
+        line 13: 34
+        line 14: 46
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      47     0  args   [Ljava/lang/String;
+            8      39     1    ob   Le0027_OverloadMethods/OverloadDemo;
+           34      13     2 result   D
+}
+SourceFile: "Overload.java"
+BootstrapMethods:
+  0: #58 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #64 Результат вызова ob.teset(123.25): \u0001
+InnerClasses:
+  public static final #71= #67 of #69;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0027_OverloadMethods;
+
+public class Overload {
+    public static void main(String[] args) {
+        OverloadDemo ob = new OverloadDemo();
+        double result;
+
+        ob.test();
+        ob.test(10);
+        ob.test(10, 20);
+        result = ob.test(123.25);
+
+        System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ РІС‹Р·РѕРІР° ob.teset(123.25): " + result);
+    }
+}
+---------------------------------------------------------------------------------------------

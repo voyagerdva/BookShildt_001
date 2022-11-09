@@ -1,0 +1,166 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0033_Public_Private/Green.class
+  Last modified 27 окт. 2022 г.; size 812 bytes
+  SHA-256 checksum 3894dc9acbaf5a02aca105e052b24e8ca5b1288bb54d912339c5c8ca4658acc2
+  Compiled from "Green.java"
+public class e0033_Public_Private.Green
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #8                          // e0033_Public_Private/Green
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 2, methods: 5, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Methodref          #8.#9          // e0033_Public_Private/Green.readVV:()V
+   #8 = Class              #10            // e0033_Public_Private/Green
+   #9 = NameAndType        #11:#6         // readVV:()V
+  #10 = Utf8               e0033_Public_Private/Green
+  #11 = Utf8               readVV
+  #12 = Methodref          #8.#13         // e0033_Public_Private/Green.readNN:()V
+  #13 = NameAndType        #14:#6         // readNN:()V
+  #14 = Utf8               readNN
+  #15 = Fieldref           #16.#17        // java/lang/System.out:Ljava/io/PrintStream;
+  #16 = Class              #18            // java/lang/System
+  #17 = NameAndType        #19:#20        // out:Ljava/io/PrintStream;
+  #18 = Utf8               java/lang/System
+  #19 = Utf8               out
+  #20 = Utf8               Ljava/io/PrintStream;
+  
+  #21 = Fieldref           #8.#22         // e0033_Public_Private/Green.VV:Le0033_Public_Private/Green;
+  #22 = NameAndType        #23:#24        // VV:Le0033_Public_Private/Green;
+  #23 = Utf8               VV
+
+  #24 = Utf8               Le0033_Public_Private/Green;
+  #25 = Methodref          #26.#27        // java/io/PrintStream.println:(Ljava/lang/Object;)V
+  #26 = Class              #28            // java/io/PrintStream
+  #27 = NameAndType        #29:#30        // println:(Ljava/lang/Object;)V
+  #28 = Utf8               java/io/PrintStream
+  #29 = Utf8               println
+  #30 = Utf8               (Ljava/lang/Object;)V
+  
+  #31 = Fieldref           #8.#32         // e0033_Public_Private/Green.NN:Le0033_Public_Private/Green;
+  #32 = NameAndType        #33:#24        // NN:Le0033_Public_Private/Green;
+  #33 = Utf8               NN
+  
+  #34 = Methodref          #8.#3          // e0033_Public_Private/Green."<init>":()V
+  #35 = Utf8               Code
+  #36 = Utf8               LineNumberTable
+  #37 = Utf8               LocalVariableTable
+  #38 = Utf8               this
+  #39 = Utf8               main
+  #40 = Utf8               ([Ljava/lang/String;)V
+  #41 = Utf8               args
+  #42 = Utf8               [Ljava/lang/String;
+  #43 = Utf8               <clinit>
+  #44 = Utf8               SourceFile
+  #45 = Utf8               Green.java
+{
+  public static e0033_Public_Private.Green VV;
+    descriptor: Le0033_Public_Private/Green;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+
+  public e0033_Public_Private.Green();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0033_Public_Private/Green;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=0, locals=1, args_size=1
+         0: invokestatic  #7                  // Method readVV:()V
+         3: invokestatic  #12                 // Method readNN:()V
+         6: return
+      LineNumberTable:
+        line 8: 0
+        line 9: 3
+        line 10: 6
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0  args   [Ljava/lang/String;
+----------------------------------------------------------------------------------------
+
+  static void readVV();
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: getstatic     #15                 // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: getstatic     #21                 // Field VV:Le0033_Public_Private/Green;
+         6: invokevirtual #25                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+         9: return
+      LineNumberTable:
+        line 13: 0
+        line 14: 9
+
+  static void readNN();
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: getstatic     #15                 // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: getstatic     #31                 // Field NN:Le0033_Public_Private/Green;
+         6: invokevirtual #25                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+         9: return
+      LineNumberTable:
+        line 17: 0
+        line 18: 9
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: new           #8                  // class e0033_Public_Private/Green
+         3: dup
+         4: invokespecial #34                 // Method "<init>":()V
+         7: putstatic     #21                 // Field VV:Le0033_Public_Private/Green;
+
+        10: new           #8                  // class e0033_Public_Private/Green
+        13: dup
+        14: invokespecial #34                 // Method "<init>":()V
+        17: putstatic     #31                 // Field NN:Le0033_Public_Private/Green;
+
+        20: return
+      LineNumberTable:
+        line 4: 0
+        line 5: 10
+}
+
+SourceFile: "Green.java"
+#############################################################################################
+package e0033_Public_Private;
+
+public class Green {
+    public static Green VV = new Green();
+    private static Green NN = new Green();
+
+    public static void main(String[] args) {
+        readVV();
+        readNN();
+    }
+
+    static void readVV() {
+        System.out.println(VV);
+    }
+
+    static void readNN() {
+        System.out.println(NN);
+    }
+}
+---------------------------------------------------------------------------------------------

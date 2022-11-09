@@ -1,0 +1,97 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0033_Public_Private/GreenRun.class
+  Last modified 27 окт. 2022 г.; size 561 bytes
+  SHA-256 checksum 3c8aaed7bddfd6f8f25864a7270b9841951ed2eb4214569861fcdb07e4431d92
+  Compiled from "GreenRun.java"
+public class e0033_Public_Private.GreenRun
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #11                         // e0033_Public_Private/GreenRun
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 2, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // e0033_Public_Private/Green
+   #8 = Utf8               e0033_Public_Private/Green
+   #9 = Methodref          #7.#3          // e0033_Public_Private/Green."<init>":()V
+  #10 = Fieldref           #11.#12        // e0033_Public_Private/GreenRun.green1:Le0033_Public_Private/Green;
+  #11 = Class              #13            // e0033_Public_Private/GreenRun
+  #12 = NameAndType        #14:#15        // green1:Le0033_Public_Private/Green;
+  #13 = Utf8               e0033_Public_Private/GreenRun
+  #14 = Utf8               green1
+  #15 = Utf8               Le0033_Public_Private/Green;
+  #16 = Fieldref           #11.#17        // e0033_Public_Private/GreenRun.green2:Le0033_Public_Private/Green;
+  #17 = NameAndType        #18:#15        // green2:Le0033_Public_Private/Green;
+  #18 = Utf8               green2
+  #19 = Utf8               Code
+  #20 = Utf8               LineNumberTable
+  #21 = Utf8               LocalVariableTable
+  #22 = Utf8               this
+  #23 = Utf8               Le0033_Public_Private/GreenRun;
+  #24 = Utf8               main
+  #25 = Utf8               ([Ljava/lang/String;)V
+  #26 = Utf8               args
+  #27 = Utf8               [Ljava/lang/String;
+  #28 = Utf8               SourceFile
+  #29 = Utf8               GreenRun.java
+{
+  public e0033_Public_Private.Green green1;
+    descriptor: Le0033_Public_Private/Green;
+    flags: (0x0001) ACC_PUBLIC
+
+  public e0033_Public_Private.GreenRun();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #7                  // class e0033_Public_Private/Green
+         8: dup
+         9: invokespecial #9                  // Method e0033_Public_Private/Green."<init>":()V
+        12: putfield      #10                 // Field green1:Le0033_Public_Private/Green;
+        15: aload_0
+        16: new           #7                  // class e0033_Public_Private/Green
+        19: dup
+        20: invokespecial #9                  // Method e0033_Public_Private/Green."<init>":()V
+        23: putfield      #16                 // Field green2:Le0033_Public_Private/Green;
+        26: return
+      LineNumberTable:
+        line 3: 0
+        line 4: 4
+        line 5: 15
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      27     0  this   Le0033_Public_Private/GreenRun;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=0, locals=1, args_size=1
+         0: return
+      LineNumberTable:
+        line 9: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       1     0  args   [Ljava/lang/String;
+}
+SourceFile: "GreenRun.java"
+#############################################################################################
+package e0033_Public_Private;
+
+public class GreenRun {
+    public Green green1 = new Green();
+    private Green green2 = new Green();
+
+
+    public static void main(String[] args) {
+    }
+}
+---------------------------------------------------------------------------------------------

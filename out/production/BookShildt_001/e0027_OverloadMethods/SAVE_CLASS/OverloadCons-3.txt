@@ -1,0 +1,209 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0027_OverloadMethods/OverloadCons.class
+  Last modified 24 окт. 2022 г.; size 1437 bytes
+  SHA-256 checksum 62d14d1e088d7079b341f5a36b5105f5bdcfac81cc6de8811980de8ff98b6c9a
+  Compiled from "OverloadCons.java"
+public class e0027_OverloadMethods.OverloadCons
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #46                         // e0027_OverloadMethods/OverloadCons
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // e0027_OverloadMethods/Box
+   #8 = Utf8               e0027_OverloadMethods/Box
+   #9 = Double             10.0d
+  #11 = Double             20.0d
+  #13 = Double             30.0d
+  #15 = Methodref          #7.#16         // e0027_OverloadMethods/Box."<init>":(DDD)V
+  #16 = NameAndType        #5:#17         // "<init>":(DDD)V
+  #17 = Utf8               (DDD)V
+  #18 = Methodref          #7.#3          // e0027_OverloadMethods/Box."<init>":()V
+  #19 = Double             7.0d
+  #21 = Methodref          #7.#22         // e0027_OverloadMethods/Box."<init>":(D)V
+  #22 = NameAndType        #5:#23         // "<init>":(D)V
+  #23 = Utf8               (D)V
+  #24 = Methodref          #7.#25         // e0027_OverloadMethods/Box.volume:()D
+  #25 = NameAndType        #26:#27        // volume:()D
+  #26 = Utf8               volume
+  #27 = Utf8               ()D
+  #28 = Fieldref           #29.#30        // java/lang/System.out:Ljava/io/PrintStream;
+  #29 = Class              #31            // java/lang/System
+  #30 = NameAndType        #32:#33        // out:Ljava/io/PrintStream;
+  #31 = Utf8               java/lang/System
+  #32 = Utf8               out
+  #33 = Utf8               Ljava/io/PrintStream;
+  #34 = InvokeDynamic      #0:#35         // #0:makeConcatWithConstants:(D)Ljava/lang/String;
+  #35 = NameAndType        #36:#37        // makeConcatWithConstants:(D)Ljava/lang/String;
+  #36 = Utf8               makeConcatWithConstants
+  #37 = Utf8               (D)Ljava/lang/String;
+  #38 = Methodref          #39.#40        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #39 = Class              #41            // java/io/PrintStream
+  #40 = NameAndType        #42:#43        // println:(Ljava/lang/String;)V
+  #41 = Utf8               java/io/PrintStream
+  #42 = Utf8               println
+  #43 = Utf8               (Ljava/lang/String;)V
+  #44 = InvokeDynamic      #1:#35         // #1:makeConcatWithConstants:(D)Ljava/lang/String;
+  #45 = InvokeDynamic      #2:#35         // #2:makeConcatWithConstants:(D)Ljava/lang/String;
+  #46 = Class              #47            // e0027_OverloadMethods/OverloadCons
+  #47 = Utf8               e0027_OverloadMethods/OverloadCons
+  #48 = Utf8               Code
+  #49 = Utf8               LineNumberTable
+  #50 = Utf8               LocalVariableTable
+  #51 = Utf8               this
+  #52 = Utf8               Le0027_OverloadMethods/OverloadCons;
+  #53 = Utf8               main
+  #54 = Utf8               ([Ljava/lang/String;)V
+  #55 = Utf8               args
+  #56 = Utf8               [Ljava/lang/String;
+  #57 = Utf8               mybox1
+  #58 = Utf8               Le0027_OverloadMethods/Box;
+  #59 = Utf8               mybox2
+  #60 = Utf8               mycube
+  #61 = Utf8               vol
+  #62 = Utf8               D
+  #63 = Utf8               SourceFile
+  #64 = Utf8               OverloadCons.java
+  #65 = Utf8               BootstrapMethods
+  #66 = MethodHandle       6:#67          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #67 = Methodref          #68.#69        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #68 = Class              #70            // java/lang/invoke/StringConcatFactory
+  #69 = NameAndType        #36:#71        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #70 = Utf8               java/lang/invoke/StringConcatFactory
+  #71 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #72 = String             #73            // VOLUME mybox1 = \u0001
+  #73 = Utf8               VOLUME mybox1 = \u0001
+  #74 = String             #75            // VOLUME mybox2 = \u0001
+  #75 = Utf8               VOLUME mybox2 = \u0001
+  #76 = String             #77            // VOLUME mycube = \u0001
+  #77 = Utf8               VOLUME mycube = \u0001
+  #78 = Utf8               InnerClasses
+  #79 = Class              #80            // java/lang/invoke/MethodHandles$Lookup
+  #80 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #81 = Class              #82            // java/lang/invoke/MethodHandles
+  #82 = Utf8               java/lang/invoke/MethodHandles
+  #83 = Utf8               Lookup
+{
+  public e0027_OverloadMethods.OverloadCons();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0027_OverloadMethods/OverloadCons;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=8, locals=6, args_size=1
+         0: new           #7                  // class e0027_OverloadMethods/Box
+         3: dup
+         4: ldc2_w        #9                  // double 10.0d
+         7: ldc2_w        #11                 // double 20.0d
+        10: ldc2_w        #13                 // double 30.0d
+        13: invokespecial #15                 // Method e0027_OverloadMethods/Box."<init>":(DDD)V
+        16: astore_1
+
+        17: new           #7                  // class e0027_OverloadMethods/Box
+        20: dup
+        21: invokespecial #18                 // Method e0027_OverloadMethods/Box."<init>":()V
+        24: astore_2
+
+        25: new           #7                  // class e0027_OverloadMethods/Box
+        28: dup
+        29: ldc2_w        #19                 // double 7.0d
+        32: invokespecial #21                 // Method e0027_OverloadMethods/Box."<init>":(D)V
+        35: astore_3
+        
+        36: aload_1
+        37: invokevirtual #24                 // Method e0027_OverloadMethods/Box.volume:()D
+        40: dstore        4
+
+        42: getstatic     #28                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        45: dload         4
+        47: invokedynamic #34,  0             // InvokeDynamic #0:makeConcatWithConstants:(D)Ljava/lang/String;
+        52: invokevirtual #38                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        55: aload_2
+        56: invokevirtual #24                 // Method e0027_OverloadMethods/Box.volume:()D
+        59: dstore        4
+
+        61: getstatic     #28                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        64: dload         4
+        66: invokedynamic #44,  0             // InvokeDynamic #1:makeConcatWithConstants:(D)Ljava/lang/String;
+        71: invokevirtual #38                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        74: aload_3
+        75: invokevirtual #24                 // Method e0027_OverloadMethods/Box.volume:()D
+        78: dstore        4
+        
+        80: getstatic     #28                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        83: dload         4
+        85: invokedynamic #45,  0             // InvokeDynamic #2:makeConcatWithConstants:(D)Ljava/lang/String;
+        90: invokevirtual #38                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        93: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 17
+        line 7: 25
+        line 11: 36
+        line 12: 42
+        line 14: 55
+        line 15: 61
+        line 17: 74
+        line 18: 80
+        line 19: 93
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      94     0  args   [Ljava/lang/String;
+           17      77     1 mybox1   Le0027_OverloadMethods/Box;
+           25      69     2 mybox2   Le0027_OverloadMethods/Box;
+           36      58     3 mycube   Le0027_OverloadMethods/Box;
+           42      52     4   vol   D
+}
+SourceFile: "OverloadCons.java"
+BootstrapMethods:
+  0: #66 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #72 VOLUME mybox1 = \u0001
+  1: #66 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #74 VOLUME mybox2 = \u0001
+  2: #66 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #76 VOLUME mycube = \u0001
+InnerClasses:
+  public static final #83= #79 of #81;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0027_OverloadMethods;
+
+public class OverloadCons {
+    public static void main(String[] args) {
+        Box mybox1 = new Box(10, 20, 30);
+        Box mybox2 = new Box();
+        Box mycube = new Box(7);
+
+        double vol;
+
+        vol = mybox1.volume();
+        System.out.println("VOLUME mybox1 = " + vol);
+
+        vol = mybox2.volume();
+        System.out.println("VOLUME mybox2 = " + vol);
+
+        vol = mycube.volume();
+        System.out.println("VOLUME mycube = " + vol);
+    }
+}
+---------------------------------------------------------------------------------------------

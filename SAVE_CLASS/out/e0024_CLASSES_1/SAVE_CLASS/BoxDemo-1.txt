@@ -114,7 +114,7 @@ Constant pool:
 
          8: aload_1                                                                             # Загружает ссылку из localVarTable на вершину стека
          9: ldc2_w        #10                 // double 10.0d                                   # Кладет константу в стек. Использует широкий индекс (_w), используется для long и double
-        12: putfield      #12                 // Field e0024_CLASSES_1/Box.width:D              # Вставляет в поле объекта значение с верха стека
+        12: putfield      #12                 // Field e0024_CLASSES_1/Box.width:D              # Вставляет в поле width объекта по ссылке из стека e0024_CLASSES_1/Box (вторая сверху) значение 10.0d с вершины стека
 
         15: aload_1                                                                             # Загружает ссылку из localVarTable на вершину стека
         16: ldc2_w        #16                 // double 20.0d
