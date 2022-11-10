@@ -1,0 +1,192 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0036_Public_Private_4_Stack/Stack.class
+  Last modified 9 нояб. 2022 г.; size 837 bytes
+  SHA-256 checksum 7c531b303aac9acec48cbfe60b76b67dfd24bd745f48acfec7d58175d87358a7
+  Compiled from "Stack.java"
+class e0036_Public_Private_4_Stack.Stack
+  minor version: 0
+  major version: 61
+  flags: (0x0020) ACC_SUPER
+  this_class: #8                          // e0036_Public_Private_4_Stack/Stack
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 2, methods: 3, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   
+   #7 = Fieldref           #8.#9          // e0036_Public_Private_4_Stack/Stack.stck:[I
+   #8 = Class              #10            // e0036_Public_Private_4_Stack/Stack
+   #9 = NameAndType        #11:#12        // stck:[I
+
+  #10 = Utf8               e0036_Public_Private_4_Stack/Stack
+  #11 = Utf8               stck
+  #12 = Utf8               [I
+  
+  #13 = Fieldref           #8.#14         // e0036_Public_Private_4_Stack/Stack.tos:I
+  #14 = NameAndType        #15:#16        // tos:I
+  #15 = Utf8               tos
+  #16 = Utf8               I
+  
+  #17 = Fieldref           #18.#19        // java/lang/System.out:Ljava/io/PrintStream;
+  #18 = Class              #20            // java/lang/System
+  #19 = NameAndType        #21:#22        // out:Ljava/io/PrintStream;
+  #20 = Utf8               java/lang/System
+  #21 = Utf8               out
+  #22 = Utf8               Ljava/io/PrintStream;
+  #23 = String             #24            // Stack is FULL
+  #24 = Utf8               Stack is FULL
+  #25 = Methodref          #26.#27        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #26 = Class              #28            // java/io/PrintStream
+  #27 = NameAndType        #29:#30        // println:(Ljava/lang/String;)V
+  #28 = Utf8               java/io/PrintStream
+  #29 = Utf8               println
+  #30 = Utf8               (Ljava/lang/String;)V
+  #31 = String             #32            // Stack NOT FULL
+  #32 = Utf8               Stack NOT FULL
+  #33 = Utf8               Code
+  #34 = Utf8               LineNumberTable
+  #35 = Utf8               LocalVariableTable
+  #36 = Utf8               this
+  #37 = Utf8               Le0036_Public_Private_4_Stack/Stack;
+  #38 = Utf8               push
+  #39 = Utf8               (I)V
+  #40 = Utf8               item
+  #41 = Utf8               StackMapTable
+  #42 = Utf8               pop
+  #43 = Utf8               ()I
+  #44 = Utf8               SourceFile
+  #45 = Utf8               Stack.java
+{
+  e0036_Public_Private_4_Stack.Stack();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         
+         4: aload_0
+         5: bipush        10
+         
+         7: newarray       int                                    # для илициализации массива в приватной переменной stck в конструкторе вызывается инстркуция newarray и работает с тем,
+         9: putfield      #7                  // Field stck:[I    # что ей предоставляет putfield из пулла констант
+         
+        12: aload_0
+        13: iconst_m1
+        14: putfield      #13                 // Field tos:I
+        
+        17: return
+      LineNumberTable:
+        line 7: 0
+        line 4: 4
+        line 8: 12
+        line 9: 17
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0  this   Le0036_Public_Private_4_Stack/Stack;
+
+  void push(int);
+    descriptor: (I)V
+    flags: (0x0000)
+    Code:
+      stack=4, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #13                 // Field tos:I
+         4: bipush        9
+         6: if_icmpne     20
+         9: getstatic     #17                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        12: ldc           #23                 // String Stack is FULL
+        14: invokevirtual #25                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        17: goto          37
+        20: aload_0
+        21: getfield      #7                  // Field stck:[I
+        24: aload_0
+        25: dup
+        26: getfield      #13                 // Field tos:I
+        29: iconst_1
+        30: iadd
+        31: dup_x1
+        32: putfield      #13                 // Field tos:I
+        35: iload_1
+        36: iastore
+        37: return
+      LineNumberTable:
+        line 12: 0
+        line 13: 9
+        line 15: 20
+        line 16: 37
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      38     0  this   Le0036_Public_Private_4_Stack/Stack;
+            0      38     1  item   I
+      StackMapTable: number_of_entries = 2
+        frame_type = 20 /* same */
+        frame_type = 16 /* same */
+
+  int pop();
+    descriptor: ()I
+    flags: (0x0000)
+    Code:
+      stack=5, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #13                 // Field tos:I
+         4: ifge          17
+         7: getstatic     #17                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        10: ldc           #31                 // String Stack NOT FULL
+        12: invokevirtual #25                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        15: iconst_0
+        16: ireturn
+        17: aload_0
+        18: getfield      #7                  // Field stck:[I
+        21: aload_0
+        22: dup
+        23: getfield      #13                 // Field tos:I
+        26: dup_x1
+        27: iconst_1
+        28: isub
+        29: putfield      #13                 // Field tos:I
+        32: iaload
+        33: ireturn
+      LineNumberTable:
+        line 19: 0
+        line 20: 7
+        line 21: 15
+        line 24: 17
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      34     0  this   Le0036_Public_Private_4_Stack/Stack;
+      StackMapTable: number_of_entries = 1
+        frame_type = 17 /* same */
+}
+SourceFile: "Stack.java"
+#############################################################################################
+package e0036_Public_Private_4_Stack;
+
+class Stack {
+    private int stck[] = new int[10];
+    private int tos;
+
+    Stack() {
+        tos = -1;
+    }
+
+    void push(int item) {
+        if (tos == 9)
+            System.out.println("Stack is FULL");
+        else
+            stck[++tos] = item;
+    }
+
+    int pop() {
+        if (tos < 0) {
+            System.out.println("Stack NOT FULL");
+            return 0;
+        }
+        else
+            return stck[tos--];
+    }
+}
+---------------------------------------------------------------------------------------------

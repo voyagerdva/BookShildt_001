@@ -1,0 +1,209 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0037_Static/UseStatic.class
+  Last modified 9 но€б. 2022 г.; size 1320 bytes
+  SHA-256 checksum bf60a726bd60216a0574fa08c6ff3322126973ba5bb2281949e27a14f7bb74b2
+  Compiled from "UseStatic.java"
+class e0037_Static.UseStatic
+  minor version: 0
+  major version: 61
+  flags: (0x0020) ACC_SUPER
+  this_class: #24                         // e0037_Static/UseStatic
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 2, methods: 4, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = InvokeDynamic      #0:#14         // #0:makeConcatWithConstants:(I)Ljava/lang/String;
+  #14 = NameAndType        #15:#16        // makeConcatWithConstants:(I)Ljava/lang/String;
+  #15 = Utf8               makeConcatWithConstants
+  #16 = Utf8               (I)Ljava/lang/String;
+  #17 = Methodref          #18.#19        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #18 = Class              #20            // java/io/PrintStream
+  #19 = NameAndType        #21:#22        // println:(Ljava/lang/String;)V
+  #20 = Utf8               java/io/PrintStream
+  #21 = Utf8               println
+  #22 = Utf8               (Ljava/lang/String;)V
+  #23 = Fieldref           #24.#25        // e0037_Static/UseStatic.a:I
+  #24 = Class              #26            // e0037_Static/UseStatic
+  #25 = NameAndType        #27:#28        // a:I
+  #26 = Utf8               e0037_Static/UseStatic
+  #27 = Utf8               a
+  #28 = Utf8               I
+  #29 = InvokeDynamic      #1:#14         // #1:makeConcatWithConstants:(I)Ljava/lang/String;
+  #30 = Fieldref           #24.#31        // e0037_Static/UseStatic.b:I
+  #31 = NameAndType        #32:#28        // b:I
+  #32 = Utf8               b
+  #33 = InvokeDynamic      #2:#14         // #2:makeConcatWithConstants:(I)Ljava/lang/String;
+  #34 = Methodref          #24.#35        // e0037_Static/UseStatic.meth:(I)V
+  #35 = NameAndType        #36:#37        // meth:(I)V
+  #36 = Utf8               meth
+  #37 = Utf8               (I)V
+  
+  #38 = String             #39            // STATIC BLOCK HAS BEEN INITIALIZED
+  #39 = Utf8               STATIC BLOCK HAS BEEN INITIALIZED
+  
+  #40 = Utf8               Code
+  #41 = Utf8               LineNumberTable
+  #42 = Utf8               LocalVariableTable
+  #43 = Utf8               this
+  #44 = Utf8               Le0037_Static/UseStatic;
+  #45 = Utf8               x
+  #46 = Utf8               main
+  #47 = Utf8               ([Ljava/lang/String;)V
+  #48 = Utf8               args
+  #49 = Utf8               [Ljava/lang/String;
+  #50 = Utf8               <clinit>
+  #51 = Utf8               SourceFile
+  #52 = Utf8               UseStatic.java
+  #53 = Utf8               BootstrapMethods
+  #54 = MethodHandle       6:#55          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #55 = Methodref          #56.#57        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #56 = Class              #58            // java/lang/invoke/StringConcatFactory
+  #57 = NameAndType        #15:#59        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #58 = Utf8               java/lang/invoke/StringConcatFactory
+  #59 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #60 = String             #61            // x = \u0001
+  #61 = Utf8               x = \u0001
+  #62 = String             #63            // a = \u0001
+  #63 = Utf8               a = \u0001
+  #64 = String             #65            // b = \u0001
+  #65 = Utf8               b = \u0001
+  #66 = Utf8               InnerClasses
+  #67 = Class              #68            // java/lang/invoke/MethodHandles$Lookup
+  #68 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #69 = Class              #70            // java/lang/invoke/MethodHandles
+  #70 = Utf8               java/lang/invoke/MethodHandles
+  #71 = Utf8               Lookup
+{
+  static int a;
+    descriptor: I
+    flags: (0x0008) ACC_STATIC
+
+  static int b;
+    descriptor: I
+    flags: (0x0008) ACC_STATIC
+
+  e0037_Static.UseStatic();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0037_Static/UseStatic;
+
+  static void meth(int);
+    descriptor: (I)V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: iload_0
+         4: invokedynamic #13,  0             // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+         9: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+
+        12: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        15: getstatic     #23                 // Field a:I
+        18: invokedynamic #29,  0             // InvokeDynamic #1:makeConcatWithConstants:(I)Ljava/lang/String;
+        23: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        
+        26: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        29: getstatic     #30                 // Field b:I
+        32: invokedynamic #33,  0             // InvokeDynamic #2:makeConcatWithConstants:(I)Ljava/lang/String;
+        37: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        40: return
+      LineNumberTable:
+        line 8: 0
+        line 9: 12
+        line 10: 26
+        line 11: 40
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      41     0     x   I
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: bipush        42
+         2: invokestatic  #34                 // Method meth:(I)V
+         5: return
+      LineNumberTable:
+        line 19: 0
+        line 20: 5
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       6     0  args   [Ljava/lang/String;
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: iconst_3
+         1: putstatic     #23                 // Field a:I
+         4: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         7: ldc           #38                 // String STATIC BLOCK HAS BEEN INITIALIZED
+         9: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        12: getstatic     #23                 // Field a:I
+        15: iconst_4
+        16: imul
+        17: putstatic     #30                 // Field b:I
+        20: return
+      LineNumberTable:
+        line 4: 0
+        line 14: 4
+        line 15: 12
+        line 16: 20
+}
+SourceFile: "UseStatic.java"
+BootstrapMethods:
+  0: #54 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #60 x = \u0001
+  1: #54 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #62 a = \u0001
+  2: #54 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #64 b = \u0001
+InnerClasses:
+  public static final #71= #67 of #69;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0037_Static;
+
+class UseStatic {
+    static int a = 3;
+    static int b;
+
+    static void meth(int x) {
+        System.out.println("x = " + x);
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+    }
+
+    static {
+        System.out.println("STATIC BLOCK HAS BEEN INITIALIZED");
+        b = a * 4;
+    }
+
+    public static void main(String[] args) {
+        meth(42);
+    }
+}
+---------------------------------------------------------------------------------------------
