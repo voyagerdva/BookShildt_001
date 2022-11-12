@@ -5,7 +5,7 @@ public class Test1 {
     int b;
 
     Test1(int i, int j) {
-        a = j;
+        a = i;
         b = j;
     }
 

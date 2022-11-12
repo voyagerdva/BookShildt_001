@@ -1,0 +1,262 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0046_Args_Var_Length/PassArray.class
+  Last modified 12 но€б. 2022 г.; size 1446 bytes
+  SHA-256 checksum acade73ff364a75aeae2e57f6b36e9fbfb49756f52a5dd9d836e360066fab785
+  Compiled from "PassArray.java"
+public class e0046_Args_Var_Length.PassArray
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #30                         // e0046_Args_Var_Length/PassArray
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 3, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = InvokeDynamic      #0:#14         // #0:makeConcatWithConstants:(I)Ljava/lang/String;
+  #14 = NameAndType        #15:#16        // makeConcatWithConstants:(I)Ljava/lang/String;
+  #15 = Utf8               makeConcatWithConstants
+  #16 = Utf8               (I)Ljava/lang/String;
+  #17 = Methodref          #18.#19        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #18 = Class              #20            // java/io/PrintStream
+  #19 = NameAndType        #21:#22        // println:(Ljava/lang/String;)V
+  #20 = Utf8               java/io/PrintStream
+  #21 = Utf8               println
+  #22 = Utf8               (Ljava/lang/String;)V
+  #23 = InvokeDynamic      #1:#14         // #1:makeConcatWithConstants:(I)Ljava/lang/String;
+  #24 = Methodref          #18.#25        // java/io/PrintStream.print:(Ljava/lang/String;)V
+  #25 = NameAndType        #26:#22        // print:(Ljava/lang/String;)V
+  #26 = Utf8               print
+  #27 = Methodref          #18.#28        // java/io/PrintStream.println:()V
+  #28 = NameAndType        #21:#6         // println:()V
+  #29 = Methodref          #30.#31        // e0046_Args_Var_Length/PassArray.vaTest:([I)V
+  #30 = Class              #32            // e0046_Args_Var_Length/PassArray
+  #31 = NameAndType        #33:#34        // vaTest:([I)V
+  #32 = Utf8               e0046_Args_Var_Length/PassArray
+  #33 = Utf8               vaTest
+  #34 = Utf8               ([I)V
+  #35 = String             #36            // ---------
+  #36 = Utf8               ---------
+  #37 = String             #38            // =========
+  #38 = Utf8               =========
+  #39 = Utf8               Code
+  #40 = Utf8               LineNumberTable
+  #41 = Utf8               LocalVariableTable
+  #42 = Utf8               this
+  #43 = Utf8               Le0046_Args_Var_Length/PassArray;
+  #44 = Utf8               x
+  #45 = Utf8               I
+  #46 = Utf8               v
+  #47 = Utf8               [I
+  #48 = Utf8               StackMapTable
+  #49 = Class              #47            // "[I"
+  #50 = Utf8               main
+  #51 = Utf8               ([Ljava/lang/String;)V
+  #52 = Utf8               args
+  #53 = Utf8               [Ljava/lang/String;
+  #54 = Utf8               n1
+  #55 = Utf8               n2
+  #56 = Utf8               n3
+  #57 = Utf8               SourceFile
+  #58 = Utf8               PassArray.java
+  #59 = Utf8               BootstrapMethods
+  #60 = MethodHandle       6:#61          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #61 = Methodref          #62.#63        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #62 = Class              #64            // java/lang/invoke/StringConcatFactory
+  #63 = NameAndType        #15:#65        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #64 = Utf8               java/lang/invoke/StringConcatFactory
+  #65 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #66 = String             #67            // Quatity args: \u0001 Contains:
+  #67 = Utf8               Quatity args: \u0001 Contains:
+  #68 = String             #69            // \u0001
+  #69 = Utf8               \u0001
+  #70 = Utf8               InnerClasses
+  #71 = Class              #72            // java/lang/invoke/MethodHandles$Lookup
+  #72 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #73 = Class              #74            // java/lang/invoke/MethodHandles
+  #74 = Utf8               java/lang/invoke/MethodHandles
+  #75 = Utf8               Lookup
+{
+  public e0046_Args_Var_Length.PassArray();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0046_Args_Var_Length/PassArray;
+
+  static void vaTest(int[]);
+    descriptor: ([I)V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=5, args_size=1
+         0: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: aload_0
+         4: arraylength
+         5: invokedynamic #13,  0             // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+        10: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        13: aload_0
+        14: astore_1
+        15: aload_1
+        16: arraylength
+        17: istore_2
+        18: iconst_0
+        19: istore_3
+
+        20: iload_3
+        21: iload_2
+        22: if_icmpge     49
+        25: aload_1
+        26: iload_3
+        27: iaload
+        28: istore        4
+        30: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        33: iload         4
+        35: invokedynamic #23,  0             // InvokeDynamic #1:makeConcatWithConstants:(I)Ljava/lang/String;
+        40: invokevirtual #24                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+        43: iinc          3, 1
+        46: goto          20
+        
+        49: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        52: invokevirtual #27                 // Method java/io/PrintStream.println:()V
+        55: return
+      LineNumberTable:
+        line 5: 0
+        line 7: 13
+        line 8: 30
+        line 7: 43
+        line 11: 49
+        line 12: 55
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           30      13     4     x   I
+            0      56     0     v   [I
+      StackMapTable: number_of_entries = 2
+        frame_type = 254 /* append */
+          offset_delta = 20
+          locals = [ class "[I", int, int ]
+        frame_type = 248 /* chop */
+          offset_delta = 28
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=4, args_size=1
+         0: iconst_1
+         
+         1: newarray       int
+         3: dup
+         4: iconst_0
+         5: bipush        10
+         7: iastore
+         8: astore_1
+         9: iconst_3
+
+        10: newarray       int
+        12: dup
+        13: iconst_0
+        14: iconst_3
+        15: iastore
+        16: dup
+        17: iconst_1
+        18: iconst_5
+        19: iastore
+        20: dup
+        21: iconst_2
+        22: bipush        7
+        24: iastore
+        25: astore_2
+        26: iconst_0
+
+        27: newarray       int
+        29: astore_3
+        30: aload_1
+        31: invokestatic  #29                 // Method vaTest:([I)V
+        
+        34: aload_2
+        35: invokestatic  #29                 // Method vaTest:([I)V
+        
+        38: aload_3
+        39: invokestatic  #29                 // Method vaTest:([I)V
+        
+        42: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        45: ldc           #35                 // String ---------
+        47: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        50: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        53: invokevirtual #27                 // Method java/io/PrintStream.println:()V
+        56: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        59: ldc           #37                 // String =========
+        61: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        64: return
+      LineNumberTable:
+        line 15: 0
+        line 16: 9
+        line 17: 26
+        line 19: 30
+        line 20: 34
+        line 21: 38
+        line 22: 42
+        line 23: 50
+        line 24: 56
+        line 25: 64
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      65     0  args   [Ljava/lang/String;
+            9      56     1    n1   [I
+           26      39     2    n2   [I
+           30      35     3    n3   [I
+}
+SourceFile: "PassArray.java"
+BootstrapMethods:
+  0: #60 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #66 Quatity args: \u0001 Contains:
+  1: #60 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #68 \u0001
+InnerClasses:
+  public static final #75= #71 of #73;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0046_Args_Var_Length;
+
+public class PassArray {
+    static void vaTest(int v[]) {
+        System.out.println("Quatity args: " + v.length + " Contains: ");
+
+        for (int x : v) {
+            System.out.print(x + " ");
+        }
+
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        int n1[] = {10};
+        int n2[] = {3, 5, 7};
+        int n3[] = {};
+
+        vaTest(n1);
+        vaTest(n2);
+        vaTest(n3);
+        System.out.println("---------");
+        System.out.println();
+        System.out.println("=========");
+    }
+}
+---------------------------------------------------------------------------------------------

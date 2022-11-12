@@ -1,0 +1,134 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0043_Inner_Include_Class_IN_FOR/Outer43.class
+  Last modified 12 но€б. 2022 г.; size 770 bytes
+  SHA-256 checksum 62278c3095afc875192922486ec2158a1669c3d56eb604917e38b462487f36b2
+  Compiled from "Outer43.java"
+public class e0043_Inner_Include_Class_IN_FOR.Outer43
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #8                          // e0043_Inner_Include_Class_IN_FOR/Outer43
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // e0043_Inner_Include_Class_IN_FOR/Outer43.outer_x:I
+   #8 = Class              #10            // e0043_Inner_Include_Class_IN_FOR/Outer43
+   #9 = NameAndType        #11:#12        // outer_x:I
+  #10 = Utf8               e0043_Inner_Include_Class_IN_FOR/Outer43
+  #11 = Utf8               outer_x
+  #12 = Utf8               I
+  #13 = Class              #14            // e0043_Inner_Include_Class_IN_FOR/Outer43$1Inner
+  #14 = Utf8               e0043_Inner_Include_Class_IN_FOR/Outer43$1Inner
+  #15 = Methodref          #13.#16        // e0043_Inner_Include_Class_IN_FOR/Outer43$1Inner."<init>":(Le0043_Inner_Include_Class_IN_FOR/Outer43;)V
+  #16 = NameAndType        #5:#17         // "<init>":(Le0043_Inner_Include_Class_IN_FOR/Outer43;)V
+  #17 = Utf8               (Le0043_Inner_Include_Class_IN_FOR/Outer43;)V
+  #18 = Methodref          #13.#19        // e0043_Inner_Include_Class_IN_FOR/Outer43$1Inner.display:()V
+  #19 = NameAndType        #20:#6         // display:()V
+  #20 = Utf8               display
+  #21 = Utf8               Code
+  #22 = Utf8               LineNumberTable
+  #23 = Utf8               LocalVariableTable
+  #24 = Utf8               this
+  #25 = Utf8               Le0043_Inner_Include_Class_IN_FOR/Outer43;
+  #26 = Utf8               test
+  #27 = Utf8               inner
+  #28 = Utf8               Le0043_Inner_Include_Class_IN_FOR/Outer43$1Inner;
+  #29 = Utf8               i
+  #30 = Utf8               StackMapTable
+  #31 = Utf8               SourceFile
+  #32 = Utf8               Outer43.java
+  #33 = Utf8               NestMembers
+  #34 = Utf8               InnerClasses
+  #35 = Utf8               Inner
+{
+  int outer_x;
+    descriptor: I
+    flags: (0x0000)
+
+  public e0043_Inner_Include_Class_IN_FOR.Outer43();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: bipush        100
+         7: putfield      #7                  // Field outer_x:I
+        10: return
+      LineNumberTable:
+        line 3: 0
+        line 4: 4
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      11     0  this   Le0043_Inner_Include_Class_IN_FOR/Outer43;
+
+  void test();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=3, locals=3, args_size=1
+         0: iconst_0
+         1: istore_1
+         
+         2: iload_1
+         3: bipush        10
+         5: if_icmpge     27
+         8: new           #13                 // class e0043_Inner_Include_Class_IN_FOR/Outer43$1Inner
+        11: dup
+        12: aload_0
+        13: invokespecial #15                 // Method e0043_Inner_Include_Class_IN_FOR/Outer43$1Inner."<init>":(Le0043_Inner_Include_Class_IN_FOR/Outer43;)V
+        16: astore_2
+        17: aload_2
+        18: invokevirtual #18                 // Method e0043_Inner_Include_Class_IN_FOR/Outer43$1Inner.display:()V
+        21: iinc          1, 1
+        24: goto          2
+        
+        27: return
+      LineNumberTable:
+        line 7: 0
+        line 13: 8
+        line 14: 17
+        line 7: 21
+        line 16: 27
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           17       4     2 inner   Le0043_Inner_Include_Class_IN_FOR/Outer43$1Inner;
+            2      25     1     i   I
+            0      28     0  this   Le0043_Inner_Include_Class_IN_FOR/Outer43;
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 2
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 24
+}
+SourceFile: "Outer43.java"
+NestMembers:
+  e0043_Inner_Include_Class_IN_FOR/Outer43$1Inner
+InnerClasses:
+  #35= #13;                               // Inner=class e0043_Inner_Include_Class_IN_FOR/Outer43$1Inner
+#############################################################################################
+package e0043_Inner_Include_Class_IN_FOR;
+
+public class Outer43 {
+    int outer_x = 100;
+
+    void test() {
+        for (int i = 0; i < 10; i++) {
+            class Inner {
+                void display () {
+                    System.out.println("OUT: outer_x = " + outer_x);
+                }
+            }
+            Inner inner = new Inner();
+            inner.display();
+        }
+    }
+}
+---------------------------------------------------------------------------------------------

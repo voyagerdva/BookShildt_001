@@ -1,0 +1,392 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0047_Args_Var_Length_OVERRIDE/VarArgs4.class
+  Last modified 12 но€б. 2022 г.; size 2005 bytes
+  SHA-256 checksum 45aced3ce63707fa41c345691dd771d50aae11e6481293347faa542068b358b2
+  Compiled from "VarArgs4.java"
+public class e0047_Args_Var_Length_OVERRIDE.VarArgs4
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #35                         // e0047_Args_Var_Length_OVERRIDE/VarArgs4
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 5, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = InvokeDynamic      #0:#14         // #0:makeConcatWithConstants:(I)Ljava/lang/String;
+  #14 = NameAndType        #15:#16        // makeConcatWithConstants:(I)Ljava/lang/String;
+  #15 = Utf8               makeConcatWithConstants
+  #16 = Utf8               (I)Ljava/lang/String;
+  #17 = Methodref          #18.#19        // java/io/PrintStream.print:(Ljava/lang/String;)V
+  #18 = Class              #20            // java/io/PrintStream
+  #19 = NameAndType        #21:#22        // print:(Ljava/lang/String;)V
+  #20 = Utf8               java/io/PrintStream
+  #21 = Utf8               print
+  #22 = Utf8               (Ljava/lang/String;)V
+  #23 = InvokeDynamic      #1:#14         // #1:makeConcatWithConstants:(I)Ljava/lang/String;
+  #24 = Methodref          #18.#25        // java/io/PrintStream.println:()V
+  #25 = NameAndType        #26:#6         // println:()V
+  #26 = Utf8               println
+  #27 = InvokeDynamic      #2:#14         // #2:makeConcatWithConstants:(I)Ljava/lang/String;
+  #28 = InvokeDynamic      #1:#29         // #1:makeConcatWithConstants:(Z)Ljava/lang/String;
+  #29 = NameAndType        #15:#30        // makeConcatWithConstants:(Z)Ljava/lang/String;
+  #30 = Utf8               (Z)Ljava/lang/String;
+  #31 = InvokeDynamic      #3:#32         // #3:makeConcatWithConstants:(Ljava/lang/String;I)Ljava/lang/String;
+  #32 = NameAndType        #15:#33        // makeConcatWithConstants:(Ljava/lang/String;I)Ljava/lang/String;
+  #33 = Utf8               (Ljava/lang/String;I)Ljava/lang/String;
+  #34 = Methodref          #35.#36        // e0047_Args_Var_Length_OVERRIDE/VarArgs4.varTest:([I)V
+  #35 = Class              #37            // e0047_Args_Var_Length_OVERRIDE/VarArgs4
+  #36 = NameAndType        #38:#39        // varTest:([I)V
+  #37 = Utf8               e0047_Args_Var_Length_OVERRIDE/VarArgs4
+  #38 = Utf8               varTest
+  #39 = Utf8               ([I)V
+  #40 = Methodref          #35.#41        // e0047_Args_Var_Length_OVERRIDE/VarArgs4.varTest:([Z)V
+  #41 = NameAndType        #38:#42        // varTest:([Z)V
+  #42 = Utf8               ([Z)V
+  #43 = String             #44            // Check match:
+  #44 = Utf8               Check match:
+  #45 = Methodref          #35.#46        // e0047_Args_Var_Length_OVERRIDE/VarArgs4.varTest:(Ljava/lang/String;[I)V
+  #46 = NameAndType        #38:#47        // varTest:(Ljava/lang/String;[I)V
+  #47 = Utf8               (Ljava/lang/String;[I)V
+  #48 = Utf8               Code
+  #49 = Utf8               LineNumberTable
+  #50 = Utf8               LocalVariableTable
+  #51 = Utf8               this
+  #52 = Utf8               Le0047_Args_Var_Length_OVERRIDE/VarArgs4;
+  #53 = Utf8               x
+  #54 = Utf8               I
+  #55 = Utf8               v
+  #56 = Utf8               [I
+  #57 = Utf8               StackMapTable
+  #58 = Class              #56            // "[I"
+  #59 = Utf8               Z
+  #60 = Utf8               [Z
+  #61 = Class              #60            // "[Z"
+  #62 = Utf8               msg
+  #63 = Utf8               Ljava/lang/String;
+  #64 = Utf8               main
+  #65 = Utf8               ([Ljava/lang/String;)V
+  #66 = Utf8               args
+  #67 = Utf8               [Ljava/lang/String;
+  #68 = Utf8               SourceFile
+  #69 = Utf8               VarArgs4.java
+  #70 = Utf8               BootstrapMethods
+  #71 = MethodHandle       6:#72          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #72 = Methodref          #73.#74        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #73 = Class              #75            // java/lang/invoke/StringConcatFactory
+  #74 = NameAndType        #15:#76        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #75 = Utf8               java/lang/invoke/StringConcatFactory
+  #76 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #77 = String             #78            // varTest(int ...): Args q-ty: \u0001 Contains:
+  #78 = Utf8               varTest(int ...): Args q-ty: \u0001 Contains:
+  #79 = String             #80            // \u0001
+  #80 = Utf8               \u0001
+  #81 = String             #82            // varTest(boolean ...): Args q-ty: \u0001 Contains:
+  #82 = Utf8               varTest(boolean ...): Args q-ty: \u0001 Contains:
+  #83 = String             #84            // varTest(String, int ...): \u0001\u0001 Contains:
+  #84 = Utf8               varTest(String, int ...): \u0001\u0001 Contains:
+  #85 = Utf8               InnerClasses
+  #86 = Class              #87            // java/lang/invoke/MethodHandles$Lookup
+  #87 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #88 = Class              #89            // java/lang/invoke/MethodHandles
+  #89 = Utf8               java/lang/invoke/MethodHandles
+  #90 = Utf8               Lookup
+{
+  public e0047_Args_Var_Length_OVERRIDE.VarArgs4();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0047_Args_Var_Length_OVERRIDE/VarArgs4;
+
+  static void varTest(int...);
+    descriptor: ([I)V
+    flags: (0x0088) ACC_STATIC, ACC_VARARGS
+    Code:
+      stack=2, locals=5, args_size=1
+         0: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: aload_0
+         4: arraylength
+         5: invokedynamic #13,  0             // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+        10: invokevirtual #17                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+        13: aload_0
+        14: astore_1
+        15: aload_1
+        16: arraylength
+        17: istore_2
+        18: iconst_0
+        19: istore_3
+        20: iload_3
+        21: iload_2
+        
+        22: if_icmpge     49
+        25: aload_1
+        26: iload_3
+        27: iaload
+        28: istore        4
+        30: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        33: iload         4
+        35: invokedynamic #23,  0             // InvokeDynamic #1:makeConcatWithConstants:(I)Ljava/lang/String;
+        40: invokevirtual #17                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+        43: iinc          3, 1
+        46: goto          20
+        
+        49: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        52: invokevirtual #24                 // Method java/io/PrintStream.println:()V
+        55: return
+      LineNumberTable:
+        line 5: 0
+        line 7: 13
+        line 8: 30
+        line 7: 43
+        line 10: 49
+        line 11: 55
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           30      13     4     x   I
+            0      56     0     v   [I
+      StackMapTable: number_of_entries = 2
+        frame_type = 254 /* append */
+          offset_delta = 20
+          locals = [ class "[I", int, int ]
+        frame_type = 248 /* chop */
+          offset_delta = 28
+
+  static void varTest(boolean...);
+    descriptor: ([Z)V
+    flags: (0x0088) ACC_STATIC, ACC_VARARGS
+    Code:
+      stack=2, locals=5, args_size=1
+         0: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: aload_0
+         4: arraylength
+         5: invokedynamic #27,  0             // InvokeDynamic #2:makeConcatWithConstants:(I)Ljava/lang/String;
+        10: invokevirtual #17                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+        13: aload_0
+        14: astore_1
+        15: aload_1
+        16: arraylength
+        17: istore_2
+        18: iconst_0
+        19: istore_3
+        20: iload_3
+        21: iload_2
+        
+        22: if_icmpge     49
+        25: aload_1
+        26: iload_3
+        27: baload
+        28: istore        4
+        30: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        33: iload         4
+        35: invokedynamic #28,  0             // InvokeDynamic #1:makeConcatWithConstants:(Z)Ljava/lang/String;
+        40: invokevirtual #17                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+        43: iinc          3, 1
+        46: goto          20
+        
+        49: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        52: invokevirtual #24                 // Method java/io/PrintStream.println:()V
+        55: return
+      LineNumberTable:
+        line 14: 0
+        line 16: 13
+        line 17: 30
+        line 16: 43
+        line 19: 49
+        line 20: 55
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           30      13     4     x   Z
+            0      56     0     v   [Z
+      StackMapTable: number_of_entries = 2
+        frame_type = 254 /* append */
+          offset_delta = 20
+          locals = [ class "[Z", int, int ]
+        frame_type = 248 /* chop */
+          offset_delta = 28
+
+  static void varTest(java.lang.String, int...);
+    descriptor: (Ljava/lang/String;[I)V
+    flags: (0x0088) ACC_STATIC, ACC_VARARGS
+    Code:
+      stack=3, locals=6, args_size=2
+         0: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: aload_0
+         4: aload_1
+         5: arraylength
+         6: invokedynamic #31,  0             // InvokeDynamic #3:makeConcatWithConstants:(Ljava/lang/String;I)Ljava/lang/String;
+        11: invokevirtual #17                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+        14: aload_1
+        15: astore_2
+        16: aload_2
+        17: arraylength
+        18: istore_3
+        19: iconst_0
+        20: istore        4
+        22: iload         4
+        24: iload_3
+        
+        25: if_icmpge     53
+        28: aload_2
+        29: iload         4
+        31: iaload
+        32: istore        5
+        34: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        37: iload         5
+        39: invokedynamic #23,  0             // InvokeDynamic #1:makeConcatWithConstants:(I)Ljava/lang/String;
+        44: invokevirtual #17                 // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+        47: iinc          4, 1
+        50: goto          22
+        
+        53: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        56: invokevirtual #24                 // Method java/io/PrintStream.println:()V
+        59: return
+      LineNumberTable:
+        line 23: 0
+        line 25: 14
+        line 26: 34
+        line 25: 47
+        line 28: 53
+        line 29: 59
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           34      13     5     x   I
+            0      60     0   msg   Ljava/lang/String;
+            0      60     1     v   [I
+      StackMapTable: number_of_entries = 2
+        frame_type = 254 /* append */
+          offset_delta = 22
+          locals = [ class "[I", int, int ]
+        frame_type = 248 /* chop */
+          offset_delta = 30
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=5, locals=1, args_size=1
+         0: iconst_3
+         1: newarray       int
+         3: dup
+         4: iconst_0
+         5: iconst_1
+         6: iastore
+         7: dup
+         8: iconst_1
+         9: iconst_2
+        10: iastore
+        11: dup
+        12: iconst_2
+        13: iconst_3
+        14: iastore
+        15: invokestatic  #34                 // Method varTest:([I)V
+
+        18: iconst_3
+        19: newarray       boolean
+        21: dup
+        22: iconst_0
+        23: iconst_1
+        24: bastore
+        25: dup
+        26: iconst_1
+        27: iconst_0
+        28: bastore
+        29: dup
+        30: iconst_2
+        31: iconst_0
+        32: bastore
+        33: invokestatic  #40                 // Method varTest:([Z)V
+        
+        36: ldc           #43                 // String Check match:
+        38: iconst_2
+        39: newarray       int
+        41: dup
+        42: iconst_0
+        43: bipush        12
+        45: iastore
+        46: dup
+        47: iconst_1
+        48: bipush        15
+        50: iastore
+        51: invokestatic  #45                 // Method varTest:(Ljava/lang/String;[I)V
+        
+        54: return
+      LineNumberTable:
+        line 32: 0
+        line 33: 18
+        line 34: 36
+        line 35: 54
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      55     0  args   [Ljava/lang/String;
+}
+SourceFile: "VarArgs4.java"
+BootstrapMethods:
+  0: #71 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #77 varTest(int ...): Args q-ty: \u0001 Contains:
+  1: #71 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #79 \u0001
+  2: #71 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #81 varTest(boolean ...): Args q-ty: \u0001 Contains:
+  3: #71 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #83 varTest(String, int ...): \u0001\u0001 Contains:
+InnerClasses:
+  public static final #90= #86 of #88;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0047_Args_Var_Length_OVERRIDE;
+
+public class VarArgs4 {
+    static void varTest(int... v) {
+        System.out.print("varTest(int ...): " + "Args q-ty: " + v.length + " Contains: ");
+
+        for (int x : v) {
+            System.out.print(x + " ");
+        }
+        System.out.println();
+    }
+
+    static void varTest(boolean... v) {
+        System.out.print("varTest(boolean ...): " + "Args q-ty: " + v.length + " Contains: ");
+
+        for (boolean x : v) {
+            System.out.print(x + " ");
+        }
+        System.out.println();
+    }
+
+    static void varTest(String msg, int... v) {
+        System.out.print("varTest(String, int ...): " + msg + v.length + " Contains: ");
+
+        for (int x : v) {
+            System.out.print(x + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        varTest(1, 2, 3);
+        varTest(true, false, false);
+        varTest("Check match: ", 12, 15);
+    }
+}
+---------------------------------------------------------------------------------------------
