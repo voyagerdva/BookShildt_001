@@ -1,0 +1,160 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0042_Inner_Include_Class/Outer$Inner.class
+  Last modified 12 нояб. 2022 г.; size 1185 bytes
+  SHA-256 checksum b09a5003f46a3d38c2d1c72d173009574307d48a183d7d4a1383b2489c11c4eb
+  Compiled from "Outer.java"
+class e0042_Inner_Include_Class.Outer$Inner
+  minor version: 0
+  major version: 61
+  flags: (0x0020) ACC_SUPER
+  this_class: #2                          // e0042_Inner_Include_Class/Outer$Inner
+  super_class: #8                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 2, attributes: 4
+Constant pool:
+   #1 = Fieldref           #2.#3          // e0042_Inner_Include_Class/Outer$Inner.this$0:Le0042_Inner_Include_Class/Outer;
+   #2 = Class              #4             // e0042_Inner_Include_Class/Outer$Inner
+   #3 = NameAndType        #5:#6          // this$0:Le0042_Inner_Include_Class/Outer;
+   #4 = Utf8               e0042_Inner_Include_Class/Outer$Inner
+   #5 = Utf8               this$0
+   #6 = Utf8               Le0042_Inner_Include_Class/Outer;
+   
+   #7 = Methodref          #8.#9          // java/lang/Object."<init>":()V
+   #8 = Class              #10            // java/lang/Object
+   #9 = NameAndType        #11:#12        // "<init>":()V
+  #10 = Utf8               java/lang/Object
+  #11 = Utf8               <init>
+  #12 = Utf8               ()V
+  
+  #13 = Fieldref           #14.#15        // java/lang/System.out:Ljava/io/PrintStream;
+  #14 = Class              #16            // java/lang/System
+  #15 = NameAndType        #17:#18        // out:Ljava/io/PrintStream;
+  #16 = Utf8               java/lang/System
+  #17 = Utf8               out
+  #18 = Utf8               Ljava/io/PrintStream;
+  
+  #19 = Fieldref           #20.#21        // e0042_Inner_Include_Class/Outer.outer_x:I
+  #20 = Class              #22            // e0042_Inner_Include_Class/Outer
+  #21 = NameAndType        #23:#24        // outer_x:I
+  #22 = Utf8               e0042_Inner_Include_Class/Outer
+  #23 = Utf8               outer_x
+  #24 = Utf8               I
+  
+  #25 = InvokeDynamic      #0:#26         // #0:makeConcatWithConstants:(I)Ljava/lang/String;
+  #26 = NameAndType        #27:#28        // makeConcatWithConstants:(I)Ljava/lang/String;
+  #27 = Utf8               makeConcatWithConstants
+  #28 = Utf8               (I)Ljava/lang/String;
+
+  #29 = Methodref          #30.#31        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #30 = Class              #32            // java/io/PrintStream
+  #31 = NameAndType        #33:#34        // println:(Ljava/lang/String;)V
+  #32 = Utf8               java/io/PrintStream
+  #33 = Utf8               println
+  #34 = Utf8               (Ljava/lang/String;)V
+  #35 = Utf8               (Le0042_Inner_Include_Class/Outer;)V
+  #36 = Utf8               Code
+  #37 = Utf8               LineNumberTable
+  #38 = Utf8               LocalVariableTable
+  #39 = Utf8               this
+  #40 = Utf8               Le0042_Inner_Include_Class/Outer$Inner;
+  #41 = Utf8               display
+  #42 = Utf8               SourceFile
+  #43 = Utf8               Outer.java
+  #44 = Utf8               NestHost
+  #45 = Utf8               BootstrapMethods
+  #46 = MethodHandle       6:#47          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #47 = Methodref          #48.#49        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #48 = Class              #50            // java/lang/invoke/StringConcatFactory
+  #49 = NameAndType        #27:#51        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #50 = Utf8               java/lang/invoke/StringConcatFactory
+  #51 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #52 = String             #53            // OUTPUT: outer_x = \u0001
+  #53 = Utf8               OUTPUT: outer_x = \u0001
+  #54 = Utf8               InnerClasses
+  #55 = Utf8               Inner
+  #56 = Class              #57            // java/lang/invoke/MethodHandles$Lookup
+  #57 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #58 = Class              #59            // java/lang/invoke/MethodHandles
+  #59 = Utf8               java/lang/invoke/MethodHandles
+  #60 = Utf8               Lookup
+{
+  ''' Единственное отличие нестатических классов, объявленных внутри других классов, заключается в том, что при генерации байткода во вложенные классы добавляется ссылка на родительский объект '''
+  final e0042_Inner_Include_Class.Outer this$0;     ''' Компилятор добавил ссылку на объект внешнего класса final e0042_Inner_Include_Class.Outer this$0; и инициализирует её в конструкторе. '''
+    descriptor: Le0042_Inner_Include_Class/Outer;   
+    flags: (0x1010) ACC_FINAL, ACC_SYNTHETIC
+
+  e0042_Inner_Include_Class.Outer$Inner(e0042_Inner_Include_Class.Outer);
+    descriptor: (Le0042_Inner_Include_Class/Outer;)V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=2, args_size=2
+        ''' ... и инициализирует её в конструкторе. '''
+         0: aload_0
+         1: aload_1
+         2: putfield      #1                  // Field this$0:Le0042_Inner_Include_Class/Outer;
+         
+         5: aload_0
+         6: invokespecial #7                  // Method java/lang/Object."<init>":()V
+
+         9: return
+      LineNumberTable:
+        line 11: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      10     0  this   Le0042_Inner_Include_Class/Outer$Inner;
+            0      10     1 this$0   Le0042_Inner_Include_Class/Outer;
+
+  void display();   
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #13                 // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: aload_0
+         ''' В методе Inner.display() эта ссылка используется для доступа к приватному полю outer_x родительского объекта '''
+         4: getfield      #1                  // Field this$0:Le0042_Inner_Include_Class/Outer;
+         7: getfield      #19                 // Field e0042_Inner_Include_Class/Outer.outer_x:I
+        10: invokedynamic #25,  0             // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+        15: invokevirtual #29                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        18: return
+      LineNumberTable:
+        line 13: 0
+        line 14: 18
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      19     0  this   Le0042_Inner_Include_Class/Outer$Inner;
+}
+SourceFile: "Outer.java"
+NestHost: class e0042_Inner_Include_Class/Outer
+BootstrapMethods:
+  0: #46 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #52 OUTPUT: outer_x = \u0001
+InnerClasses:
+  #55= #2 of #20;                         // Inner=class e0042_Inner_Include_Class/Outer$Inner of class e0042_Inner_Include_Class/Outer
+  public static final #60= #56 of #58;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+#############################################################################################
+package e0042_Inner_Include_Class;
+
+public class Outer {
+    int outer_x = 100;
+
+    void test() {
+        Inner inner = new Inner();
+        inner.display();
+    }
+
+    class Inner {
+        int y = 10;
+        void display() {
+            System.out.println("OUTPUT: outer_x = " + outer_x);
+        }
+    }
+}
+
+'''Так что ничего особенного во вложенных классах Java нет. Они компилируются статически и хранятся вместе со всеми остальными классами. 
+Для доступа к полям родительского объекта в них внедряется ссылка на родительский объект.
+
+Кстати, эта ссылка может быть причиной раздувания памяти. Родительский объект не будет удалён сборщиком мусора до тех пор, 
+пока не будут удалены все объекты вложенного класса. Поэтому если в родительском объекте есть много всякой всячины, 
+то это будет болтаться в памяти, даже если объект вложенного класса этим не пользуется.
+'''
+---------------------------------------------------------------------------------------------

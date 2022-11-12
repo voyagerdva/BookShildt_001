@@ -1,0 +1,111 @@
+https://ru.stackoverflow.com/questions/1130964/java-nested-classes-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8
+
+Java nested classes размещение в памяти
+Вопрос задан 2 года 5 месяцев назад
+Изменён 2 года 5 месяцев назад
+Просмотрен 75 раз
+
+0
+
+
+у меня возник вопрос, который не дает мне покоя, а именно:
+
+Статические методы и поля принадлежат классу, а не экземпляру класса и хранятся в PermGen -> ("MetaSpace").
+Мы не можем делать статические классы но можем делать nested classes.
+Мы свободно можем создавать экземпляры nested классов в любом количестве так, будто это обычный Java объект который хранится в хипе.
+Может кто-то знает, где в памяти хранятся nested классы?
+
+javastatic
+Поделиться
+Улучшить вопрос
+Отслеживать
+задан 25 мая 2020 в 0:29
+Олег Мищенков's user avatar '
+Олег Мищенков
+1
+Вот про пункт 2 я не понял. Что может помешать вам объявить public static class StaticClass { ... } внутри другого класса? – 
+Pak Uula
+ 25 мая 2020 в 3:56
+Если уточнить мой пункт № 2, то - статическими, мы можем делать только вложенные классы в другой класс. Вот – 
+Олег Мищенков
+ 25 мая 2020 в 12:00
+Добавить комментарий
+1 ответ
+Сортировка:
+
+Наивысший рейтинг (по умолчанию)
+
+1
+
+
+Member Class - это такой же класс, как и top-level класс, и храниться должен там же, где хранятся определения классов.
+
+Единственное отличие нестатических классов, объявленных внутри других классов, заключается в том, что при генерации байткода во вложенные классы добавляется ссылка на родительский объект.
+
+package org.example;
+
+class TopLevel
+{
+   private int data;
+
+   public TopLevel(int _data)
+   {
+      data = _data;
+   }
+
+   class MemberClass
+   {
+       public int getData() {
+           return data;
+       }
+   }
+
+   MemberClass getMemberClassInstance()
+   {
+      return new MemberClass();
+   }
+}
+Распечатаем утилитой javap содержимое сгенерированного .class файла:
+
+pakuula:/home/pakuula/eclipse-workspace/MemberClass/bin/org/example$ javap 'TopLevel$MemberClass.class'
+Вывод команды:
+
+Compiled from "TopLevel.java"
+class org.example.TopLevel$MemberClass {
+  final org.example.TopLevel this$0;
+  org.example.TopLevel$MemberClass(org.example.TopLevel);
+  public int getData();
+}
+Компилятор добавил ссылку на объект внешнего класса final org.example.TopLevel this$0; и инициализирует её в конструкторе.
+
+В методе MemberClass.getData() эта ссылка используется для доступа к приватному полю data родительского объекта. Вот байткод конструктора и метода getData (результат работы javap -v):
+
+  org.example.TopLevel$MemberClass(org.example.TopLevel);
+    descriptor: (Lorg/example/TopLevel;)V
+    flags:
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: putfield      #10                 // Field this$0:Lorg/example/TopLevel;
+         5: aload_0
+         6: invokespecial #12                 // Method java/lang/Object."<init>":()V
+         9: return
+
+  public int getData();
+    descriptor: ()I
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #10                 // Field this$0:Lorg/example/TopLevel;
+         4: getfield      #21                 // Field org/example/TopLevel.data:I
+         7: ireturn
+
+
+Так что ничего особенного во вложенных классах Java нет. Они компилируются статически и хранятся вместе со всеми остальными классами. 
+Для доступа к полям родительского объекта в них внедряется ссылка на родительский объект.
+
+Кстати, эта ссылка может быть причиной раздувания памяти. Родительский объект не будет удалён сборщиком мусора до тех пор, 
+пока не будут удалены все объекты вложенного класса. Поэтому если в родительском объекте есть много всякой всячины, 
+то это будет болтаться в памяти, даже если объект вложенного класса этим не пользуется.

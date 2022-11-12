@@ -1,0 +1,234 @@
+Classfile /E:/__PROJECT__/JAVA/BookShildt_001/out/production/BookShildt_001/e0041_Arrays_Lenght/TestStack41.class
+  Last modified 11 но€б. 2022 г.; size 1057 bytes
+  SHA-256 checksum 6ceb62f9d9bb43041068cc6e0485ae2c4e9bfacad2f14aad20d513079363d817
+  Compiled from "TestStack41.java"
+public class e0041_Arrays_Lenght.TestStack41
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #37                         // e0041_Arrays_Lenght/TestStack41
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // e0041_Arrays_Lenght/Stack41
+   #8 = Utf8               e0041_Arrays_Lenght/Stack41
+   #9 = Methodref          #7.#10         // e0041_Arrays_Lenght/Stack41."<init>":(I)V
+  #10 = NameAndType        #5:#11         // "<init>":(I)V
+  #11 = Utf8               (I)V
+  #12 = Methodref          #7.#13         // e0041_Arrays_Lenght/Stack41.push:(I)V
+  #13 = NameAndType        #14:#11        // push:(I)V
+  #14 = Utf8               push
+  #15 = Fieldref           #16.#17        // java/lang/System.out:Ljava/io/PrintStream;
+  #16 = Class              #18            // java/lang/System
+  #17 = NameAndType        #19:#20        // out:Ljava/io/PrintStream;
+  #18 = Utf8               java/lang/System
+  #19 = Utf8               out
+  #20 = Utf8               Ljava/io/PrintStream;
+  #21 = String             #22            // Stack in mystack1:
+  #22 = Utf8               Stack in mystack1:
+  #23 = Methodref          #24.#25        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #24 = Class              #26            // java/io/PrintStream
+  #25 = NameAndType        #27:#28        // println:(Ljava/lang/String;)V
+  #26 = Utf8               java/io/PrintStream
+  #27 = Utf8               println
+  #28 = Utf8               (Ljava/lang/String;)V
+  #29 = Methodref          #7.#30         // e0041_Arrays_Lenght/Stack41.pop:()I
+  #30 = NameAndType        #31:#32        // pop:()I
+  #31 = Utf8               pop
+  #32 = Utf8               ()I
+  #33 = Methodref          #24.#34        // java/io/PrintStream.println:(I)V
+  #34 = NameAndType        #27:#11        // println:(I)V
+  #35 = String             #36            // Stack in mystack2:
+  #36 = Utf8               Stack in mystack2:
+  #37 = Class              #38            // e0041_Arrays_Lenght/TestStack41
+  #38 = Utf8               e0041_Arrays_Lenght/TestStack41
+  #39 = Utf8               Code
+  #40 = Utf8               LineNumberTable
+  #41 = Utf8               LocalVariableTable
+  #42 = Utf8               this
+  #43 = Utf8               Le0041_Arrays_Lenght/TestStack41;
+  #44 = Utf8               main
+  #45 = Utf8               ([Ljava/lang/String;)V
+  #46 = Utf8               i
+  #47 = Utf8               I
+  #48 = Utf8               args
+  #49 = Utf8               [Ljava/lang/String;
+  #50 = Utf8               mystack1
+  #51 = Utf8               Le0041_Arrays_Lenght/Stack41;
+  #52 = Utf8               mystack2
+  #53 = Utf8               StackMapTable
+  #54 = Utf8               SourceFile
+  #55 = Utf8               TestStack41.java
+{
+  public e0041_Arrays_Lenght.TestStack41();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Le0041_Arrays_Lenght/TestStack41;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=4, args_size=1
+         0: new           #7                  // class e0041_Arrays_Lenght/Stack41
+         3: dup
+         4: iconst_5
+         5: invokespecial #9                  // Method e0041_Arrays_Lenght/Stack41."<init>":(I)V
+         8: astore_1
+         
+         9: new           #7                  // class e0041_Arrays_Lenght/Stack41
+        12: dup
+        13: bipush        8
+        15: invokespecial #9                  // Method e0041_Arrays_Lenght/Stack41."<init>":(I)V
+        18: astore_2
+        
+        19: iconst_0
+        20: istore_3
+        
+        21: iload_3
+        22: iconst_5
+        23: if_icmpge     37
+        26: aload_1
+        27: iload_3
+        28: invokevirtual #12                 // Method e0041_Arrays_Lenght/Stack41.push:(I)V
+        31: iinc          3, 1
+        34: goto          21
+        
+        37: iconst_0
+        38: istore_3
+        
+        39: iload_3
+        40: bipush        8
+        42: if_icmpge     56
+        45: aload_2
+        46: iload_3
+        47: invokevirtual #12                 // Method e0041_Arrays_Lenght/Stack41.push:(I)V
+        50: iinc          3, 1
+        53: goto          39
+        
+        56: getstatic     #15                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        59: ldc           #21                 // String Stack in mystack1:
+        61: invokevirtual #23                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        64: iconst_0
+        65: istore_3
+        
+        66: iload_3
+        67: iconst_5
+        68: if_icmpge     87
+        71: getstatic     #15                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        74: aload_1
+        75: invokevirtual #29                 // Method e0041_Arrays_Lenght/Stack41.pop:()I
+        78: invokevirtual #33                 // Method java/io/PrintStream.println:(I)V
+        81: iinc          3, 1
+        84: goto          66
+        
+        87: getstatic     #15                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        90: ldc           #35                 // String Stack in mystack2:
+        92: invokevirtual #23                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        95: iconst_0
+        96: istore_3
+        
+        97: iload_3
+        98: bipush        8
+       100: if_icmpge     119
+       103: getstatic     #15                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       106: aload_2
+       107: invokevirtual #29                 // Method e0041_Arrays_Lenght/Stack41.pop:()I
+       110: invokevirtual #33                 // Method java/io/PrintStream.println:(I)V
+       113: iinc          3, 1
+       116: goto          97
+       
+       119: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 9
+        line 8: 19
+        line 9: 26
+        line 8: 31
+        line 12: 37
+        line 13: 45
+        line 12: 50
+        line 16: 56
+        line 17: 64
+        line 18: 71
+        line 17: 81
+        line 21: 87
+        line 22: 95
+        line 23: 103
+        line 22: 113
+        line 25: 119
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           21      16     3     i   I
+           39      17     3     i   I
+           66      21     3     i   I
+           97      22     3     i   I
+            0     120     0  args   [Ljava/lang/String;
+            9     111     1 mystack1   Le0041_Arrays_Lenght/Stack41;
+           19     101     2 mystack2   Le0041_Arrays_Lenght/Stack41;
+      StackMapTable: number_of_entries = 8
+        frame_type = 254 /* append */
+          offset_delta = 21
+          locals = [ class e0041_Arrays_Lenght/Stack41, class e0041_Arrays_Lenght/Stack41, int ]
+        frame_type = 250 /* chop */
+          offset_delta = 15
+        frame_type = 252 /* append */
+          offset_delta = 1
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 16
+        frame_type = 252 /* append */
+          offset_delta = 9
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 20
+        frame_type = 252 /* append */
+          offset_delta = 9
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 21
+}
+SourceFile: "TestStack41.java"
+#############################################################################################
+package e0041_Arrays_Lenght;
+
+public class TestStack41 {
+    public static void main(String[] args) {
+        Stack41 mystack1 = new Stack41(5);
+        Stack41 mystack2 = new Stack41(8);
+
+        for (int i = 0; i < 5; i++) {
+            mystack1.push(i);
+        }
+
+        for (int i = 0; i < 8; i++) {
+            mystack2.push(i);
+        }
+
+        System.out.println("Stack in mystack1:");
+        for (int i = 0; i < 5; i++) {
+            System.out.println(mystack1.pop());
+        }
+
+        System.out.println("Stack in mystack2:");
+        for (int i = 0; i < 8; i++) {
+            System.out.println(mystack2.pop());
+        }
+    }
+}
+---------------------------------------------------------------------------------------------
