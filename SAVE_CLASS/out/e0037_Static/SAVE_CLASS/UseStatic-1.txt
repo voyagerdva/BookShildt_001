@@ -157,13 +157,16 @@ Constant pool:
       stack=2, locals=0, args_size=0
          0: iconst_3
          1: putstatic     #23                 // Field a:I
+
          4: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
          7: ldc           #38                 // String STATIC BLOCK HAS BEEN INITIALIZED
          9: invokevirtual #17                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+
         12: getstatic     #23                 // Field a:I
         15: iconst_4
         16: imul
         17: putstatic     #30                 // Field b:I
+        
         20: return
       LineNumberTable:
         line 4: 0

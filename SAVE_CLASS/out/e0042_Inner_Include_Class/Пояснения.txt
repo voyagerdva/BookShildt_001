@@ -44,27 +44,24 @@ Member Class - это такой же класс, как и top-level класс, и хранитьс€ должен там
 
 package org.example;
 
-class TopLevel
-{
+class TopLevel {
    private int data;
 
-   public TopLevel(int _data)
-   {
+   public TopLevel(int _data) {
       data = _data;
    }
 
-   class MemberClass
-   {
+   class MemberClass {
        public int getData() {
            return data;
        }
    }
 
-   MemberClass getMemberClassInstance()
-   {
+   MemberClass getMemberClassInstance() {
       return new MemberClass();
    }
 }
+
 –аспечатаем утилитой javap содержимое сгенерированного .class файла:
 
 pakuula:/home/pakuula/eclipse-workspace/MemberClass/bin/org/example$ javap 'TopLevel$MemberClass.class'
